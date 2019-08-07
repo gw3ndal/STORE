@@ -1,6 +1,3 @@
-# STORE
-⋄ STORE -- E-commerce Project 
-***
 # Développement Web Fullstack
 _Par Philippe Giraud_ --
 _TP Php Mvc Store_
