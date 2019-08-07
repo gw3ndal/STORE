@@ -31,10 +31,13 @@ _Dépôt privé_
 ***
 
 ### Organisation :  
+
 📆  Le **01/08/2019**:   
-  ▸ Lancement du projet.  
+  ▸ Lancement du projet. 
+  
 📆  Le **01/08/2019**:   
   ▸ Composition des groupes.   
+  
 📆  Jusqu’au **22/08/2019**:  
   ▸ Modélisation UML   
   ▸ Mise en place du Trello   
@@ -51,7 +54,8 @@ _Dépôt privé_
 ▸ Groupe 2 : `afpa0519_store_2`    
 ▸ Groupe 3 : `afpa0519_store_3`    
 
-### Livraison:   
+### Livraison:  
+
 📆 Date limite : **01/09/2019**    
 ▸ Disque partage, avec toutes les ressources de votre projet (dev,base de données, Trello, Uml)    
  
