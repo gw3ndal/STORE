@@ -1,2 +1,6 @@
 ### Hello everybody
-Equipe de Choc 😁
+Equipe de Choc 😁:
+Marouane
+Farid
+Gwendal
+Abdenour
