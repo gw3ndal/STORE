@@ -33,10 +33,8 @@ _Dépôt privé_
 ### Organisation :  
 
 📆  Le **01/08/2019**:   
-  ▸ Lancement du projet. 
-  
-📆  Le **01/08/2019**:   
-  ▸ Composition des groupes.   
+  ▸ Lancement du projet.   
+  ▸ Composition des groupes.     
   
 📆  Jusqu’au **22/08/2019**:  
   ▸ Modélisation UML   
