@@ -1,5 +1,5 @@
 # Développement Web Fullstack   
-_Par Philippe Giraud -- TP Php Mvc Store_
+_Par Philippe Giraud -- TP PHP MVC Store_
 
 ## Sujet :
 En partant de l’architecture MVC procédurale et de la base de données fournie, vous devez construire une boutique en ligne la plus réaliste possible, avec une équipe de 4 personnes.
