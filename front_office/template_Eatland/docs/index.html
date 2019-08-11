@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Eatland Docs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300&amp;subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.min.css">
+        <!-- <link href="favicon.ico" rel="icon" type="image/x-icon" /> -->
+        <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+        
+        <script src="js/lib/modernizr-2.6.2.min.js"></script>
+        <script data-main="js/main.js" src="js/lib/require.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header></header>
+        <section role="main">
+            <div class="documentation-sidebar ui sidebar">
+                <div class="theme-logo"><a href="http://vsart.me/builder"><img src="img/logo.png" alt="" class="ui medium image"></a></div>
+                <nav>
+                    <div class="ui fluid vertical menu page-navs">
+                        <div class="header item">
+                            <i class="list icon"></i>
+                            Structure
+                        </div>
+                        <a href="#files-structure" class="sidebar-nav item">Files</a>
+                        <a href="#html-structure" class="sidebar-nav item">Html</a>
+                        <a href="#css-structure" class="sidebar-nav item">CSS / Less</a>
+                        <a href="#js-structure" class="sidebar-nav item">JavaScript</a>
+                        <div class="header item">
+                            <i class="icon magic"></i>
+                            Customization & Styles
+                        </div>
+                        <a href="#minify-js" class="sidebar-nav item">Minify javascript</a>
+                        <a href="#theme-color" class="sidebar-nav item">Theme color</a>
+                        <a href="#custom-curency" class="sidebar-nav item">Currency</a>
+                        <a href="#custom-fonts" class="sidebar-nav item">Font family</a>
+                        <a href="#custom-logo" class="sidebar-nav item">Logo image</a>
+                        <a href="#custom-nav" class="sidebar-nav item">Nav item</a>
+                        <a href="#custom-product" class="sidebar-nav item">Product item</a>
+                        <a href="#custom-category" class="sidebar-nav item">Category item</a>
+                        <a href="#custom-main-slider" class="sidebar-nav item">Main slider</a>
+                        <a href="#text-slider" class="sidebar-nav item">Text slider</a>
+                        <a href="#custom-products-slider" class="sidebar-nav item">Carousel</a>
+                        <a href="#custom-testim-slider" class="sidebar-nav item">Testimonial slider</a>
+                        <a href="#custom-video" class="sidebar-nav item">Video</a>
+                        <a href="#custom-icons" class="sidebar-nav item">Icons</a>
+                        <div class="header item">
+                            <i class="icon url"></i>
+                            Source & Credits
+                        </div>
+                        <a href="#fonts-source" class="sidebar-nav item">Fonts Source</a>
+                        <a href="#script-source" class="sidebar-nav item">Scripts Source</a>
+                        <div class="header item">
+                            <i class="icon info letter"></i>
+                            General Info
+                        </div>
+                        <a href="#responsive" class="sidebar-nav item">Responsive</a>
+                        <a href="#browser-support" class="sidebar-nav item">Browser Support</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="documentation-content">
+                <section class="structure-docs">
+                    <div class="categoy-title-block">
+                        <h2 class="ui header">Structure</h2>
+                    </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                <section id="files-structure" class="docs-point">
+                                        <h3 class="ui header category-title">Files</h3>
+                                        <div class="file-structure-content">
+                                            <div class="ui list">
+                                                <div class="item"><i class="right folder icon"></i>category - (products category items)</div>
+                                                <div class="item"><i class="right folder icon"></i>css - (page stylesheets)
+                                                    <div class="list">
+                                                        <div class="item"><i class="right folder icon"></i>less - (stylesheets with CSS pre-processor)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="item"><i class="right folder icon"></i>fonts - (the Font Awesome iconic font)</div>
+                                                <div class="item"><i class="right folder icon"></i>img - (all images)</div>
+                                                <div class="item"><i class="right folder icon"></i>js - (page Scripts)
+                                                    <div class="list">
+                                                        <div class="item"><i class="right folder icon"></i>components - (page JavaScript Components)</div>
+                                                        <div class="item"><i class="right folder icon"></i>lib - (page plugins)</div>
+                                                        <div class="item"><i class="right file icon"></i>main.js - (JavaScript file and module loader)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="item"><i class="right file icon"></i>index.html - (main page document)</div>
+                                                <div class="item"><i class="right file icon"></i>sendmail.php - (mail sender php script)</div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                    <section id="html-structure" class="docs-point">
+                                        <h3 class="ui header category-title">HTML</h3>
+                                        <div class="html-structure-content">
+                                            <p>The template is based on the <a href="http://foundation.zurb.com/">Foundation</a> Framework</p>
+                                            <p>The Foundation grid system consist of 12 columns. Width of each column is specified by the small-#, medium-#, and large-# classes.</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+    <div class="row">
+        <div class="small-2 large-4 columns">...</div>
+        <div class="small-4 large-4 columns">...</div>
+        <div class="small-6 large-4 columns">...</div>
+    </div>
+    <div class="row">
+        <div class="large-3 columns">...</div>
+        <div class="large-6 columns">...</div>
+        <div class="large-3 columns">...</div>
+    </div>
+    <div class="row">
+        <div class="small-6 large-2 columns">...</div>
+        <div class="small-6 large-8 columns">...</div>
+        <div class="small-12 large-2 columns">...</div>
+    </div>
+</textarea></code>
+</pre>
+                                            <p>If you need more information about the Foundation grid system, please visit the <a href="http://foundation.zurb.com/docs/components/grid.html">official foundation documentation.</a></p>
+                                            
+                                        </div>
+                                    </section>
+                                    
+                                    <section id="css-structure" class="docs-point">
+                                        <h3 class="ui header category-title">CSS / Less</h3>
+                                        <div>
+                                            <p>For style part of the template we are using <a href="http://smacss.com/">Scalable and Modular Architecture for CSS/LESS</a> and it has 2 core goals.</p>
+                                            <div class="ui bulleted list">
+                                                <div class="item">Increase the semantic value of html section and content</div>
+                                                <div class="item">Decrease the expectation of a specific html structure</div>
+                                            </div>
+                                            <p>
+                                                The purpose of SMACSS categorization is to reduse code repetition, to increse consistent experience, and to make the maintenance easier. Under SMACSS there are 5 general categories of css/less rules:
+                                            </p>
+                                            <div class="ui list">
+                                                <div class="item"><i class="right folder icon"></i>color - (stylesheets for the each theme color)</div>
+                                                <div class="item"><i class="right folder icon"></i>lib - (page scripts stylesheet)</div>
+                                                <div class="item"><i class="right folder icon"></i>modules - (stylesheets for the each theme block)
+                                                    <div class="list">
+                                                        <div class="item"><i class="right file icon"></i>_about.less - (about us section)</div>
+                                                        <div class="item"><i class="right file icon"></i>_team.less - (team section)</div>
+                                                        <div class="item"><i class="right file icon"></i>_preloader.less - (page preloader)</div>
+                                                        <div class="item"><i class="right file icon"></i>...</div>
+                                                    </div>
+                                                </div>
+                                                <div class="item"><i class="right file icon"></i>_base.less - (global styles and resets for this theme)</div>
+                                                <div class="item"><i class="right file icon"></i>_theme.less - (theme variables and general components styles)</div>
+                                                <div class="item"><i class="right file icon"></i>_layout.less - (classes and styles that define the theme layout)</div>
+                                                <div class="item"><i class="right file icon"></i>_module.less - (stylesheet for the each theme component)</div>
+                                                <div class="item"><i class="right file icon"></i>style.less - (all the less files)</div>
+                                                <div class="item"><i class="right file icon"></i>welcome.less - (welcome page styles)</div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                    <section id="js-structure" class="docs-point">
+                                        <h3 class="ui header category-title">JavaScript</h3>
+                                        <div>
+                                            <p>Is very important how you structure your JavaScript because:</p>
+                                            <div class="ui ordered list">
+                                                <div class="item">If done right, it makes code easier to understand for others and yourself when re-visting your own code.</div>
+                                                <div class="item">Having a decided-upon structure helps keeping future code clean and encourages your declared best practices.</div>
+                                                <div class="item">It makes your code testable.</div>
+                                            </div>
+                                            <p>For JavaScript design pattern we are using <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript">"Module Pattern"</a>, which helps keep the units of code both cleanly separated and well organized.</p>
+                                            <p>Each module object is a separate file and is loaded on the page with the help of <a href="http://requirejs.org/">RequireJS</a>, JavaScript file and module loader.</p>
+                                            <p>Here is how a module looks like.</p>
+<pre class="language-javascript"><code>
+<textarea name="" id="" cols="30" rows="10">var s,  
+    PrimaryNameSpace = {  
+
+        settings : {  
+            basicExample: $('.main'),  
+            nestedExample : {  
+                first: true,  
+                second: true,  
+                third: true,  
+                fourth: true,  
+                fifth : ['one', 'two', 'three', 'four', 'five', 'six']  
+            },  
+
+            foo: 'bar'  
+
+        },  
+
+        init: function () {  
+            s = this.settings;  
+             
+            this.nextMethod();  
+            this.anotherMethod();  
+        },  
+
+        nextMethod: function () {  
+        },  
+
+        anotherMethod: function () {  
+        }  
+    };</textarea>
+</code>
+</pre>
+                                        <p>For more about JavaScript module pattern read the <a href="http://css-tricks.com/how-do-you-structure-javascript-the-module-pattern-edition/">How Do You Structure JavaScript? The Module Pattern Edition</a> article.</p>
+                                        </div>
+                                    </section> 
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+                <section class="custom-style">
+                    <div class="categoy-title-block">
+                        <h2 class="ui header">Customization &amp; Styles</h2>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section id="minify-js" class="docs-point">
+                                    <h3 class="ui header category-title">Minify javascript</h3>
+                                    <div>
+                                        <p>First, make sure you have installed <a href="http://nodejs.org/">nodeJS</a>.</p>
+                                        <p>For windows platform just run minify.bat from the js folder.</p>
+                                        <p>For other platforms run in terminal from the js folder following command:</p>
+                                        <p>node tools/r.js -o tools/build.js</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section id="theme-color" class="docs-point">
+                                    <h3 class="ui header category-title">Theme color</h3>
+                                    <div>
+                                        <p>To change the theme color, change the data color of the body tag.</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+<body data-color="pink">
+</textarea></code>
+</pre>
+                                        <p>These are our theme colors.</p>
+                                        <div class="ui horizontal list">
+                                            <div class="item">
+                                                <span class="color-preview" style="background-color: #e02140;"></span>
+                                                red
+                                            </div>
+                                            <div class="item">
+                                                <span class="color-preview" style="background-color: #a0ce54;"></span>
+                                                green
+                                            </div>
+                                            <div class="item">
+                                                <span class="color-preview" style="background-color: #e27982;"></span>
+                                                pink
+                                            </div>
+                                            <div class="item">
+                                                <span class="color-preview" style="background-color: #e47a46;"></span>
+                                                orange
+                                            </div>
+                                            <div class="item">
+                                                <span class="color-preview" style="background-color: #f5c440;"></span>
+                                                yellow
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section id="custom-curency" class="docs-point">
+                                    <h3 class="ui header category-title">Currency</h3>
+                                    <div>
+                                        <p>To change the theme currency, write it inside the data-currency attribute on body tag.</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+<body data-color="pink" data-currency="$">
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section id="custom-fonts" class="docs-point">
+                                    <h3 class="ui header category-title">Font Family</h3>
+                                    <div>
+                            <p>To change the embedded font, find in the page head link tags.</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&anp;subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+</textarea></code>
+</pre>
+                            <p>To change the font, first go to <a href="https://www.google.com/fonts">Google Fonts</a>, choose a font and replace the code above with the generated code.</p>
+                            <p>Next find the _theme.less file in the css/less directory.</p>
+                            <p>At the begining of the document find font variables and change it's content with your new font name</p>
+                        </div>
+                                </section>
+                                
+                                <section id="custom-logo"  class="docs-point">
+                                    <h3 class="ui header category-title">Logo image</h3>
+                                    <div>
+                                        <p>To change the logo image, rename your new image - logo.png, and replace it with current one in images directory.</p>
+                                    </div>
+                                </section>
+                                
+                                <section id="custom-nav"  class="docs-point">
+                                    <h3 class="ui header category-title">Nav item</h3>
+                                    <div class="custom-logo-content">
+                                        <p>Search in your html file this code block. Copy and paste a list item to add a new nav.</p>
+<pre class="language-markup"><code>
+<textarea>
+<nav>
+    <ul class="navs-list l-tal-c">
+        <li class="nav-item js-nav-item">
+            <a href="#products"><p class="nav-text t-fw-l">Products</p></a>
+        </li>
+        <li class="nav-item js-nav-item">
+            <a href="#ingredients"><p class="nav-text t-fw-l">Ingredients</p></a>
+        </li>
+        <li class="nav-item js-nav-item">
+            <a href="#team"><p class="nav-text t-fw-l">Team</p></a>
+        </li>
+        <li class="nav-item js-nav-item">
+            <a href="#about"><p class="nav-text t-fw-l">About</p></a>
+        </li>
+        <li class="nav-item js-nav-item">
+            <a href="#contact"><p class="nav-text t-fw-l">Contact</p></a>
+        </li>
+    </ul>
+</nav>
+</textarea></code>
+</pre>
+                                        <p>Anchor href attribute must match an id of a block, where page will scroll to on click.</p>
+                                    </div>
+                                </section>
+                                
+                                <section id="custom-product"  class="docs-point">
+                                    <h3 class="ui header category-title">Product item</h3>
+                                    <div class="custom-logo-content">
+                                        <p>To add a new product item, find its category html document in categories directory and copy a list item in products-list block.</p>
+<pre class="language-markup"><code>
+<textarea>
+<li class="products-item js-product-item">
+    <div class="product-view l-dis-ib">
+        <a href="big image path" class="js-imagelightbox">
+            <span class="hover-view" data-icon="&#xe08b;"></span>
+            <img src="small image path" alt="Product description">
+        </a>
+    </div>
+    <div class="product-short-info l-dis-ib">
+        <p class="prod-name js-prod-title">Product name</p>
+        <p class="prod-code js-prod-code">Product unique code</p>
+    </div>
+    <div class="prod-price-block l-dis-ib">
+        <span class="add-prod-btn js-add-to-card product-control-btn l-dis-ib">+</span>
+        <p class="prod-price js-prod-price l-dis-ib">Product price <span class="curency">$</span></p>
+    </div>
+</li>
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                                
+                                <section id="custom-category"  class="docs-point">
+                                    <h3 class="ui header category-title">Category item</h3>
+                                    <div class="custom-logo-content">
+                                        <p>To add a new category item, find category-list block and copy a list item.</p>
+<pre class="language-markup"><code>
+<textarea>
+<li class="category-item js-catItem" data-category="category-name" data-path="categories/category-name.html">Category name</li>
+</textarea></code>
+</pre>
+                                        <p>Next, create a new html file and name it the same as data-category content(it is required for category html to have the name exactly the same as data-category content)</p>
+                                        <p>In your new category html file paste following markup and start adding product items</p>
+<pre class="language-markup"><code>
+<textarea>
+<li class="product-page-item js-product-page" data-category="category-name">
+    <div class="prod-page-view">
+        <ul class="prod-page-list">
+            <li class="cat-products-list prod-page">
+                <div class="order-block">
+                    <p class="added-products l-dis-ib">Added products <span class="products-number"><span class="js-products-counter"></span></span></p>
+                    <span class="order-now-btn js-order-btn l-dis-ib">Pre-Order Now</span>
+                </div>
+                <div class="products-list-block">
+                    <ul class="products-list js-products-list">
+                        <li class="products-item js-product-item">
+                            <div class="product-view l-dis-ib">
+                                <a href="large image path" class="js-imagelightbox">
+                                    <span class="hover-view" data-icon="&#xe08b;"></span>
+                                    <img src="small image path" alt="Product description">
+                                </a>
+                            </div>
+                            <div class="product-short-info l-dis-ib">
+                                <p class="prod-name js-prod-title">Product name</p>
+                                <p class="prod-code js-prod-code">Product code</p>
+                            </div>
+                            <div class="prod-price-block l-dis-ib">
+                                <span class="add-prod-btn js-add-to-card product-control-btn l-dis-ib">+</span>
+                                <p class="prod-price js-prod-price l-dis-ib">Product price<span class="curency"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="cat-products-desc prod-page">
+                <article>
+                    <div class="category-image-block"><img src="category image" alt=""></div>
+                    <div class="category-description-block js-description-block">
+                        <h3 class="category-title">Category name</h3>
+                        <p class="category-description">
+                            Category short history or description
+                        </p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</li>
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                                
+                                <section id="custom-main-slider"  class="docs-point">
+                                    <h3 class="ui header category-title">Main slider</h3>
+                                    <div>
+                                        <p>To add a new slider item, search for the text-slider block and copy/paste a slider item.</p>
+<pre class="language-markup"><code>
+<textarea>
+<div class="slide-item">
+    <h1 class="title">Item title</h1>
+    <h3 class="subtitle">Item subtitle</h3>
+</div>
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                                
+                                <section id="text-slider"  class="docs-point">
+                                    <h3 class="ui header category-title">Text slider</h3>
+                                    <div>
+                                        <p>To add a new slider item, search for the slider-container block and copy/paste an item.</p>
+<pre class="language-markup"><code>
+<textarea>
+<div class="slider-item">
+    <figure class="item-container">
+        <img src="image path" class="item-image" alt="">
+        <figcaption class="variation-text l-tal-c">
+            <div class="text-container">
+                <div class="main-content">
+                    <h1 class="title">Slide title</h1>
+                    <h3 class="subtitle">Slide description</h3>
+                </div>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                                
+                                <section id="custom-products-slider" class="docs-point">
+                                    <h3 class="ui header category-title">Carousel</h3>
+                                    <div>
+                                        <p>To add a new carousel item in ingredients block, copy/paste a slide item and set the paths to your images</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+<div class="item">
+    <a class="fancybox ingredients-img" rel="gallery1" href="Large image path">
+        <img src="Small image path" alt="">
+    </a>      
+    <a class="fancybox ingredients-img" rel="gallery1" href="Large image path">
+        <img src="Small image path" alt="">
+    </a>                               
+</div>
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                                
+                                <section id="custom-testim-slider" class="docs-point">
+                                    <h3 class="ui header category-title">Testimonial slider</h3>
+                                    <div>
+                                        <p>To add a new testimonial, search for the testimonials-images-list block and copy/paste a slide item.</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+<div class="testimonial-item">
+    <div class="item-header l-tal-c">
+        <div class="auth-img l-dis-ib"><img src="Image path" alt=""></div>
+        <h4 class="auth-name t-fw-l">Testimonial author</h4>
+    </div>
+    <div class="item-testim js-item-testim">Main testimonial</div>
+</div>
+</textarea></code>
+</pre>                             
+                                    </div>
+                                </section>
+                                <section id="custom-video" class="docs-point">
+                                    <h3 class="ui header category-title">Video</h3>
+                                    <div>
+                                        <p>Add your video in three required extensions(.mp4, .ogg, .webm) in the video directory plus, an image to be shown on devices that does not support html5 video and set path to them in your html.</p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+<video preload="auto" autoplay loop class="video-bg js-video-bg" poster="video/video-preview-image.jpg" muted>
+    <source src="video/your-video.mp4" type="video/mp4">
+    <source src="video/your-video.webm" type="video/webm">
+    <source src="video/your-video.ogv" type="video/ogg">
+</video>
+</textarea></code>
+</pre>
+                                    </div>
+                                </section>
+                                
+                                
+                                <section id="custom-icons" class="docs-point">
+                                    <h3 class="ui header category-title">Icons</h3>
+                                    <div>
+                                        <p>
+                                            To change an icon chose a new one from <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a> icons change icon class(fa-university).
+                                        </p>
+<pre class="language-markup"><code>
+<textarea name="" id="" cols="30" rows="10">
+<div class="icon-block l-dis-ib">
+    <i class="fa icon-class"></i>
+</div>
+</textarea></code>
+</pre>
+                                        <p>If you need more information, please visit this site: <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a> official page.</p>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="source">
+                    <div class="categoy-title-block">
+                        <h2 class="ui header">Source & Credits</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section id="fonts-source" class="docs-point">
+                                    <h3 class="ui header category-title">Fonts Source</h3>
+                                    <div>
+                                        <div class="ui list">
+                                            <div class="item">Typography Fonts - <a href="https://www.google.com/fonts">Google Fonts</a></div>
+                                            <div class="item">Icon Fonts - <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, <a href="http://cdn.webfid.com/simple/">Simple Line Icons</a></div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section id="script-source" class="docs-point">
+                                    <h3 class="ui header category-title">Scripts Source</h3>
+                                    <div>
+                                        <div class="ui list">
+                                            <div class="item">JavaScript library - <a href="http://jquery.com/">jQuery</a></div>
+                                            <div class="item">Front-end framework - <a href="http://foundation.zurb.com/">Foundation</a></div>
+                                            <div class="item">Front-end MVC framework - <a href="http://backbonejs.org/">Backbone.js</a></div>
+                                            <div class="item">Slider - <a href="http://www.owlgraphic.com/owlcarousel/">OWL Carousel</a></div>
+                                            <div class="item"><a href="http://modernizr.com/">Modernizr</a></div>
+                                            <div class="item">Lightbox - <a href="http://fancyapps.com/fancybox/">Fancybox</a></div>
+                                            <div class="item">File and module loader - <a href="http://requirejs.org/">RequireJS</a></div>
+                                            <div class="item">Accelerated JavaScript animation - <a href="http://julian.com/research/velocity/">Velocity.js</a></div>
+                                            <div class="item">On scroll reveal animations - <a href="http://julian.com/research/velocity/">Velocity.js</a>, <a href="https://github.com/protonet/jquery.inview">jquery.inview</a></div>
+                                            <div class="item">Custom scrollbar - <a href="http://manos.malihu.gr/tuts/jquery_custom_scrollbar.html">jQuery custom content scroller</a></div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <section class="general-info-docs">
+                    <div class="categoy-title-block">
+                        <h2 class="ui header">General Info</h2>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <scetion id="responsive" class="docs-point">
+                                    <h3 class="ui header category-title">Responsive</h3>
+                                    <div>
+                                        <p>Fully Responsive</p>
+                                        <i class="circular large teal desktop icon"></i>
+                                        <i class="circular large teal tablet icon"></i>
+                                        <i class="circular large teal mobile icon"></i>
+                                    </div>
+                                </scetion>
+                                
+                                <section id="browser-support" class="docs-point">
+                                    <h3 class="ui header category-title">Browser Support</h3>
+                                    <div>
+                                        <p>Chrome, Firefox, Opera, Safari, IE9+</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+        <script src="js/lib/prism.js"></script>
+    </body>
+</html>
