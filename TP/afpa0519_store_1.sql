@@ -157,6 +157,7 @@ DROP TABLE IF EXISTS `st_products`;
 CREATE TABLE IF NOT EXISTS `st_products` (
   `pro_id` int(11) NOT NULL AUTO_INCREMENT,
   `pro_title` varchar(200) NOT NULL,
+  `pro_subtitle` varchar(255) NOT NULL,
   `pro_descr` mediumtext NOT NULL,
   `pro_img_url` varchar(255) NOT NULL,
   `pro_price` decimal(10,2) NOT NULL,
