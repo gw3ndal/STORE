@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Développement Web Fullstack   
 _Par Philippe Giraud -- TP PHP MVC Store_
 
@@ -59,7 +58,3 @@ _Dépôt privé_
 ▸ Disque partage, avec toutes les ressources de votre projet (dev,base de données, Trello, Uml)    
  
 _Si vous manquez de travail, inspirez-vous des boutiques réelles pour reproduire certaines de leurs fonctionnalités._
-=======
-# La branche de Fonctionnalités
-Les branches `Feature` permettent de commencer à travailler sur une nouvelle fonctionnalité. La branche `Feature` est créée à partir de la branche `Develop`. Vous devrez créer pour chaque nouvelle fonctionnalité une branche `Feature` ! Lorsque nous avons fini de développer notre nouvelle fonctionnalité, il faudra alors la commiter puis la fusionner sur la branche `Develop`.
->>>>>>> feature
