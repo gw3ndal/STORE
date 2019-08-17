@@ -1,0 +1,23 @@
+[
+  {
+    "title": "MADAGASCAR",
+    "subtitle": "chocolat noir d’origine | Madagascar",
+    "description": "Notes d’agrumes à l’attaque, puis de fruits secs et de miel, finale légèrement acidulée et délicate longueur en bouche.",
+    "image": "https://www.chocolatsdumonde.ch/wp-content/uploads/Omnom_Madagascar_A-1-e1526937458994.jpg",
+    "price": "10.00"
+  },
+  {
+    "title": "TANZANIA",
+    "subtitle": "chocolat noir d’origine | Tanzanie",
+    "description": "La texture lisse et soyeuse dévoile lentement des notes fruitées, légèrement acidulé, sur un fond grillé, sans amertume.",
+    "image": "https://www.chocolatsdumonde.ch/wp-content/uploads/Omnom_Tanzania_A-e1527099864264.jpg",
+    "price": "10.00"
+  },
+  {
+    "title": "NICARAGUA",
+    "subtitle": "chocolat noir d’origine | Nicaragua",
+    "description": "Après une brève note fruitée, puis acidulée, c’est une douce amertume mêlée de notes épicées et boisées qui envahit le palais.",
+    "image": "https://www.chocolatsdumonde.ch/wp-content/uploads/Omnom_Nicaragua_A-e1527100375445.jpg",
+    "price": "10.00"
+  }
+]
