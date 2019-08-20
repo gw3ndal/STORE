@@ -35,5 +35,3 @@ if(file_exists($file)){
 }
 
 // var_dump($pdo);
-?>
-<link href="css/mystyle.css" rel="stylesheet">
