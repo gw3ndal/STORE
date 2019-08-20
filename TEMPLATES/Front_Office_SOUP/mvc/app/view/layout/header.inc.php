@@ -29,6 +29,10 @@
 <!-- CSS Theme -->
 <link id="theme" rel="stylesheet" href="assets/css/themes/theme-beige.min.css" />
 
+
+<!-- CSS CREATED -->
+<link href="assets/css/mystyle.css" rel="stylesheet">
+
 </head>
 
 <body>
