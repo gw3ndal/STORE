@@ -3,7 +3,7 @@
    define("APP_LANG","fr");
    define("APP_CHARSET","utf-8");
    define("DB_HOST","localhost");
-   define("DB_NAME","afpa0519_store_1");
+   define("DB_NAME","afpa0519_store_exp");
    define("DB_CHARSET","utf8");
    define("DB_USER","root");
    define("DB_PASSWORD","");
