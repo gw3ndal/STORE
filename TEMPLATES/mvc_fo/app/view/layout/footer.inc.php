@@ -1,4 +1,15 @@
-        <!-- Footer -->
+ <hr>
+<?php
+if (DEBUG){?>
+    <strong>SESSION</strong>
+    <div class="container-fluid">
+<?php
+    var_dump($_SESSION);
+    ?>
+<?php
+}
+?>      
+           <!-- Footer -->
         <footer id="footer" class="bg-dark dark">
             
             <div class="container">
