@@ -1,4 +1,5 @@
-	<!-- Content -->
+<!-- HEADER -->
+<?php include("../app/view/layout/header.inc.php");?>	<!-- Content -->
 	<div id="content">
 
 		<!-- Page Title -->
