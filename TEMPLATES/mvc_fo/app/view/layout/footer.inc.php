@@ -51,7 +51,7 @@
                 </div>
                 <!-- Footer 2nd Row -->
                 <div class="footer-second-row">
-                    <span class="text-muted">Copyright Soup 2017©. Made with love by Suelo.</span>
+                    <span class="text-muted">Copyright &copy; <?=SITE_NAME?> 2019. Made with love by Suelo.</span>
                 </div>
             </div>
 
