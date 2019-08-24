@@ -12,7 +12,6 @@
             </span>
         </a>
     </div>
-
     <div class="box">
         <div class="box-header">
             <h3 class=" d-flex align-items-center">
@@ -52,13 +51,6 @@
                 </div>
             </li>
             <!-- Fin de boucle FOREACH-->
-
-            <!-- DEBUT SUPPRESSION -->
-
-
-
-            <!-- FIN SUPPRESSION -->
-
         </ul>
     </div>
 </div>

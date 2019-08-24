@@ -46,8 +46,8 @@
                     <div class="text-sm">
                         <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
                             Pérou</span>
-                        <span class="label brown-300"></span>
-                        <span class="label red-300"></span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
                     </div>
                 </div>
             </li>
