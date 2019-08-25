@@ -1,7 +1,7 @@
 <?php include 'layout/header.inc.php';?>
 
 <!-- ############ LAYOUT START-->
-<div style="padding-top:100px;" class="col-lg-8 mx-auto p">
+<div class="col-lg-8 mx-auto p">
     <div class="d-flex justify-content-end mb-2">
         <a href="" class="btn btn-md black">
             <span class="pull-left m-r-sm">
@@ -15,19 +15,17 @@
     <div class="box">
         <div class="box-header">
             <h3 class=" d-flex align-items-center">
-                <span>Les Catégories</span>
-                <span class="label rounded ml-2 success">10</span>
+                <span class="text-u-c">Les Catégories</span>
+                <span class="label rounded ml-2 success totalNumber"></span>
             </h3>
-            <small>Toutes les catégories</small>
+            <small>Toutes nos catégories</small>
         </div>
-        <ul class="list inset">
-            <!-- Début de boucle FOREACH-->
+        <div class="box-divider m-0"></div>
+        <ul class="list inset totalElements">
+            <!-- START FOREACH LOOP -->
             <li class="list-item">
                 <a herf="" class="list-left">
-                    <span class="w-40 r-2x _600 text-lg accent">
-                        B
-                        <!-- Script php qui récupère la première lettre d'un titre et la mettre en UpperCase ou juste mettre l'ID du produit  -->
-                    </span>
+                    <span class="w-40 r-2x _600 text-lg text-u-c accent firstLetter"></span>
                 </a>
                 <div class="list-body">
                     <div class="m-y-sm pull-right">
@@ -41,16 +39,19 @@
                             <i class="fa fa-pencil "></i>
                         </a>
                     </div>
-                    <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div><a class="firstTitle" href="">KABYLIE 2018 LACTE CARAMEL BEURRE SALE</a></div>
                     <div class="text-sm">
-                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
-                            Pérou</span>
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
                         <span class="label brown-300"></span>
                         <span class="label red-300"></span>
                     </div>
                 </div>
             </li>
-            <!-- Fin de boucle FOREACH-->
+            <!-- END FOREACH LOOP -->
+
+            <!-- START REMOVE -->
+
+            <!-- END REMOVE -->
         </ul>
     </div>
 </div>

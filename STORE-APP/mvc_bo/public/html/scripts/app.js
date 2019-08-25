@@ -104,4 +104,22 @@
     init();
     setTheme();
 
+ // MY SCRIPTS:
+ $(function(){
+  var current = location.pathname;
+  $('li a.menuChoco').each(function(){
+    var $this = $(this);
+    if($this.attr('href').indexOf(current)!==-1){
+      $this.addClass('active');
+    }
+  })
+})
+
+const liElements = document.querySelectorAll('.totalElements li').length;
+const totalNumber = document.querySelector('.totalNumber').textContent =liElements;
+const firstTitle = document.querySelector('.firstTitle');
+const firstLetter = document.querySelector('.firstLetter').textContent =firstTitle.textContent[0];
+
+
 })(jQuery);
+
