@@ -57,7 +57,7 @@
                     <a herf="" class="list-left">
                         <span class="w-40 avatar">
                             <img src="<?=root('public/assets/images/a5.jpg')?>" alt="...">
-                            <i class="on b-white bottom"></i>
+                            <i class="busy b-white bottom"></i>
                         </span>
                     </a>
                     <div class="list-body">
@@ -83,7 +83,7 @@
                     <a herf="" class="list-left">
                         <span class="w-40 avatar">
                             <img src="<?=root('public/assets/images/a6.jpg')?>" alt="...">
-                            <i class="on b-white bottom"></i>
+                            <i class="away b-white bottom"></i>
                         </span>
                     </a>
                     <div class="list-body">
@@ -138,5 +138,6 @@
     </div>
 </div>
 <!--ENDCONTENT -->
+
 <?php include 'layout/footer.inc.php';?>
 <?php include 'layout/scripts.inc.php';?>

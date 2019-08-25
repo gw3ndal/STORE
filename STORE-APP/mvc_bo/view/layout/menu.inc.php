@@ -6,7 +6,7 @@
             <i class="material-icons">menu</i>
         </a>
         <!-- brand -->
-        <a class="navbar-brand">
+        <a class="navbar-brand" href="<?=root('view/dashboard.php')?>">
             <img src="<?=root('public/assets/images/logo.png')?>" alt="profile image">
             <span class="hidden-folded inline">ADMIN</span>
         </a>
@@ -56,7 +56,7 @@
                         <small class="text-muted">Administrator</small>
                     </span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-overlay pull-right">
+                <div class="dropdown-menu dropdown-menu-scale pull-right">
                     <a class="dropdown-item" ui-sref="app.page.profile">
                         <span>Profile</span>
                     </a>
@@ -70,6 +70,7 @@
             </li>
         </ul>
         <!-- / navbar right -->
+
     </div>
 </div>
 <!-- END MENU -->
