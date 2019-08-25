@@ -1,4 +1,4 @@
-<?php include 'layout/header.inc.php';?>
+<?php include 'layout/menu.inc.php';?>
 
 <!-- ############ LAYOUT START-->
 <div class="col-lg-8 mx-auto p">
@@ -133,3 +133,4 @@
 </div>
 <!-- ############ LAYOUT END-->
 <?php include 'layout/footer.inc.php';?>
+<?php include 'layout/scripts.inc.php';?>

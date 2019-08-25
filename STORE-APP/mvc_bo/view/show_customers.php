@@ -1,4 +1,4 @@
-<?php include 'layout/header.inc.php';?>
+<?php include 'layout/menu.inc.php';?>
 
 <!--START CONTENT -->
 <div class="d-flex justify-content-center">
@@ -44,11 +44,9 @@
                                 <i class="fa fa-pencil "></i>
                             </a>
                         </div>
-                        <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
-                        <div class="text-sm">
-                            <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
-                            <span class="label brown-300">B</span>
-                            <span class="label red-300">N</span>
+                        <div>
+                            <span>Anabelle</span>
+                            <small class="block"><i class="fa fa-phone m-r-sm text-muted"></i>(021) 9000 9877</small>
                         </div>
                     </div>
                 </li>
@@ -74,14 +72,13 @@
                                 <i class="fa fa-pencil "></i>
                             </a>
                         </div>
-                        <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
-                        <div class="text-sm">
-                            <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
-                            <span class="label brown-300">B</span>
-                            <span class="label red-300">N</span>
+                        <div>
+                            <span>Fafa</span>
+                            <small class="block"><i class="fa fa-phone m-r-sm text-muted"></i>(021) 9000 9877</small>
                         </div>
                     </div>
                 </li>
+
                 <li class="list-item">
                     <a herf="" class="list-left">
                         <span class="w-40 avatar">
@@ -101,14 +98,13 @@
                                 <i class="fa fa-pencil "></i>
                             </a>
                         </div>
-                        <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
-                        <div class="text-sm">
-                            <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
-                            <span class="label brown-300">B</span>
-                            <span class="label red-300">N</span>
+                        <div>
+                            <span>Marijuata</span>
+                            <small class="block"><i class="fa fa-phone m-r-sm text-muted"></i>(021) 9000 9877</small>
                         </div>
                     </div>
                 </li>
+
                 <li class="list-item">
                     <a herf="" class="list-left">
                         <span class="w-40 avatar">
@@ -128,68 +124,13 @@
                                 <i class="fa fa-pencil "></i>
                             </a>
                         </div>
-                        <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
-                        <div class="text-sm">
-                            <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
-                            <span class="label brown-300">B</span>
-                            <span class="label red-300">N</span>
+                        <div>
+                            <span>Gwendalou</span>
+                            <small class="block"><i class="fa fa-phone m-r-sm text-muted"></i>(021) 9000 9877</small>
                         </div>
                     </div>
                 </li>
-                <li class="list-item">
-                    <a herf="" class="list-left">
-                        <span class="w-40 avatar">
-                            <img src="<?=root('public/assets/images/a8.jpg')?>" alt="...">
-                            <i class="on b-white bottom"></i>
-                        </span>
-                    </a>
-                    <div class="list-body">
-                        <div class="m-y-sm pull-right">
-                            <a href="" class="btn btn-sm  white b-info">
-                                <i class="fa fa-eye"></i>
-                            </a>
-                            <a href="" class="btn btn-sm  white b-danger">
-                                <i class="fa fa-trash"></i>
-                            </a>
-                            <a href="" class="btn btn-sm white b-success">
-                                <i class="fa fa-pencil "></i>
-                            </a>
-                        </div>
-                        <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
-                        <div class="text-sm">
-                            <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
-                            <span class="label brown-300">B</span>
-                            <span class="label red-300">N</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-item">
-                    <a herf="" class="list-left">
-                        <span class="w-40 avatar">
-                            <img src="<?=root('public/assets/images/a9.jpg')?>" alt="...">
-                            <i class="on b-white bottom"></i>
-                        </span>
-                    </a>
-                    <div class="list-body">
-                        <div class="m-y-sm pull-right">
-                            <a href="" class="btn btn-sm  white b-info">
-                                <i class="fa fa-eye"></i>
-                            </a>
-                            <a href="" class="btn btn-sm  white b-danger">
-                                <i class="fa fa-trash"></i>
-                            </a>
-                            <a href="" class="btn btn-sm white b-success">
-                                <i class="fa fa-pencil "></i>
-                            </a>
-                        </div>
-                        <div><a href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
-                        <div class="text-sm">
-                            <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
-                            <span class="label brown-300">B</span>
-                            <span class="label red-300">N</span>
-                        </div>
-                    </div>
-                </li>
+
                 <!-- END REMOVE -->
 
             </ul>
@@ -197,4 +138,5 @@
     </div>
 </div>
 <!--ENDCONTENT -->
-<?php include 'layout/footer.inc.php';
+<?php include 'layout/footer.inc.php';?>
+<?php include 'layout/scripts.inc.php';?>
