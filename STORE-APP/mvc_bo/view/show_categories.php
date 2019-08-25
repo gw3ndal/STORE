@@ -16,16 +16,16 @@
         <div class="box-header">
             <h3 class=" d-flex align-items-center">
                 <span class="text-u-c">Les Catégories</span>
-                <span class="label rounded ml-2 success totalNumber"></span>
+                <span class="label rounded ml-2 brown totalNumber"></span>
             </h3>
-            <small>Toutes nos catégories</small>
+            <small>Tous nos types de chocolats</small>
         </div>
         <div class="box-divider m-0"></div>
         <ul class="list inset totalElements">
             <!-- START FOREACH LOOP -->
             <li class="list-item">
                 <a herf="" class="list-left">
-                    <span class="w-40 r-2x _600 text-lg text-u-c accent firstLetter"></span>
+                    <span class="w-40 r-2x _600 text-lg text-u-c accent brown"></span>
                 </a>
                 <div class="list-body">
                     <div class="m-y-sm pull-right">
@@ -39,7 +39,7 @@
                             <i class="fa fa-pencil "></i>
                         </a>
                     </div>
-                    <div><a class="firstTitle" href="">KABYLIE 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div><a class="firstTitle" href="">BLANC</a></div>
                     <div class="text-sm">
                         <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
                         <span class="label brown-300"></span>
@@ -50,6 +50,82 @@
             <!-- END FOREACH LOOP -->
 
             <!-- START REMOVE -->
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg text-u-c accent brown-100"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">AU LAIT</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
+                        <span class="label brown-300"></span>
+                        <span class="label red-300"></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg text-u-c accent brown-100"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">RUBIS</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
+                        <span class="label brown-300"></span>
+                        <span class="label red-300"></span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg text-u-c accent brown-100"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">NOIR</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel | Pérou</span>
+                        <span class="label brown-300"></span>
+                        <span class="label red-300"></span>
+                    </div>
+                </div>
+            </li>
+
 
             <!-- END REMOVE -->
         </ul>

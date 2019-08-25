@@ -117,8 +117,19 @@
 
 const liElements = document.querySelectorAll('.totalElements li').length;
 const totalNumber = document.querySelector('.totalNumber').textContent =liElements;
-const firstTitle = document.querySelector('.firstTitle');
-const firstLetter = document.querySelector('.firstLetter').textContent =firstTitle.textContent[0];
+const firstTitle = [...document.querySelectorAll('.firstTitle')];
+
+const letters = firstTitle.map(el=>{
+  let letter = el.textContent.trim()
+  el.parentNode
+    .parentNode
+    .parentNode
+    .firstElementChild
+    .firstElementChild.textContent = letter[0]
+})
+
+
+
 
 
 })(jQuery);

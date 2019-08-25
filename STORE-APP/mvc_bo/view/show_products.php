@@ -18,7 +18,7 @@
         <div class="box-header">
             <h3 class=" d-flex align-items-center">
                 <span class="text-u-c">Le Catalogue</span>
-                <span class="label rounded ml-2 success totalNumber"></span>
+                <span class="label rounded ml-2 brown  totalNumber"></span>
             </h3>
             <small>Tous nos produits</small>
         </div>
@@ -27,7 +27,7 @@
             <!-- START FOREACH LOOP -->
             <li class="list-item">
                 <a herf="" class="list-left">
-                    <span class="w-40 r-2x _600 text-lg accent text-u-c firstLetter"></span>
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
                 </a>
                 <div class="list-body">
                     <div class="m-y-sm pull-right">
@@ -41,7 +41,7 @@
                             <i class="fa fa-pencil "></i>
                         </a>
                     </div>
-                    <div><a class="firstTitle" href="">PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div><a class="firstTitle" href=""> PEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
                     <div class="text-sm">
                         <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
                             Pérou</span>
@@ -53,7 +53,395 @@
             <!-- END FOREACH LOOP -->
 
             <!-- STAR REMOVE -->
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">AEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
 
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">ZEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">BEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">KEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">MEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">NEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">SEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">DEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">YEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">KEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">LEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">XEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">HEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">SEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-item">
+                <a herf="" class="list-left">
+                    <span class="w-40 r-2x _600 text-lg brown-600 text-u-c"></span>
+                </a>
+                <div class="list-body">
+                    <div class="m-y-sm pull-right">
+                        <a href="" class="btn btn-sm  white b-info">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-sm  white b-danger">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a href="" class="btn btn-sm white b-success">
+                            <i class="fa fa-pencil "></i>
+                        </a>
+                    </div>
+                    <div><a class="firstTitle" href="">JEROU 2018 LACTE CARAMEL BEURRE SALE</a></div>
+                    <div class="text-sm">
+                        <span class="text-muted">Chocolat noir au lait grand cru avec caramel |
+                            Pérou</span>
+                        <span class="label brown-300">B</span>
+                        <span class="label red-300">N</span>
+                    </div>
+                </div>
+            </li>
             <!-- END REMOVE -->
 
         </ul>

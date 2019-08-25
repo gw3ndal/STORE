@@ -18,7 +18,7 @@
             <div class="box-header">
                 <h3 class=" d-flex align-items-center">
                     <span class="text-u-c">Les Clients</span>
-                    <span class="label rounded ml-2 success totalNumber"></span>
+                    <span class="label rounded ml-2 brown totalNumber"></span>
                 </h3>
                 <small>Tous nos clients</small>
             </div>
