@@ -5,7 +5,7 @@
 
     <div class="col-xs-12 col-sm-12 col-md-8">
         <div class="d-flex justify-content-end mb-2">
-            <a href="" class="btn btn-md black">
+            <a href="<?=root('view/addCustomer.php')?>" class="btn btn-md black">
                 <span class="pull-left m-r-sm">
                     <i class="fa fa-plus "></i>
                 </span>
@@ -14,10 +14,10 @@
                 </span>
             </a>
         </div>
-        <div class="box">
+        <div class="box padding">
             <div class="box-header">
                 <h3 class=" d-flex align-items-center">
-                    <span class="text-u-c">Les Clients</span>
+                    <span class="text-u-c text-md">Clients</span>
                     <span class="label rounded ml-2 brown totalNumber"></span>
                 </h3>
                 <small>Tous nos clients</small>
@@ -35,7 +35,7 @@
                     <div class="list-body">
                         <div class="m-y-sm pull-right">
                             <a href="" class="btn btn-sm  white b-info">
-                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-link"></i>
                             </a>
                             <a href="" class="btn btn-sm  white b-danger">
                                 <i class="fa fa-trash"></i>
@@ -63,7 +63,7 @@
                     <div class="list-body">
                         <div class="m-y-sm pull-right">
                             <a href="" class="btn btn-sm  white b-info">
-                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-link"></i>
                             </a>
                             <a href="" class="btn btn-sm  white b-danger">
                                 <i class="fa fa-trash"></i>
@@ -89,7 +89,7 @@
                     <div class="list-body">
                         <div class="m-y-sm pull-right">
                             <a href="" class="btn btn-sm  white b-info">
-                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-link"></i>
                             </a>
                             <a href="" class="btn btn-sm  white b-danger">
                                 <i class="fa fa-trash"></i>
@@ -115,7 +115,7 @@
                     <div class="list-body">
                         <div class="m-y-sm pull-right">
                             <a href="" class="btn btn-sm  white b-info">
-                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-link"></i>
                             </a>
                             <a href="" class="btn btn-sm  white b-danger">
                                 <i class="fa fa-trash"></i>
@@ -140,4 +140,5 @@
 <!--ENDCONTENT -->
 
 <?php include 'layout/footer.inc.php';?>
+<?php $myScript = MY_SCRIPT?>
 <?php include 'layout/scripts.inc.php';?>

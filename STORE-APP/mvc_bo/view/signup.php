@@ -10,7 +10,7 @@
 
     <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
         <div class="m-b text-sm">
-            Inscrivez-vous
+            Créer votre compte
         </div>
         <form name="form">
             <div class="md-form-group">
@@ -36,7 +36,7 @@
     </div>
 
     <div class="p-v-lg text-center">
-        <div>Vous avez déjà un compte ? <a ui-sref="access.signin" href="<?=root('view/signin.php')?>" class="text-primary _600">S'identifier</a></div>
+        <div><a ui-sref="access.signin" href="<?=root('view/signin.php')?>" class="text-primary _600">Se connecter à un compte existant</a></div>
     </div>
 </div>
 

@@ -25,3 +25,4 @@ $mvc_root = substr($_SERVER['SCRIPT_NAME'], 0, $mvc_bo);
 define("WWW_MVC", $mvc_root);
 
 require_once 'functions.php';
+define("MY_SCRIPT", root('public/html/scripts/app.js'));

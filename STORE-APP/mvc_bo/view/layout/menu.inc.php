@@ -6,7 +6,7 @@
             <i class="material-icons">menu</i>
         </a>
         <!-- brand -->
-        <a class="navbar-brand" href="<?=root('view/dashboard.php')?>">
+        <a class="navbar-brand" href="<?=root('view/index.php')?>">
             <img src="<?=root('public/assets/images/logo.png')?>" alt="profile image">
             <span class="hidden-folded inline">ADMIN</span>
         </a>
@@ -16,7 +16,7 @@
             <!-- link and dropdown -->
             <ul class="nav navbar-nav navbar-nav-inline text-center pull-left m-r text-warn-hover">
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn menuChoco" href="<?=url_for('show_products.php');?>">
+                    <a class="nav-link btn menuChoco" href="<?=root('view/show_products.php');?>">
                         <span class="nav-text">
                             <i class="material-icons">shopping_basket</i>
                             <span class="text-xs">Produits</span>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn menuChoco" href="<?=url_for('show_categories.php');?>">
+                    <a class="nav-link btn menuChoco" href="<?=root('view/show_categories.php');?>">
                         <span class="nav-text">
                             <i class="material-icons">local_play</i>
                             <span class="text-xs">Catégories</span>
@@ -32,15 +32,17 @@
                     </a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn menuChoco" href="<?=url_for('show_customers.php');?>">
+                    <a class="nav-link btn menuChoco" href="<?=root('view/show_customers.php');?>">
                         <span class="nav-text">
                             <i class="material-icons">person_pin</i>
                             <span class="text-xs">Clients</span>
                         </span>
                     </a>
+
                 </li>
             </ul>
             <!-- / link and dropdown -->
+
         </div>
         <!-- / navbar collapse -->
         <!-- nabar right -->
@@ -74,4 +76,78 @@
     </div>
 </div>
 <!-- END MENU -->
+
+<!-- START SWITCHER -->
+<div id="switcher">
+    <div class="switcher box-color black lt" id="sw-theme" ui-class="active">
+        <a href="" ui-toggle-class="active" target="#sw-theme" class="box-color black lt text-color sw-btn">
+            <i class="fa fa-gear text-white"></i>
+        </a>
+        <div class="box-header">
+            <h2>Administration</h2>
+        </div>
+        <div class="box-divider"></div>
+        <div class="box-body">
+            <p>Ajouter:</p>
+            <div class="">
+                <div class=" mb-2 w-100">
+                    <a href="<?=root('view/addProduct.php')?>" class="btn btn-md white w-100">
+                        <span class="pull-left m-r-sm">
+                            <i class="fa fa-plus "></i>
+                        </span>
+                        <span class="clear text-left l-h-1x">
+                            <b class="text-sm text-u-c m-b-xs">Produit</b>
+                        </span>
+                    </a>
+                </div>
+
+                <div class=" mb-2">
+                    <a href="<?=root('view/addCategory.php')?>" class="btn btn-md white w-100">
+                        <span class="pull-left m-r-sm">
+                            <i class="fa fa-plus "></i>
+                        </span>
+                        <span class="clear text-left l-h-1x">
+                            <b class="text-sm text-u-c m-b-xs">Catégorie</b>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="mb-2">
+                    <a href="<?=root('view/addCustomer.php')?>" class="btn btn-md white w-100">
+                        <span class="pull-left m-r-sm">
+                            <i class="fa fa-plus "></i>
+                        </span>
+                        <span class="clear text-left l-h-1x">
+                            <b class="text-sm text-u-c m-b-xs">Compte</b>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <p>Themes:</p>
+            <div data-target="bg" class="row no-gutter text-u-c text-center _600 clearfix">
+                <label class="p-a col-sm-6 light text-black pointer m-0">
+                    <input type="radio" name="theme" value="" hidden="">
+                    Light
+                </label>
+                <label class="p-a col-sm-6 grey pointer m-0">
+                    <input type="radio" name="theme" value="grey" hidden="" class="has-value">
+                    Grey
+                </label>
+                <label class="p-a col-sm-6 dark pointer m-0">
+                    <input type="radio" name="theme" value="dark" hidden="" class="has-value">
+                    Dark
+                </label>
+                <label class="p-a col-sm-6 black pointer m-0">
+                    <input type="radio" name="theme" value="black" hidden="" class="has-value">
+                    Black
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- END SWITCHER -->
+
 <div style="padding-top:100px;">

@@ -128,9 +128,5 @@ const letters = firstTitle.map(el=>{
     .firstElementChild.textContent = letter[0]
 })
 
-
-
-
-
 })(jQuery);
 

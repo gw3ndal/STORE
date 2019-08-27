@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="<?=root('public/assets/styles/app.css')?>" type="text/css" />
     <!-- endbuild -->
     <link rel="stylesheet" href="<?=root('public/assets/styles/font.css')?>" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?=root('public/libs/jquery/parsleyjs/dist/parsley.css')?>">
 </head>
 
 <body class="hg">
