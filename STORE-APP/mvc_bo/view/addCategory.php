@@ -31,7 +31,7 @@
 
                             </div>
                             <div class=" p-a text-right">
-                                <button type="submit" class="btn dark pointer">Ajouter</button>
+                                <button type="submit" class="btn text-dark warn pointer">Ajouter</button>
                             </div>
                         </div>
                     </form>

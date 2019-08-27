@@ -3,12 +3,12 @@
 <!-- ############ LAYOUT START-->
 <div class="col-lg-8 mx-auto">
     <div class="d-flex justify-content-end mb-2">
-        <a href="<?=root('view/addCategory.php')?>" class="btn btn-md black">
+        <a href="<?=root('view/addCategory.php')?>" class="btn btn-md text-dark warn">
             <span class="pull-left m-r-sm">
                 <i class="fa fa-plus "></i>
             </span>
             <span class="clear text-left l-h-1x">
-                <b class="text-sm m-b-xs">Ajouter une Catégorie</b>
+                <b class="text-sm m-b-xs ">Ajouter une Catégorie</b>
             </span>
         </a>
     </div>

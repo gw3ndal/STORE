@@ -1,43 +1,104 @@
 <?php include 'layout/menu.inc.php';?>
 
 <!-- START CONTENT -->
-<div class="row col-12 container d-flex justify-content-center m-0">
-    <div class="col-xs-6 col-sm-4">
+
+<div class="row col-12 d-flex justify-content-center m-0 p-0">
+    <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="box p-a">
             <div class="pull-left m-r">
-                <span class="w-48 rounded  accent">
-                    <i class="material-icons"></i>
+                <span class="w-40 warn text-center rounded">
+                    <i class="material-icons">shopping_basket</i>
                 </span>
             </div>
             <div class="clear">
-                <h4 class="m-0 text-lg _300"><a href="">125 <span class="text-sm">Emails</span></a></h4>
-                <small class="text-muted">6 new arrivals.</small>
+                <h4 class="m-0 text-md"><a href="">75 <span class="text-sm">Ventes</span></a></h4>
+                <small class="text-muted">6 paiements en attente</small>
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4">
-        <div class="box p-a">
-            <div class="pull-left m-r">
-                <span class="w-48 rounded primary">
-                    <i class="material-icons"></i>
-                </span>
-            </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box-color p-a warn">
+
             <div class="clear">
-                <h4 class="m-0 text-lg _300"><a href="">40 <span class="text-sm">Projects</span></a></h4>
-                <small class="text-muted">38 open.</small>
+                <h4 class="m-0 text-md"><a href="">25% <span class="text-sm"> de Reduction</span></a></h4>
+                <small class="text-muted">632 activités.</small>
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4">
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="box p-a">
-            <div class="pull-left m-r">
-                <span class="w-48 rounded warn">
-                    <i class="material-icons"></i>
+            <div class="pull-right m-l">
+                <span class="w-40 accent text-center rounded">
+                    <i class="material-icons">people</i>
                 </span>
             </div>
             <div class="clear">
-                <h4 class="m-0 text-lg _300"><a href="">600 <span class="text-sm">Users</span></a></h4>
-                <small class="text-muted">632 vips.</small>
+                <h4 class="m-0 text-md"><a href="">6,000 <span class="text-sm">Membres</span></a></h4>
+                <small class="text-muted">632 activités.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box-color p-a accent">
+            <div class="pull-left m-r">
+                <span class="w-40 dker text-center rounded">
+                    <i class="material-icons">comment</i>
+                </span>
+            </div>
+            <div class="clear">
+                <h4 class="m-0 text-md"><a href="">69 <span class="text-sm">Commentaires</span></a></h4>
+                <small class="text-muted">5 approuvés.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box-color p-a primary">
+            <div class="pull-right m-l">
+                <span class="w-40 dker text-center rounded">
+                    <i class="material-icons">local_shipping</i>
+                </span>
+            </div>
+            <div class="clear">
+                <h4 class="m-0 text-md"><a href="">40 <span class="text-sm">Commandes</span></a></h4>
+                <small class="text-muted">38 Expédiées.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box p-a">
+            <div class="pull-right m-l">
+                <span class="w-40 dker text-center rounded">
+                    <i class="material-icons">local_shipping</i>
+                </span>
+            </div>
+            <div class="clear">
+                <h4 class="m-0 text-md"><a href="">60% <span class="text-sm">d'Augmentation</span></a></h4>
+                <small class="text-muted">38 Expédiées.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box-color p-a warn">
+
+            <div class="clear">
+                <h4 class="m-0 text-md"><a href="">25% <span class="text-sm"> de Reduction</span></a></h4>
+                <small class="text-muted">632 activités.</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box p-a">
+
+            <div class="clear">
+                <h4 class="m-0 text-md"><a href="">10% <span class="text-sm">de Croissance</span></a></h4>
+                <small class="text-muted">Caculée il y a 2h.</small>
             </div>
         </div>
     </div>

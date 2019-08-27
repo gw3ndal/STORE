@@ -22,30 +22,42 @@
                             <div class="box-divider m-0"></div>
                             <div class="box-body">
                                 <p class="text-muted">Veuillez remplir tous les champs</p>
+
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Titre</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" placeholder="Le titre du produit" data-parsley-range="[4, 200]" required>
                                     </div>
                                 </div>
+
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Sous Titre</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" placeholder="Le sous-titre du produit" data-parsley-range="[4, 255]" required>
                                     </div>
                                 </div>
+
                                 <div class="form-group row">
-                                    <label class="col-sm-2 form-control-label">URL</label>
+                                    <label class="col-sm-2 form-control-label">URL RECTO</label>
                                     <div class="col-sm-10">
-                                        <input type="url" class="form-control" placeholder="L'URL de l'image" data-parsley-id="54" data-parsley-range="[4, 255]" required>
+                                        <input type="url" class="form-control" placeholder="L'URL de l'image Recto" data-parsley-id="54" data-parsley-range="[4, 255]" required>
                                     </div>
                                 </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 form-control-label">URL VERSO</label>
+                                    <div class="col-sm-10">
+                                        <input type="url" class="form-control" placeholder="L'URL de l'image Verso" data-parsley-id="54" data-parsley-range="[4, 255]" required>
+                                    </div>
+                                </div>
+
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Description</label>
                                     <div class="col-sm-10">
                                         <textarea class="form-control" rows="6" data-minwords="6" required="" placeholder="Saisissez la description du produit" data-parsley-id="25"></textarea>
                                     </div>
                                 </div>
+
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Prix</label>
                                     <div class="col-sm-10">
@@ -53,8 +65,9 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class=" p-a text-right">
-                                <button type="submit" class="btn dark pointer">Ajouter</button>
+                                <button type="submit" class="btn text-dark warn pointer">Ajouter</button>
                             </div>
                         </div>
                 </div>

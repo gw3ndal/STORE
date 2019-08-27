@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                             <div class=" p-a text-right">
-                                <button type="submit" class="btn dark pointer">Valider</button>
+                                <button type="submit" class="btn text-dark warn pointer">Valider</button>
                             </div>
                         </div>
                     </form>
