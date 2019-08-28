@@ -12,5 +12,5 @@
    define("PAGE_DESCR_DEFAUT", "Découvrez le meilleur chicoula d'ici et d'ailleurs | Tœshï");
    define("DEBUG", true);
    define("NB_PAR_PAGE", 12);
-   define("DEFAULT_MODULE", "article");
+   define("DEFAULT_MODULE", "home");
    define("DEFAULT_ACTION", "index");
