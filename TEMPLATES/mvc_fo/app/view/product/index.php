@@ -22,7 +22,7 @@
 			<div class="container">
 				<div class="row no-gutters">
 					<div class="col-md-10 push-md-1" role="tablist">
-						<!-- Menu Category / Burgers -->
+						<!-- Menu Category -->
 						<div id="Burgers" class="menu-category">
 							<div class="menu-category-title collapse-toggle" role="tab" data-target="#menuBurgersContent" data-toggle="collapse" aria-expanded="true">
 								<div class="bg-image"><img src="assets/img/photos/var_lait.jpg" alt="categorie"></div>

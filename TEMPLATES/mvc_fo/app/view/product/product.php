@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<?php include("layout/header.inc.php");?>
+<?php include("../app/view/layout/header.inc.php");?>
 	<!-- Content -->
 	<div id="content">
 
@@ -89,5 +89,5 @@
 			</div>
 		</section>
 <!-- FOOTER -->
-<?php include("layout/footer.inc.php");?>
+<?php include("../app/view/layout/footer.inc.php");?>
 

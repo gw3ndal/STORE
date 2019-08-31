@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<?php include("layout/header.inc.php");?>
+<?php include("../app/view/layout/header.inc.php");?>
    <!-- Content -->
 	<div id="content">
 
@@ -22,7 +22,7 @@
 			<div class="container">
 				<div class="row no-gutters">
 					<div class="col-md-10 push-md-1" role="tablist">
-						<!-- Menu Category / Burgers -->
+						<!-- Menu Category -->
 						<div id="Burgers" class="menu-category">
 							<div id="menuBurgersContent" class="menu-category-content padded collapse show">
 								<div class="row gutters-sm">
@@ -45,10 +45,10 @@
                         <nav aria-label="Page navigation" class="mt-5">
                             <ul class="pagination justify-content-center">
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <i class="ti-arrow-left"></i>
-                                        <span class="sr-only">Previous</span>
-                                  </a>
+                                	<a class="page-link" href="#" aria-label="Previous">
+                                    	<i class="ti-arrow-left"></i>
+                                    	<span class="sr-only">Previous</span>
+                                  	</a>
                                 </li>
                                 <li class="page-item"><a class="page-link active" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -66,4 +66,4 @@
 			</div>
 		</div>
 <!-- FOOTER -->
-<?php include("layout/footer.inc.php");?>
+<?php include("../app/view/layout/footer.inc.php");?>
