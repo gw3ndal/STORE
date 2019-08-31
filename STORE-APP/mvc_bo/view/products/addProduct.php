@@ -1,4 +1,4 @@
-<?php include 'layout/menu.inc.php';?>
+<?php include '../layout/menu.inc.php';?>
 
 <!-- ############ LAYOUT START-->
 <!-- content -->
@@ -10,7 +10,7 @@
         <div class="padding">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-12 col-md-8">
-                    <a class="md-btn md-flat m-b-sm px-3" href="<?=root('view/show_products.php')?>">
+                    <a class="md-btn md-flat m-b-sm px-3" href="<?=root('view/products/show_products.php')?>">
                         <i class="fa fa-chevron-left mr-2"></i>
                         Voir les Produits
                     </a>
@@ -21,7 +21,7 @@
                             </div>
                             <div class="box-divider m-0"></div>
                             <div class="box-body">
-                                <p class="text-muted">Veuillez remplir tous les champs</p>
+                                <p class="text-muted">Veuillez remplir les champs</p>
 
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Titre</label>
@@ -31,21 +31,35 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-2 form-control-label">Sous Titre</label>
+                                    <label class="col-sm-2 form-control-label">Sous Titre 1</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" placeholder="Le sous-titre du produit" data-parsley-range="[4, 255]" required>
+                                        <input type="text" class="form-control" placeholder="Le 1er sous-titre du produit" data-parsley-range="[4, 255]">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-2 form-control-label">URL RECTO</label>
+                                    <label class="col-sm-2 form-control-label">Sous Titre 2</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="Le 2ème sous-titre du produit" data-parsley-range="[4, 255]">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 form-control-label">Sous Titre 3</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="Le 3ème sous-titre du produit" data-parsley-range="[4, 255]">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 form-control-label">IMAGE RECTO</label>
                                     <div class="col-sm-10">
                                         <input type="url" class="form-control" placeholder="L'URL de l'image Recto" data-parsley-id="54" data-parsley-range="[4, 255]" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-2 form-control-label">URL VERSO</label>
+                                    <label class="col-sm-2 form-control-label">IMAGE VERSO</label>
                                     <div class="col-sm-10">
                                         <input type="url" class="form-control" placeholder="L'URL de l'image Verso" data-parsley-id="54" data-parsley-range="[4, 255]" required>
                                     </div>
@@ -54,7 +68,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-2 form-control-label">Description</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" rows="6" data-minwords="6" required="" placeholder="Saisissez la description du produit" data-parsley-id="25"></textarea>
+                                        <textarea class="form-control" rows="6" data-minwords="6" required="" placeholder="Saisissez la description du produit" data-parsley-range="[30, 5000]" data-parsley-id="25"></textarea>
                                     </div>
                                 </div>
 
@@ -64,24 +78,23 @@
                                         <input type="text" data-parsley-type="number" class="form-control has-value " placeholder="Le prix du produit en euro" data-parsley-id="60" required>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class=" p-a text-right">
-                                <button type="submit" class="btn text-dark warn pointer">Ajouter</button>
+                                <div class=" p-a text-right">
+                                    <button type="submit" class="btn text-dark warn pointer">Ajouter</button>
+                                </div>
                             </div>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
-    </div>
-    <!-- ############ PAGE END-->
+        <!-- ############ PAGE END-->
 
-</div>
+    </div>
 </div>
 <!-- / -->
 <!-- ############ LAYOUT END-->
 
-<?php include 'layout/footer.inc.php';?>
-<?php $myScript = MY_SCRIPT?>
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/footer.inc.php';?>
+<?php $myScript = MY_SCRIPT;?>
+<?php include '../layout/scripts.inc.php';?>

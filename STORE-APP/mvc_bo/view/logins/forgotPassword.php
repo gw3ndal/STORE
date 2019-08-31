@@ -1,4 +1,4 @@
-<?php include 'layout/header.inc.php'?>
+<?php include '../layout/header.inc.php'?>
 <!-- ############ LAYOUT START-->
 <div class="center-block w-xxl w-auto-xs p-y-md">
     <div class="navbar">
@@ -20,7 +20,7 @@
         </form>
     </div>
     <p id="alerts-container"></p>
-    <div class="p-v-lg text-center">Retour à <a ui-sref="access.signin" href="<?=root('view/signin.php')?>" class="text-primary _600">S'identifier</a></div>
+    <div class="p-v-lg text-center">Retour à <a ui-sref="access.signin" href="<?=root('view/logins/signin.php')?>" class="text-primary _600">S'identifier</a></div>
 </div>
 <!-- ############ LAYOUT END-->
-<?php include 'layout/scripts.inc.php'?>
+<?php include '../layout/scripts.inc.php'?>

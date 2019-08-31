@@ -1,4 +1,4 @@
-<?php include 'layout/menu.inc.php';?>
+<?php include '../layout/menu.inc.php';?>
 
 <!-- ############ LAYOUT START-->
 <!-- content -->
@@ -11,7 +11,7 @@
         <div class="padding">
             <div class="row d-flex justify-content-center ">
                 <div class="col-sm-12 col-md-8">
-                    <a class="md-btn md-flat m-b-sm px-3" href="<?=root('view/show_customers.php')?>">
+                    <a class="md-btn md-flat m-b-sm px-3" href="<?=root('view/categories/show_categories.php')?>">
                         <i class="fa fa-chevron-left mr-2"></i>
                         Voir les Catégories
                     </a>
@@ -49,6 +49,6 @@
 <!-- / -->
 <!-- ############ LAYOUT END-->
 
-<?php include 'layout/footer.inc.php';?>
+<?php include '../layout/footer.inc.php';?>
 <?php $myScript = MY_SCRIPT?>
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/scripts.inc.php';?>

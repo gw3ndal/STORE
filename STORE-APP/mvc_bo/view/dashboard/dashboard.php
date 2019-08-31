@@ -1,4 +1,4 @@
-<?php include 'layout/menu.inc.php';?>
+<?php include '../layout/menu.inc.php';?>
 
 <!-- START CONTENT -->
 
@@ -106,5 +106,5 @@
 
 <!-- END CONTENT -->
 
-<?php include 'layout/footer.inc.php';?>
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/footer.inc.php';?>
+<?php include '../layout/scripts.inc.php';?>

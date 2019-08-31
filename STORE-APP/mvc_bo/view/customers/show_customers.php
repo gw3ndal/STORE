@@ -1,11 +1,11 @@
-<?php include 'layout/menu.inc.php';?>
+<?php include '../layout/menu.inc.php';?>
 
 <!--START CONTENT -->
 <div class="d-flex justify-content-center">
 
     <div class="col-xs-12 col-sm-12 col-md-8">
         <div class="d-flex justify-content-end mb-2">
-            <a href="<?=root('view/addCustomer.php')?>" class="btn btn-md text-dark warn">
+            <a href="<?=root('view/customers/addCustomer.php')?>" class="btn btn-md text-dark warn">
                 <span class="pull-left m-r-sm">
                     <i class="fa fa-plus "></i>
                 </span>
@@ -139,6 +139,6 @@
 </div>
 <!--ENDCONTENT -->
 
-<?php include 'layout/footer.inc.php';?>
+<?php include '../layout/footer.inc.php';?>
 <?php $myScript = MY_SCRIPT?>
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/scripts.inc.php';?>

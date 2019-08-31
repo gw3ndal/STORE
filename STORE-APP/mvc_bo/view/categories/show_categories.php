@@ -1,9 +1,9 @@
-<?php include 'layout/menu.inc.php';?>
+<?php include '../layout/menu.inc.php';?>
 
 <!-- ############ LAYOUT START-->
 <div class="col-lg-8 mx-auto">
     <div class="d-flex justify-content-end mb-2">
-        <a href="<?=root('view/addCategory.php')?>" class="btn btn-md text-dark warn">
+        <a href="<?=root('view/categories/addCategory.php')?>" class="btn btn-md text-dark warn">
             <span class="pull-left m-r-sm">
                 <i class="fa fa-plus "></i>
             </span>
@@ -132,6 +132,6 @@
     </div>
 </div>
 <!-- ############ LAYOUT END-->
-<?php include 'layout/footer.inc.php';?>
+<?php include '../layout/footer.inc.php';?>
 <?php $myScript = MY_SCRIPT?>
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/scripts.inc.php';?>

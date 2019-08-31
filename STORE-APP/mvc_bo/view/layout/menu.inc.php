@@ -6,7 +6,7 @@
             <i class="material-icons">menu</i>
         </a>
         <!-- brand -->
-        <a class="navbar-brand" href="<?=root('view/index.php')?>">
+        <a class="navbar-brand" href="<?=root('view/dashboard/dashboard/index.php')?>">
             <img src="<?=root('public/assets/images/logo.png')?>" alt="profile image">
             <span class="hidden-folded inline">ADMIN</span>
         </a>
@@ -16,7 +16,7 @@
             <!-- link and dropdown -->
             <ul class="nav navbar-nav navbar-nav-inline text-center pull-left m-r text-warn-hover">
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn menuChoco" href="<?=root('view/show_products.php');?>">
+                    <a class="nav-link btn menuChoco" href="<?=root('view/products/show_products.php');?>">
                         <span class="nav-text">
                             <i class="material-icons">shopping_basket</i>
                             <span class="text-xs">Produits</span>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn menuChoco" href="<?=root('view/show_categories.php');?>">
+                    <a class="nav-link btn menuChoco" href="<?=root('view/categories/show_categories.php');?>">
                         <span class="nav-text">
                             <i class="material-icons">local_play</i>
                             <span class="text-xs">Catégories</span>
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link btn menuChoco" href="<?=root('view/show_customers.php');?>">
+                    <a class="nav-link btn menuChoco" href="<?=root('view/customers/show_customers.php');?>">
                         <span class="nav-text">
                             <i class="material-icons">person_pin</i>
                             <span class="text-xs">Clients</span>
@@ -91,7 +91,7 @@
             <p>Ajouter:</p>
             <div class="">
                 <div class=" mb-2 w-100">
-                    <a href="<?=root('view/addProduct.php')?>" class="btn btn-md white w-100">
+                    <a href="<?=root('view/products/addProduct.php')?>" class="btn btn-md white w-100">
                         <span class="pull-left m-r-sm">
                             <i class="fa fa-plus "></i>
                         </span>
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class=" mb-2">
-                    <a href="<?=root('view/addCategory.php')?>" class="btn btn-md white w-100">
+                    <a href="<?=root('view/categories/addCategory.php')?>" class="btn btn-md white w-100">
                         <span class="pull-left m-r-sm">
                             <i class="fa fa-plus "></i>
                         </span>
@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="mb-2">
-                    <a href="<?=root('view/addCustomer.php')?>" class="btn btn-md white w-100">
+                    <a href="<?=root('view/customers/addCustomer.php')?>" class="btn btn-md white w-100">
                         <span class="pull-left m-r-sm">
                             <i class="fa fa-plus "></i>
                         </span>

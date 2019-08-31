@@ -1,4 +1,4 @@
-<?php include 'layout/header.inc.php'?>
+<?php include '../layout/header.inc.php'?>
 
 <!-- ############ LAYOUT START-->
 <div class="center-block w-xxl w-auto-xs p-y-md">
@@ -9,7 +9,7 @@
     </div>
     <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
         <div class="m-b text-sm">
-        Connexion
+            Connexion
         </div>
         <form name="form">
             <div class="md-form-group float-label">
@@ -30,10 +30,10 @@
     </div>
 
     <div class="p-v-lg text-center">
-        <div class="m-b"><a ui-sref="access.forgot-password" href="<?=root('view/forgotPassword.php')?>" class="text-primary _600">Mot de passe oublié?</a></div>
-        <div>Vous n'avez pas de compte?<a ui-sref="access.signup" href="<?=root('view/signup.php')?>" class="text-primary _600"> S'inscrire</a></div>
+        <div class="m-b"><a ui-sref="access.forgot-password" href="<?=root('view/logins/forgotPassword.php')?>" class="text-primary _600">Mot de passe oublié?</a></div>
+        <div>Vous n'avez pas de compte?<a ui-sref="access.signup" href="<?=root('view/logins/signup.php')?>" class="text-primary _600"> S'inscrire</a></div>
     </div>
 </div>
 <!-- ############ LAYOUT END-->
 
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/scripts.inc.php';?>

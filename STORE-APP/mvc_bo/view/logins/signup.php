@@ -1,4 +1,4 @@
-<?php include 'layout/header.inc.php'?>
+<?php include '../layout/header.inc.php'?>
 
 <!-- ############ LAYOUT START-->
 <div class="center-block w-xxl w-auto-xs p-y-md">
@@ -36,11 +36,11 @@
     </div>
 
     <div class="p-v-lg text-center">
-        <div><a ui-sref="access.signin" href="<?=root('view/signin.php')?>" class="text-primary _600">Se connecter à un compte existant</a></div>
+        <div><a ui-sref="access.signin" href="<?=root('view/logins/signin.php')?>" class="text-primary _600">Se connecter à un compte existant</a></div>
     </div>
 </div>
 
 <!-- ############ LAYOUT END-->
 
 </div>
-<?php include 'layout/scripts.inc.php';?>
+<?php include '../layout/scripts.inc.php';?>
