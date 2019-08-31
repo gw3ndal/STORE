@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 01 août 2019 à 11:29
--- Version du serveur :  5.7.19
--- Version de PHP :  7.1.9
+-- Généré le :  lun. 19 août 2019 à 14:48
+-- Version du serveur :  5.7.26
+-- Version de PHP :  7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `afpa_store_vide`
+-- Base de données :  `afpa0519_store_exp`
 --
 
 -- --------------------------------------------------------
@@ -68,7 +68,57 @@ CREATE TABLE IF NOT EXISTS `st_categories` (
   `cat_id` int(11) NOT NULL AUTO_INCREMENT,
   `cat_descr` varchar(45) NOT NULL,
   PRIMARY KEY (`cat_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `st_categories`
+--
+
+INSERT INTO `st_categories` (`cat_id`, `cat_descr`) VALUES
+(1, 'au lait'),
+(2, 'blanc'),
+(3, 'blond'),
+(4, 'noir'),
+(5, 'noir d\'origine'),
+(6, 'noir grand cru'),
+(7, 'rubis'),
+(8, 'artisanal'),
+(9, 'bean to bar'),
+(10, 'bio'),
+(11, 'cru / non-conché'),
+(12, 'équitable'),
+(13, 'exclusif'),
+(14, 'sans sucre'),
+(15, 'vegan'),
+(16, 'allemagne'),
+(17, 'belgique'),
+(18, 'canada'),
+(19, 'espagne'),
+(20, 'finlande'),
+(21, 'france'),
+(22, 'islande'),
+(23, 'suisse'),
+(24, 'usa'),
+(25, 'belize'),
+(26, 'brésil'),
+(27, 'cameroun'),
+(28, 'colombie'),
+(29, 'congo'),
+(30, 'costa rica'),
+(31, 'cuba'),
+(32, 'équateur'),
+(33, 'honduras'),
+(34, 'inde'),
+(35, 'jamaïque'),
+(36, 'madagascar'),
+(37, 'mexique'),
+(38, 'nicaragua'),
+(39, 'papouasie-nouvelle-guinée'),
+(40, 'pérou'),
+(41, 'république dominicaine'),
+(42, 'tanzanie'),
+(43, 'venezuela'),
+(44, 'vietnam');
 
 -- --------------------------------------------------------
 
@@ -84,8 +134,19 @@ CREATE TABLE IF NOT EXISTS `st_customers` (
   `cus_firstname` varchar(45) NOT NULL,
   `cus_mail` varchar(80) NOT NULL,
   `cus_password` varchar(32) NOT NULL,
+  `user_admin` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`cus_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `st_customers`
+--
+
+INSERT INTO `st_customers` (`cus_id`, `cus_civility`, `cus_lastname`, `cus_firstname`, `cus_mail`, `cus_password`, `user_admin`) VALUES
+(1, 1, 'BOUSSETTA', 'Farid', 'farid_2312@hotmail.fr', '8d5e957f297893487bd98fa830fa6413', 1),
+(2, 1, 'MONDEGUER', 'Gwendal', 'loaye1978@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1),
+(3, 1, 'SALAH', 'Merwhan', 'merwhan.salah@outlook.fr', '8d5e957f297893487bd98fa830fa6413', 1),
+(4, 1, 'TAKHERBOUCHT', 'Abdenour', 'tab88@live.fr', '8d5e957f297893487bd98fa830fa6413', 1);
 
 -- --------------------------------------------------------
 
@@ -160,6 +221,7 @@ CREATE TABLE IF NOT EXISTS `st_products` (
   `pro_subtitle` varchar(255) NOT NULL,
   `pro_descr` mediumtext NOT NULL,
   `pro_img_url` varchar(255) NOT NULL,
+  `pro_img_url_2` varchar(255) NOT NULL,
   `pro_price` decimal(10,2) NOT NULL,
   `pro_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`pro_id`)
