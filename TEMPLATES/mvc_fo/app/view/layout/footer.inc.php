@@ -258,7 +258,7 @@ if (DEBUG){?>
 			</div>
 			<!-- FORM EDIT ADDRESS -->
 			<form action="index.php?module=customer&action=address" method="post">
-				<input type="hidden" name="add_id" value="<?= $_GET["id"]?>">
+				<input type="hidden" name="cus_id" value="<?= $_SESSION["user"]["cus_id"]?>">
 				<div class="modal-body panel-details-container">
 					<div class="row mb-5">
 						<div class="form-group col-sm-12">
