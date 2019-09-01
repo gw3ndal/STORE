@@ -1,7 +1,7 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="GET"){ 
 
-	define("PAGE_TITLE", "Connectez-vous");
+	define("PAGE_TITLE", "Connectez-vous | Tœshï");
 	include("../app/view/customer/login.php");
 
 }else{

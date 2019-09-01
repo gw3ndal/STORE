@@ -164,7 +164,7 @@
 						</ul>
 					</nav>
 					<div class="nav nav-main mt-1 mb-1">
-						<a href="index.php?module=product&action=index" class="btn btn-outline-secondary"><span>catalogue</span></a>
+						<a href="index.php?module=product&action=catalogue" class="btn btn-outline-secondary"><span>catalogue</span></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -212,7 +212,7 @@
 		</div>    
 
 		<div class="module module-logo logo-mobile">
-			<a href="_index.php">
+			<a href="index.php">
 				<img src="assets/img/logo_0.png" alt="logo">
 			</a>
 			<span class="toeshi-black">TŒSHĪ</span>

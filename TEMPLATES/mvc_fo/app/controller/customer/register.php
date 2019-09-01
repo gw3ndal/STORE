@@ -1,7 +1,7 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="GET"){ 
 
-	define("PAGE_TITLE", "INSCRIPTION");
+	define("PAGE_TITLE", "INSCRIPTION | Tœshï");
 	include("../app/view/customer/register.php");
 
 }else{
