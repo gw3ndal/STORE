@@ -2,11 +2,15 @@
 position: fixed !important;
 background: red;
 }*/
+/******LOGO*/
 .logo_0{
 	margin: 0px !important;
 	padding: 0px !important;
 }
-.buz li{
+.bgLogo{
+	background-color: black;
+}
+.mgTest li{
 	margin: 0px !important;
 }
 .toeshi{
@@ -26,8 +30,18 @@ background: red;
 	color:black;
 	font-size: 47px;
 	/*font-weight: bold;*/
-
 }
+/*#header.menuFixed{	
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+}*/
+
+
+
+/******MOBILE MENU*/
 .logo-mobile img{
 		margin-bottom: 10px;
 }
@@ -49,28 +63,17 @@ background: red;
 .mobile-user{
 	margin-top: 90px;
 }
-.biz{
-	background-color: black;
-}
-.buz{
-	padding-op: 30px;
-}
-#header.bouz{	
- /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 900;*/
+.module{
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
 }
 .bouiz{
 	padding-top: 104px;
 }
-.module{
-	padding-bottom: 0px !important;
-	padding-top: 0px !important;
 
-}
-/*PAGE LOGIN*/
+
+
+/******PAGE LOGIN*/
 .accueil{
 	color:brown;
 	font-weight: bold;

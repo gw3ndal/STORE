@@ -6,7 +6,7 @@
 		<!-- Page Title -->
 		<div class="page-title bg-dark dark">
 			<!-- CATALOGUE IMAGE -->
-			<div class="bg-image bg-parallax"><img src="assets/img/photos/catalogue-title.jpg" alt="catalogue"></div>
+			<div class="bg-image bg-parallax"><img src="https://www.latabledecana-gennevilliers.com/wp-content/uploads/2017/08/com-%C3%A9quitable.jpg" alt="catalogue"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 push-lg-4">
@@ -22,10 +22,10 @@
 			<div class="container">
 				<div class="row no-gutters">
 					<div class="col-md-10 push-md-1" role="tablist">
-						<!-- Menu Category / Burgers -->
+						<!-- Menu Category -->
 						<div id="Burgers" class="menu-category">
 							<div class="menu-category-title collapse-toggle" role="tab" data-target="#menuBurgersContent" data-toggle="collapse" aria-expanded="true">
-								<div class="bg-image"><img src="assets/img/photos/var_lait.jpg" alt="categorie"></div>
+								<div class="bg-image"><img src="https://www.misya.info/wp-content/uploads/2012/11/cioccolato-fondente.jpg"></div>
 								<h2 class="title">au lait</h2>
 							</div>
 							<div id="menuBurgersContent" class="menu-category-content padded collapse">

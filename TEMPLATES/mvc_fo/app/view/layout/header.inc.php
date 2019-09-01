@@ -32,7 +32,7 @@
 	<link id="theme" rel="stylesheet" href="assets/css/themes/theme-beige.min.css" />
 
 
-	<!-- CSS CREATED -->
+	<!-- CSS CREATED & LINKS ADDED -->
 	<link href="assets/css/mystyle.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,700&display=swap" rel="stylesheet">
 </head>
@@ -43,14 +43,14 @@
 <div id="body-wrapper" class="animsition">
 
 	<!-- Header -->
-	<header id="header" class="light bouz">
+	<header id="header" class="light menuFixed">
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 biz">
+				<div class="col-md-2 bgLogo">
 					<!-- Logo -->
 					<div class="module module-navigation logo_0">
-						<ul class="nav nav-main buz">
+						<ul class="nav nav-main mgTest">
 						<li><a href="https://youtu.be/_8VZ52fWYnQ?t=33" target="_blank">
 							<img src="assets/img/logo_0.png" alt="logo" width="50" >
 						</a>
@@ -164,7 +164,7 @@
 						</ul>
 					</nav>
 					<div class="nav nav-main mt-1 mb-1">
-						<a href="index.php?module=product&action=index" class="btn btn-outline-secondary"><span>catalogue</span></a>
+						<a href="index.php?module=product&action=catalogue" class="btn btn-outline-secondary"><span>catalogue</span></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -212,7 +212,7 @@
 		</div>    
 
 		<div class="module module-logo logo-mobile">
-			<a href="_index.php">
+			<a href="index.php">
 				<img src="assets/img/logo_0.png" alt="logo">
 			</a>
 			<span class="toeshi-black">TŒSHĪ</span>
