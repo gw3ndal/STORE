@@ -1,15 +1,5 @@
  <hr>
-<?php
-if (DEBUG){?>
-	<strong>SESSION</strong>
-	<div class="container-fluid">
-<?php
-	var_dump($_SESSION);
-	?>
-<?php
-}
-?>      
-		   <!-- Footer -->
+	   <!-- Footer -->
 		<footer id="footer" class="bg-dark dark">
 			
 			<div class="container">
@@ -17,7 +7,7 @@ if (DEBUG){?>
 				<div class="footer-first-row row">
 					<div class="col-lg-3 text-center mb-4">
 						<a href="index.html"><img src="assets/img/logo_0.png" alt="logo" width="88" class=""></a><br>
-						<span class="toeshi">TŒSHĪ</span>
+						<span class="toeshi"><?=SITE_NAME?></span>
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<h5 class="text-muted">ChocoLate news</h5>
@@ -117,7 +107,7 @@ if (DEBUG){?>
 		<?php
 			if (!isset($_SESSION["user"])){
 		?>
-		<a href="cust_login.php" class="panel-cart-action btn btn-secondary btn-block btn-lg">
+		<a href="index.php?module=customer&action=login" class="panel-cart-action btn btn-secondary btn-block btn-lg">
 		<?php
 			} else{
 		?>
@@ -135,7 +125,7 @@ if (DEBUG){?>
 				<img src="assets/img/logo_0.png" alt="logo" width="88">
 			</a>
 			<br>    
-			<div class="mobile-logo-toggle-toeshi">TŒSHĪ</div>
+			<div class="mobile-logo-toggle-toeshi"><?=SITE_NAME?></div>
 			<button class="close" data-toggle="panel-mobile"><i class="ti ti-close"></i></button>
 			<div class="pb-2">
 				<a href="product_index" class="btn btn-outline-primary"><span>catalogue</span></a>

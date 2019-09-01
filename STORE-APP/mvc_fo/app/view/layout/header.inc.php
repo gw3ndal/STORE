@@ -56,7 +56,7 @@
 						</a>
 						</li>
 						<li class="toeshi left">
-							<span>TŒSHĪ</span>
+							<span><?=SITE_NAME?></span>
 						</li>
 					</ul>
 					</div>
@@ -185,11 +185,12 @@
 							if (isset($_SESSION["user"])) {
 								if ($_SESSION["user"]["cus_admin"]==1) { 
 						?>
-						<i class="ti ti-settings ml-3 text-primary"></i>
+						<a href="../../mvc_bo/view/dashboard/dashboard.php"><i class="ti ti-settings ml-3 text-primary"></i></a>
 						<?php
 							}
 						}
 						?>
+
 					</div>
 					<a href="#" class="module module-cart right" data-toggle="panel-cart">
 						<span class="cart-icon">
@@ -215,7 +216,7 @@
 			<a href="index.php">
 				<img src="assets/img/logo_0.png" alt="logo">
 			</a>
-			<span class="toeshi-black">TŒSHĪ</span>
+			<span class="toeshi-black"><?=SITE_NAME?></span>
 		</div>
 
 		<a href="#" class="module module-cart" data-toggle="panel-cart">

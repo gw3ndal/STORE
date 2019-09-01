@@ -6,7 +6,7 @@
 		<!-- Page Title -->
 		<div class="page-title bg-dark dark">
 			<!-- CATALOGUE IMAGE -->
-			<div class="bg-image bg-parallax"><img src="https://www.latabledecana-gennevilliers.com/wp-content/uploads/2017/08/com-%C3%A9quitable.jpg" alt="catalogue"></div>
+			<div class="bg-image bg-parallax"><img src="http://hand-crafted-chocolate.com/wp-content/uploads/2013/04/iStock_000000934640_Large.jpg" alt="catalogue"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 push-lg-4">

@@ -8,10 +8,14 @@
 			
 			<div class="container dark">
 				<div class="slide-container">
-					<div id="section-main-1-carousel-image" class="image inner-controls">
-						<div class="slide"><div class="bg-image"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="tablette"></div></div>
-						<div class="slide"><div class="bg-image"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="tablette"></div></div>
-						<div class="slide"><div class="bg-image"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="tablette"></div></div>
+					<div id="section-main-1-carousel-image" class="image inner-controls">			
+							<?php
+								foreach($newProducts as $newPro){
+							?>
+						<div class="slide"><div class="bg-image"><img src="<?= $newPro["pro_img_url_recto"]?>" alt="tablette"></div></div>				
+							<?php
+								}
+							?>
 					</div>
 					<div class="content dark">
 						<div id="section-main-1-carousel-content">
@@ -20,11 +24,11 @@
 							?>
 							<div class="content-inner">
 								<h4 class="text-muted">Nouveautés!</h4>
-								<h1><?= $newPro["display_name"]?></h1>
-								<h5 class="text-muted mb-5">chocolat noir grand cru | Cameroun</h5>
+								<h1><?= $newPro["pro_title"]?></h1>
+								<h5 class="text-muted mb-5"><?= $newPro["pro_subtitle1"]?> | <?= $newPro["pro_subtitle3"]?></h5>
 								<div class="btn-group">
 									<a href="#productModal" data-toggle="modal" class="btn btn-outline-primary btn-lg"><span>Ajout au panier</span></a>
-									<span class="price price-lg">pour 8.00€</span>
+									<span class="price price-lg">pour <?= $newPro["pro_price_euro"]?> €</span>
 								</div>
 							</div>							
 							<?php
@@ -126,7 +130,7 @@
 		<section  id="retour"class="section pb-0 protrude">
 
 			<div class="container">
-				<h1 class="mb-6">Faîtes votre choix | <span class="toeshi-black-2 font-weight-light">TŒSHĪ</span></h1>
+				<h1 class="mb-6">Faîtes votre choix | <span class="toeshi-black-2 font-weight-light"><?=SITE_NAME?></span></h1>
 			</div>
 
 			<div class="menu-sample-carousel carousel inner-controls" data-slick='{
@@ -152,33 +156,18 @@
 				]
 			}'>
 				<!-- Menu Sample -->
+				<?php
+					foreach($categories as $cat){
+				?>
 				<div class="menu-sample">
 					<a href="product_index.php">
-						<img src="assets/img/photos/menu-sample-burgers.jpg" alt="categorie" class="image">
-						<h3 class="title">Labels</h3>
+						<img src="<?= $cat["cat_main_img"]?>" alt="categorie" class="image">
+						<h3 class="title"><?= $cat["cat_main_descr"]?></h3>
 					</a>
 				</div>
-				<!-- Menu Sample -->
-				<div class="menu-sample">
-					<a href="product_index.php">
-						<img src="https://scanup.fr/wp-content/uploads/2018/12/3-chocolats.jpg" alt="categorie" class="image">
-						<h3 class="title">Variétés</h3>
-					</a>
-				</div>
-				<!-- Menu Sample -->
-				<div class="menu-sample">
-					<a href="product_index.php">
-						<img src="assets/img/photos/menu-sample-sushi.jpg" alt="categorie" class="image">
-						<h3 class="title">Fèves</h3>
-					</a>
-				</div>
-				<!-- Menu Sample -->
-				<div class="menu-sample">
-					<a href="menu-list-navigation.html#Pasta">
-						<img src="assets/img/photos/menu-sample-pasta.jpg" alt="categorie" class="image">
-						<h3 class="title">Production</h3>
-					</a>
-				</div>
+				<?php
+					}
+				?>
 			</div>
 
 		</section>

@@ -8,7 +8,7 @@
    define("DB_USER","root");
    define("DB_PASSWORD","");
    // define("POST_TR", 350);
-   define("SITE_NAME", "Tœshï");
+   define("SITE_NAME", "TŒSHĪ");
    define("PAGE_DESCR_DEFAUT", "Découvrez le meilleur chicoula d'ici et d'ailleurs | Tœshï");
    define("DEBUG", true);
    define("NB_PAR_PAGE", 12);
