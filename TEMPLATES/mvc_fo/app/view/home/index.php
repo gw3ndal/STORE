@@ -15,24 +15,7 @@
 					</div>
 					<div class="content dark">
 						<div id="section-main-1-carousel-content">
-							<div class="content-inner">
-								<h4 class="text-muted">Nouveautés!</h4>
-								<h1>CAMEROUN 2017</h1>
-								<h5 class="text-muted mb-5">chocolat noir grand cru | Cameroun</h5>
-								<div class="btn-group">
-									<a href="#productModal" data-toggle="modal" class="btn btn-outline-primary btn-lg"><span>Ajout au panier</span></a>
-									<span class="price price-lg">pour 8.00€</span>
-								</div>
-							</div>
-							<div class="content-inner">
-								<h4 class="text-muted">Nouveautés!</h4>
-								<h1>CAMEROUN 2017</h1>
-								<h5 class="text-muted mb-5">chocolat noir grand cru | Cameroun</h5>
-								<div class="btn-group">
-									<a href="#productModal" data-toggle="modal" class="btn btn-outline-primary btn-lg"><span>Ajout au panier</span></a>
-									<span class="price price-lg">pour 8.00€</span>
-								</div>
-							</div>
+							
 							<div class="content-inner">
 								<h4 class="text-muted">Nouveautés!</h4>
 								<h1>CAMEROUN 2017</h1>
