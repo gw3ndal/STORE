@@ -1,300 +1,325 @@
  <hr>
-<?php
-if (DEBUG){?>
-    <strong>SESSION</strong>
-    <div class="container-fluid">
-<?php
-    var_dump($_SESSION);
-    ?>
-<?php
-}
-?>      
-           <!-- Footer -->
-        <footer id="footer" class="bg-dark dark">
-            
-            <div class="container">
-                <!-- Footer 1st Row -->
-                <div class="footer-first-row row">
-                    <div class="col-lg-3 text-center">
-                        <a href="index.html"><img src="assets/img/logo-light.svg" alt="" width="88" class="mt-5 mb-5"></a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="text-muted">Latest news</h5>
-                        <ul class="list-posts">
-                            <li>
-                                <a href="blog-post.html" class="title">How to create effective webdeisign?</a>
-                                <span class="date">February 14, 2015</span>
-                            </li>
-                            <li>
-                                <a href="blog-post.html" class="title">Awesome weekend in Polish mountains!</a>
-                                <span class="date">February 14, 2015</span>
-                            </li>
-                            <li>
-                                <a href="blog-post.html" class="title">How to create effective webdeisign?</a>
-                                <span class="date">February 14, 2015</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <h5 class="text-muted">Subscribe Us!</h5>
-                        <!-- MailChimp Form -->
-                        <form action="//suelo.us12.list-manage.com/subscribe/post-json?u=ed47dbfe167d906f2bc46a01b&amp;id=24ac8a22ad" id="sign-up-form" class="sign-up-form validate-form mb-3" method="POST">
-                            <div class="input-group">
-                                <input name="EMAIL" id="mce-EMAIL" type="email" class="form-control" placeholder="Tap your e-mail..." required>
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary btn-submit" type="submit">
-                                        <span class="description">Subscribe</span>
-                                        <span class="success">
-                                            <svg x="0px" y="0px" viewBox="0 0 32 32"><path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/></svg>
-                                        </span>
-                                        <span class="error">Try again...</span>
-                                    </button>
-                                </span>
-                            </div>
-                        </form>
-                        <h5 class="text-muted mb-3">Social Media</h5>
-                        <a href="#" class="icon icon-social icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="icon icon-social icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
-                        <a href="#" class="icon icon-social icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="icon icon-social icon-circle icon-sm icon-youtube"><i class="fa fa-youtube"></i></a>
-                        <a href="#" class="icon icon-social icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
-                    </div>
-                </div>
-                <!-- Footer 2nd Row -->
-                <div class="footer-second-row">
-                    <span class="text-muted">Copyright &copy; <?=SITE_NAME?> 2019. Made with love by Suelo.</span>
-                </div>
-            </div>
+	   <!-- Footer -->
+		<footer id="footer" class="bg-dark dark">
+			
+			<div class="container">
+				<!-- Footer 1st Row -->
+				<div class="footer-first-row row">
+					<div class="col-lg-3 text-center mb-4">
+						<a href="index.html"><img src="assets/img/logo_0.png" alt="logo" width="88" class=""></a><br>
+						<span class="toeshi"><?=SITE_NAME?></span>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<h5 class="text-muted">ChocoLate news</h5>
+						<ul class="list-posts">
+							<li>
+								<a href="https://www.alimentarium.org/fr/savoir/la-r%C3%A9putation-aphrodisiaque-du-chocolat" class="title">La réputation aphrodisiaque du chocolat</a>
+								<span class="date">15 août, 2019</span>
+							</li>
+							<li>
+								<a href="https://www.planetesante.ch/Magazine/Alimentation-et-nutrition/Cafe-et-chocolat/Du-chocolat-contre-un-trouble-majeur-du-rythme-cardiaque" class="title">Du chocolat contre un trouble majeur du rythme cardiaque</a>
+								<span class="date">13 juillet, 2019</span>
+							</li>
+							<li>
+								<a href="https://www.virginradio.fr/insolite-10-choses-que-vous-ne-savez-pas-sur-le-chocolat-a352119.html" class="title">La dose mortelle de chocolat pour un être humain est environ de 40 barres.</a>
+								<span class="date">29 juin, 2019</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-5 col-md-6">
+						<h5 class="text-muted">Enregistrez votre email pour rien</h5>
+						<!-- MailChimp Form -->
+						<form action="//suelo.us12.list-manage.com/subscribe/post-json?u=ed47dbfe167d906f2bc46a01b&amp;id=24ac8a22ad" id="sign-up-form" class="sign-up-form validate-form mb-3" method="POST">
+							<div class="input-group">
+								<input name="EMAIL" id="mce-EMAIL" type="email" class="form-control" placeholder="Saisir votre email" required>
+								<span class="input-group-btn">
+									<button class="btn btn-primary btn-submit" type="submit">
+										<span class="description">Enregistrer</span>
+										<span class="success">
+											<svg x="0px" y="0px" viewBox="0 0 32 32"><path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/></svg>
+										</span>
+										<span class="error">Tentez encore...</span>
+									</button>
+								</span>
+							</div>
+						</form>
+						<h5 class="text-muted mb-3">Réseaux sociaux</h5>
+						<a href="#" class="icon icon-social icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="icon icon-social icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
+						<a href="#" class="icon icon-social icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="icon icon-social icon-circle icon-sm icon-youtube"><i class="fa fa-youtube"></i></a>
+						<a href="#" class="icon icon-social icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+				<!-- Footer 2nd Row -->
+				<div class="footer-second-row">
+					<span class="text-muted">Copyright Soup 2017©. Made with love by Suelo.</span>
+				</div>
+			</div>
 
-            <!-- Back To Top -->
-            <a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
+			<!-- Back To Top -->
+			<a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
 
-        </footer>
-        <!-- Footer / End -->
+		</footer>
+		<!-- Footer / End -->
 
-    </div>
-    <!-- Content / End -->
+	</div>
+	<!-- Content / End -->
 
-    <!-- Panel Cart -->
-    <div id="panel-cart">
-        <div class="panel-cart-container">
-            <div class="panel-cart-title">
-                <h5 class="title">Your Cart</h5>
-                <button class="close" data-toggle="panel-cart"><i class="ti ti-close"></i></button>
-            </div>
-            <div class="panel-cart-content">
-                <table class="table-cart">
-                    <tr>
-                        <td class="title">
-                            <span class="name"><a href="#productModal" data-toggle="modal">Pizza Chicked BBQ</a></span>
-                            <span class="caption text-muted">26”, deep-pan, thin-crust</span>
-                        </td>
-                        <td class="price">$9.82</td>
-                        <td class="actions">
-                            <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-                            <a href="#" class="action-icon"><i class="ti ti-close"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="title">
-                            <span class="name"><a href="#productModal" data-toggle="modal">Beef Burger</a></span>
-                            <span class="caption text-muted">Large (500g)</span>
-                        </td>
-                        <td class="price">$9.82</td>
-                        <td class="actions">
-                            <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-                            <a href="#" class="action-icon"><i class="ti ti-close"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="title">
-                            <span class="name"><a href="#productModal" data-toggle="modal">Extra Burger</a></span>
-                            <span class="caption text-muted">Small (200g)</span>
-                        </td>
-                        <td class="price text-success">$0.00</td>
-                        <td class="actions">
-                            <a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-                            <a href="#" class="action-icon"><i class="ti ti-close"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="title">
-                            <span class="name">Weekend 20% OFF</span>
-                        </td>
-                        <td class="price text-success">-$8.22</td>
-                        <td class="actions"></td>
-                    </tr>
-                </table>
-                <div class="cart-summary">
-                    <div class="row">
-                        <div class="col-7 text-right text-muted">Order total:</div>
-                        <div class="col-5"><strong>$21.02</strong></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-7 text-right text-muted">Devliery:</div>
-                        <div class="col-5"><strong>$3.99</strong></div>
-                    </div>
-                    <hr class="hr-sm">
-                    <div class="row text-lg">
-                        <div class="col-7 text-right text-muted">Total:</div>
-                        <div class="col-5"><strong>$24.21</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="checkout.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Go to checkout</span></a>
-    </div>
+	<!-- Panel Cart -->
+	<div id="panel-cart">
+		<div class="panel-cart-container">
+			<div class="panel-cart-title">
+				<h5 class="title">Votre Panier</h5>
+				<button class="close" data-toggle="panel-cart"><i class="ti ti-close"></i></button>
+			</div>
+			<div class="panel-cart-content">
+				<table class="table-cart">
+					<tr>
+						<td class="title">
+							<span class="name"><a href="#productModal" data-toggle="modal">CAMEROUN 2017</a></span>
+							<span class="caption text-muted">chocolat noir grand cru | Cameroun</span>
+						</td>
+						<td class="price">8.00€</td>
+						<td class="actions">
+							<a href="product.php#qte" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
+							<a href="#" class="action-icon"><i class="ti ti-close"></i></a>
+						</td>
+					</tr>
+				</table>
+				<div class="cart-summary">
+					<div class="row">
+						<div class="col-7 text-right text-muted">Prix:</div>
+						<div class="col-5"><strong>8.00€</strong></div>
+					</div>
+					<div class="row">
+						<div class="col-7 text-right text-muted">Livraison:</div>
+						<div class="col-5"><strong>-.--€</strong></div>
+					</div>
+					<hr class="hr-sm">
+					<div class="row text-lg">
+						<div class="col-7 text-right text-muted">Total:</div>
+						<div class="col-5"><strong>8.00€</strong></div>
+					</div>
+				</div>
+			</div>
+		</div>        
+		<?php
+			if (!isset($_SESSION["user"])){
+		?>
+		<a href="index.php?module=customer&action=login" class="panel-cart-action btn btn-secondary btn-block btn-lg">
+		<?php
+			} else{
+		?>
+		<a href="index.php?module=checkout&action=index" class="panel-cart-action btn btn-secondary btn-block btn-lg">
+		<?php
+			}
+		?>
+		<span>Commander</span></a>
+	</div>
 
-    <!-- Panel Mobile -->
-    <nav id="panel-mobile">
-        <div class="module module-logo bg-dark dark">
-            <a href="#">
-                <img src="assets/img/logo-light.svg" alt="" width="88">
-            </a>
-            <button class="close" data-toggle="panel-mobile"><i class="ti ti-close"></i></button>
-        </div>
-        <nav class="module module-navigation"></nav>
-        <div class="module module-social">
-            <h6 class="text-sm mb-3">Follow Us!</h6>
-            <a href="#" class="icon icon-social icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="icon icon-social icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
-            <a href="#" class="icon icon-social icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="icon icon-social icon-circle icon-sm icon-youtube"><i class="fa fa-youtube"></i></a>
-            <a href="#" class="icon icon-social icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
-        </div>
-    </nav>
+	<!-- Panel Mobile -->
+	<nav id="panel-mobile">
+		<div class="module module-logo bg-dark dark mobile-logo-toggle p-0">
+			<a href="index.php">
+				<img src="assets/img/logo_0.png" alt="logo" width="88">
+			</a>
+			<br>    
+			<div class="mobile-logo-toggle-toeshi"><?=SITE_NAME?></div>
+			<button class="close" data-toggle="panel-mobile"><i class="ti ti-close"></i></button>
+			<div class="pb-2">
+				<a href="product_index" class="btn btn-outline-primary"><span>catalogue</span></a>
+			</div>
+		</div>
+		<!-- <div class="module module-social mobile-social mt-2">
+			<a href="product_index" class="btn btn-outline-secondary"><span>catalogue</span></a>
+		</div> -->
+		<nav class="module module-navigation"></nav>
+		<div class="module module-social mobile-social">
+			<h6 class="text-sm mb-3">Nous suivre</h6>
+			<a href="#" class="icon icon-social icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
+			<a href="#" class="icon icon-social icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
+			<a href="#" class="icon icon-social icon-circle icon-sm icon-twitter"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="icon icon-social icon-circle icon-sm icon-youtube"><i class="fa fa-youtube"></i></a>
+			<a href="#" class="icon icon-social icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
+		</div>
+		<div class="module module-social mobile-user p-0">
+			<span class="icon icon-circle icon-primary icon-lg">
+				<i class="ti ti-user"></i>
+			</span><br>
+			<?php
+				if (!isset($_SESSION["user"])){
+			?>
+			<a href="index.php?module=customer&action=login"  data-toggle="modal" data-target="#logoutModal" class="font-weight-bold">Mon compte</a>
+			<?php
+				} else{
+			?>
+			<a href="#" data-toggle="modal" data-target="#logoutModal" class="font-weight-bold text-capitalize"><?= $_SESSION["user"]["cus_firstname"] ?></a>
+			<?php
+				}
+			?>
+			<?php
+				if (isset($_SESSION["user"])) {
+					if ($_SESSION["user"]["cus_admin"]==1) { 
+			?>
+			<br>
+			<span class="icon"><a href="_index.php"><i class="ti ti-settings text-secondary"></i></a></span>
+			<?php
+				}
+			}
+			?>
+		</div>
+	</nav>
 
-    <!-- Body Overlay -->
-    <div id="body-overlay"></div>
+	<!-- Body Overlay -->
+	<div id="body-overlay"></div>
 
 </div>
 
 <!-- Modal / Product -->
 <div class="modal fade" id="productModal" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header modal-header-lg dark bg-dark">
-                <div class="bg-image"><img src="assets/img/photos/modal-add.jpg" alt=""></div>
-                <h4 class="modal-title">Specify your dish</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
-            </div>
-            <div class="modal-product-details">
-                <div class="row align-items-center">
-                    <div class="col-9">
-                        <h6 class="mb-0">Boscaiola Pasta</h6>
-                        <span class="text-muted">Pasta, Cheese, Tomatoes, Olives</span>
-                    </div>
-                    <div class="col-3 text-lg text-right">$9.00</div>
-                </div>
-            </div>
-            <div class="modal-body panel-details-container">
-                <!-- Panel Details / Size -->
-                <div class="panel-details">
-                    <h5 class="panel-details-title">
-                        <label class="custom-control custom-radio">
-                            <input name="radio_title_size" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                        <a href="#panelDetailsSize" data-toggle="collapse">Size</a>
-                    </h5>
-                    <div id="panelDetailsSize" class="collapse show">
-                        <div class="panel-details-content">
-                            <div class="form-group">
-                                <label class="custom-control custom-radio">
-                                    <input name="radio_size" type="radio" class="custom-control-input" checked>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Small - 100g ($9.99)</span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label class="custom-control custom-radio">
-                                    <input name="radio_size" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Medium - 200g ($14.99)</span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label class="custom-control custom-radio">
-                                    <input name="radio_size" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Large - 350g ($21.99)</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Panel Details / Additions -->
-                <div class="panel-details">
-                    <h5 class="panel-details-title">
-                        <label class="custom-control custom-radio">
-                            <input name="radio_title_additions" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                        <a href="#panelDetailsAdditions" data-toggle="collapse">Additions</a>
-                    </h5>
-                    <div id="panelDetailsAdditions" class="collapse">
-                        <div class="panel-details-content">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Tomato ($1.29)</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Ham ($1.29)</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Chicken ($1.29)</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Cheese($1.29)</span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Bacon ($1.29)</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Panel Details / Other -->
-                <div class="panel-details">
-                    <h5 class="panel-details-title">
-                        <label class="custom-control custom-radio">
-                            <input name="radio_title_other" type="radio" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                        </label>
-                        <a href="#panelDetailsOther" data-toggle="collapse">Other</a>
-                    </h5>
-                    <div id="panelDetailsOther" class="collapse">
-                        <textarea cols="30" rows="4" class="form-control" placeholder="Put this any other informations..."></textarea>
-                    </div>
-                </div>
-            </div>
-            <button type="button" class="modal-btn btn btn-secondary btn-block btn-lg" data-dismiss="modal"><span>Add to Cart</span></button>
-        </div>
-    </div>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-lg dark bg-dark">
+				<div class="bg-image"><img src="assets/img/photos/modal-add2.jpg" alt="bandeau"></div>
+				<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
+			</div>
+			<div class="modal-product-details">
+				<div class="row align-items-center">
+					<div class="col-9">
+						<h6 class="mb-0">CAMEROUN 2017</h6>
+						<span class="text-muted">chocolat noir grand cru | Cameroun</span>
+					</div>
+					<div class="col-3 text-lg text-right">8.00€</div>
+				</div>
+			</div>
+			<div class="modal-body panel-details-container">
+				<!-- Panel Details / Size -->
+				<div class="panel-details">
+					<h5 class="panel-details-title">
+						<a href="#panelDetailsSize" data-toggle="collapse">Descriptif</a>
+					</h5>
+					<div id="panelDetailsSize" class="collapse">
+						<div class="panel-details-content">
+							<p class="lead">
+								Fèves forastero du Haut-Penja<br>
+								Typiques des terroirs volcaniques, les notes fumées sont complétées par une légère impression de réglisse. La texture unique renforce ce sentiment de cacao volcanique. Un chocolat particulièrement fin et élégant.<br>
+								70g
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Panel Details / Additions -->
+				<div class="panel-details">
+					<h5 class="panel-details-title">
+						<a href="#panelDetailsAdditions" data-toggle="collapse">Quantité</a>
+					</h5>
+					<div id="panelDetailsAdditions" class="collapse show">
+						<div class="panel-details-content">
+							<div class="form-group text-center">
+								<input type="number" class="form-control input-qty form-control-lg" value="1">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="modal-btn btn btn-secondary btn-block btn-lg" data-dismiss="modal"><span>Ajout au panier</span></button>
+		</div>
+	</div>
+</div>
+<!-- Modal / Address Edit -->
+<div class="modal fade" id="editModal" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-lg dark bg-dark">
+				<div class="bg-image"><img src="assets/img/photos/modal-review4.jpg" alt="bandeau"></div>
+				<h4 class="modal-title">modifier l'adresse de livraison</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
+			</div>
+			<div class="modal-product-details">
+				<div class="row align-items-center">
+					<div class="col-9">
+						<h6 class="mb-0 text-uppercase"><?= $_SESSION["user"]["cus_lastname"] ?></h6>
+						<span class="text-capitalize"><?= $_SESSION["user"]["cus_firstname"] ?></span>
+					</div>
+					<div class="col-3 text-lg text-right"><span class="icon"><i class="ti ti-receipt mr-3 text-primary"></i></span></div>
+				</div>
+			</div>
+			<!-- FORM EDIT ADDRESS -->
+			<form action="index.php?module=customer&action=address" method="post">
+				<input type="hidden" name="cus_id" value="<?= $_SESSION["user"]["cus_id"]?>">
+				<div class="modal-body panel-details-container">
+					<div class="row mb-5">
+						<div class="form-group col-sm-12">
+							<label for="add_address1">Adresse:</label>
+							<input type="text" class="form-control" required="required" id="add_address1" name="add_address1" value="<?= $read_add["add_address1"] ?>">
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="add_address2">Complément d'adresse:</label>
+							<input type="text" class="form-control" placeholder="*Optionnel" id="add_address2" name="add_address2" value="<?= $read_add["add_address2"] ?>">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="add_city">Ville:</label>
+							<input type="text" class="form-control" required="required" id="add_city" name="add_city" value="<?= $read_add["add_city"] ?>">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="add_zipcode">Code Postal:</label>
+							<input type="text" class="form-control" required="required" id="add_zipcode" name="add_zipcode" value="<?= $read_add["add_zipcode"] ?>">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 p-0">
+						<button type="reset" class="modal-btn btn btn-dark btn-block btn-lg"><span>réinitialiser</span></button>
+					</div>
+					<div class="col-sm-6 p-0">
+						<button type="submit" class="modal-btn btn btn-outline-primary btn-block btn-lg"><span>VALIDER</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Modal / logout -->
+<div class="modal fade" id="logoutModal" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-lg dark bg-dark">
+				<?php
+					if (isset($_SESSION["user"])) {
+						if ($_SESSION["user"]["cus_civility"]==0) { 
+				?>
+				<div class="bg-image"><img src="assets/img/photos/bouche0.jpg" alt="bandeau"></div>
+				<?php
+					} else{
+				?>
+				<div class="bg-image"><img src="assets/img/photos/bouche1.jpg" alt="bandeau"></div>
+				<?php
+					}
+				}
+				?>				
+				<h4 class="modal-title">Voulez-vous vous déconnecter <span class="text-capitalize font-weight-bold"><?= $_SESSION["user"]["cus_firstname"] ?></span>?</h4>
+			</div><!-- 
+			<div class="modal-product-details">
+				<div class="row align-items-center">
+					<div class="col-9">
+						<h6 class="mb-0">MONDEGUER</h6>
+						<span>Gwendal</span>
+					</div>
+					<div class="col-3 text-lg text-right"><span class="icon"><i class="ti ti-receipt mr-3 text-primary"></i></span></div>
+				</div>
+			</div> -->
+				<div class="row">
+					<div class="col-sm-6 p-0">
+						<button class="modal-btn btn btn-dark btn-block btn-lg" data-dismiss="modal"><span>annuler</span></button>
+					</div>
+					<div class="col-sm-6 p-0">
+						<a href="index.php?module=customer&action=logout" class="btn btn-primary btn-block btn-lg"><span>déconnexion</span></a>
+					</div>
+				</div>
+		</div>
+	</div>
 </div>
 
 <!-- JS Plugins -->
