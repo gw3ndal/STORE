@@ -1,8 +1,5 @@
 <?php
 
-// Assign file paths to PHP constants
-// __FILE__ returns the current path to this file
-// dirname() returns the path to the parent directory
 define("CONFIG_PATH", dirname(__FILE__));
 define("PROJECT_PATH", dirname(CONFIG_PATH));
 define("VIEWS_PATH", PROJECT_PATH . '/view');
