@@ -1,5 +1,4 @@
 <?php
-
    define("APP_LANG","fr");
    define("APP_CHARSET","utf-8");
    define("DB_HOST","localhost");

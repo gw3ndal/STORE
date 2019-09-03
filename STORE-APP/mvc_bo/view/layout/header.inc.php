@@ -1,4 +1,4 @@
-<?php require_once '../../config/initialize.php'?>
+<?php include '../../config/initialize.php'?>
 <!DOCTYPE html>
 <html lang="en">
 
