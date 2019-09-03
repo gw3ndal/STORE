@@ -6,20 +6,17 @@
             <div class="col-sm-12">
                 <div class="text-sm-center text-xs-left">
                     <div class="nav text-sm justify-content-center">
-                        <a class="nav-link m-r" href="">
-                            <span>Home</span>
+                        <a class="nav-link m-r" href="<?=root('view/dashboard/dashboard/index.php')?>">
+                            <span>Accueil</span>
                         </a>
-                        <a class="nav-link m-r" href="">
-                            <span>Shop</span>
+                        <a class="nav-link m-r" href="<?=root('view/products/show_products.php')?>">
+                            <span>Produits</span>
                         </a>
-                        <a class="nav-link m-r" href="">
-                            <span>Site</span>
+                        <a class="nav-link m-r" href="<?=root('view/categories/show_categories.php')?>">
+                            <span>Catégories</span>
                         </a>
-                        <a class="nav-link m-r" href="">
-                            <span>Service</span>
-                        </a>
-                        <a class="nav-link m-r" href="">
-                            <span>Contact</span>
+                        <a class="nav-link m-r" href="<?=root('view/customers/show_customers.php')?>">
+                            <span>Clients</span>
                         </a>
                     </div>
                 </div>

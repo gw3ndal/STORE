@@ -31,13 +31,16 @@
                 </a>
                 <div class="list-body">
                     <div class="m-y-sm pull-right">
-                        <a href="" class="btn btn-sm  white b-info">
+
+                        <a href="" class="btn btn-sm  white b-info" data-toggle="tooltip" data-placement="top" title="voir">
                             <i class="fa fa-link"></i>
                         </a>
-                        <a href="" class="btn btn-sm  white b-danger">
+
+                        <a href="" class="btn btn-sm  white b-danger" data-toggle="tooltip" data-placement="top" title="supprimer">
                             <i class="fa fa-trash"></i>
                         </a>
-                        <a href="" class="btn btn-sm white b-success">
+
+                        <a href="" class="btn btn-sm white b-success" data-toggle="tooltip" data-placement="top" title="modifier">
                             <i class="fa fa-pencil "></i>
                         </a>
                     </div>

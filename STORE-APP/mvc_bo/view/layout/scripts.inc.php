@@ -3,6 +3,7 @@
 <script src="<?=root('public/libs/jquery/jquery/dist/jquery.js')?>"></script>
 
 <!-- Bootstrap -->
+<script src="<?=root('public/libs/jquery/popper/popper.min.js')?>"></script>
 <script src="<?=root('public/libs/jquery/tether/dist/js/tether.min.js')?>"></script>
 <script src="<?=root('public/libs/jquery/bootstrap/dist/js/bootstrap.js')?>"></script>
 

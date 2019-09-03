@@ -127,6 +127,10 @@ const letters = firstTitle.map(el=>{
     .firstElementChild
     .firstElementChild.textContent = letter[0]
 })
+// TOOLTIP
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 })(jQuery);
 
