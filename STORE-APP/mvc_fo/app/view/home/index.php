@@ -160,7 +160,7 @@
 					foreach($categories as $cat){
 				?>
 				<div class="menu-sample">
-					<a href="product_index.php">
+					<a href="index.php?module=product&action=catalogue&id=<?=$cat['cat_main_id']?>">
 						<img src="<?= $cat["cat_main_img"]?>" alt="categorie" class="image">
 						<h3 class="title"><?= $cat["cat_main_descr"]?></h3>
 					</a>
