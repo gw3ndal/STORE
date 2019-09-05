@@ -282,6 +282,9 @@
 	</div>
 </div>
 <!-- Modal / logout -->
+<?php
+if (isset($_SESSION["user"])){
+?>
 <div class="modal fade" id="logoutModal" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -321,6 +324,9 @@
 		</div>
 	</div>
 </div>
+<?php
+}
+?>
 
 <!-- JS Plugins -->
 <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
