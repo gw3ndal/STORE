@@ -28,13 +28,13 @@
 									<div class="col-lg-6 col-12">
 										<!-- Menu Item -->
 										<div class="menu-item menu-grid-item">
-											<a href="product_gallery.php"><img class="mb-4" src="<?= $data["pro_img_url_recto"]?>" alt="tablette"></a>
+											<a href="index.php?module=product&action=photos&id=<?=$data['pro_id']?>"><img class="mb-4" src="<?= $data["pro_img_url_recto"]?>" alt="tablette"></a>
 										</div>
 									</div>
 									<div class="col-lg-6 col-12">
 										<!-- Menu Item -->
 										<div class="menu-item menu-grid-item">
-											<a href=""><img class="mb-4" src="<?= $data["pro_img_url_verso"]?>" alt="tablette"></a>
+											<a href="index.php?module=product&action=photos&id=<?=$data['pro_id']?>#verso"><img class="mb-4" src="<?= $data["pro_img_url_verso"]?>" alt="tablette"></a>
 										</div>
 									</div>
 								</div>
