@@ -8,32 +8,28 @@
 			
 			<div class="container dark">
 				<div class="slide-container">
-					<div id="section-main-1-carousel-image" class="image inner-controls">			
-							<?php
-								foreach($newProducts as $newPro){
-							?>
-						<div class="slide"><div class="bg-image"><img src="<?= $newPro["pro_img_url_recto"]?>" alt="tablette"></div></div>				
-							<?php
-								}
-							?>
+					<div id="section-main-1-carousel-image" class="image inner-controls">
+						<div class="slide"><div class="bg-image"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="tablette"></div></div>
+						<div class="slide"><div class="bg-image"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="tablette"></div></div>
+						<div class="slide"><div class="bg-image"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="tablette"></div></div>
 					</div>
 					<div class="content dark">
 						<div id="section-main-1-carousel-content">
-							<?php
-								foreach($newProducts as $newPro){
-							?>
+						<?php foreach ($newproducts as $onedata) {?>
+						
+						
 							<div class="content-inner">
 								<h4 class="text-muted">Nouveautés!</h4>
-								<h1><?= $newPro["pro_title"]?></h1>
-								<h5 class="text-muted mb-5"><?= $newPro["pro_subtitle1"]?> | <?= $newPro["pro_subtitle3"]?></h5>
+								<h1><?= $onedata["pro_title"]?></h1>
+								<h5 class="text-muted mb-5"><?= $onedata["pro_subtitle1"]?></h5>
 								<div class="btn-group">
-									<a href="#productModal" data-toggle="modal" class="btn btn-outline-primary btn-lg"><span>Ajout au panier</span></a>
-									<span class="price price-lg">pour <?= $newPro["pro_price_euro"]?> €</span>
+									<!-- index.php?module=checkout&action=index&fait=ajout&pro_id=<?= $onedata['pro_id']?>&qte=1 -->
+								<a href="#productModal" data-product="<?= $onedata['pro_id']?>" data-price="<?= $onedata['pro_price_euro']?>"  data-qte="<?= $onedata['cad_qt']?>" data-sub="<?= $onedata['pro_subtitle1']?>" data-name="<?= $onedata['pro_title']?>" data-descr="<?= $onedata['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg">Ajout au panier</a>
+									<span class="price price-lg"><?= $onedata["pro_price_euro"]?></span>
+
 								</div>
-							</div>							
-							<?php
-								}
-							?>
+							</div>
+						<?php } ?>
 						</div>
 						<nav class="content-nav">
 							<a class="prev" href="#"><i class="ti-arrow-left"></i></a>
@@ -130,7 +126,7 @@
 		<section  id="retour"class="section pb-0 protrude">
 
 			<div class="container">
-				<h1 class="mb-6">Faîtes votre choix | <span class="toeshi-black-2 font-weight-light"><?=SITE_NAME?></span></h1>
+				<h1 class="mb-6">Faîtes votre choix | <span class="toeshi-black-2 font-weight-light">TŒSHĪ</span></h1>
 			</div>
 
 			<div class="menu-sample-carousel carousel inner-controls" data-slick='{
@@ -155,19 +151,15 @@
 					}
 				]
 			}'>
+			<?php foreach ($newcat as $onecat) {?>
 				<!-- Menu Sample -->
-				<?php
-					foreach($categories as $cat){
-				?>
 				<div class="menu-sample">
-					<a href="index.php?module=product&action=catalogue&id=<?=$cat['cat_main_id']?>">
-						<img src="<?= $cat["cat_main_img"]?>" alt="categorie" class="image">
-						<h3 class="title"><?= $cat["cat_main_descr"]?></h3>
+					<a href="index.php?module=product&action=productsbycat&id=<?=$onecat['cat_main_id']?>">
+						<img src="assets/img/photos/menu-sample-burgers.jpg" alt="categorie" class="image">
+						<h3 class="title"><?= $onecat["cat_main_descr"]?></h3>
 					</a>
 				</div>
-				<?php
-					}
-				?>
+			<?php }?>	
 			</div>
 
 		</section>

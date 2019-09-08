@@ -21,9 +21,6 @@ function check_login($form){
 		$data = $req->fetch();
 		// var_dump($data);exit;
 		$req->closeCursor();
-		if($data){
-
-		}
 		//RETOUR de tous les articles sélectionnés
 		return $data;
 	 }catch (Exception $e) {

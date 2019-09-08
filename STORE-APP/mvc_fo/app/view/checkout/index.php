@@ -1,5 +1,4 @@
-<!-- HEADER -->
-<?php include("../app/view/layout/header.inc.php");?>
+
 	<!-- Content -->
 	<div id="content">
 
@@ -57,25 +56,39 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-4 push-xl-8 col-lg-5 push-lg-7">
-						<div class="shadow bg-white stick-to-content mb-4">
-							<div class="bg-dark dark p-4"><h5 class="mb-0">Mon panier</h5></div>
-							<table class="table-cart">
-								<tr>
+						
+						<div class="bg-dark dark p-4"><h5 class="mb-0">Mon panier</h5></div>
+						<table class="table-cart">
+							<div class="shadow bg-white stick-to-content mb-4">
+							<?php
+								if (count($caddie)==0) {?>
+									
+									<tr><td>Votre panier est vide </td></tr>
+								
+							<?php
+        } else {
+	    	foreach ($caddie as $products) {
+	       ?>
+			
+	
+	   							<tr>
 									<td class="title">
-										<span class="name"><a href="#productModal" data-toggle="modal">CAMEROUN 2017</a></span>
-										<span class="caption text-muted">chocolat noir grand cru | Cameroun</span>
+										<span class="name"><a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-name="<?= $products['pro_descr']?>" data-toggle="modal"><?= $products['cad_qt']?> x <?= $products['pro_title']?></a></span>
+										<span class="caption text-muted"><?= $products['pro_subtitle1']?></span>
 									</td>
-									<td class="price">8.00€</td>
+									<td class="price"><?= $products['price']?>€</td>
 									<td class="actions">
-										<a href="#productModal" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-										<a href="#" class="action-icon"><i class="ti ti-close"></i></a>
+									<a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-name="<?= $products['pro_descr']?>" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
+										<a href="index.php?module=checkout&action=index&fait=suppression&pro_id=<?= $products['pro_id']?>" class="action-icon"><i class="ti ti-close"></i></a>
+									
 									</td>
 								</tr>
+								<?php  } } ?>
 							</table>
 							<div class="cart-summary">
 								<div class="row">
 									<div class="col-7 text-right text-muted">Prix:</div>
-									<div class="col-5"><strong>8.00€</strong></div>
+									<div class="col-5"><strong><?= $total['total'];?></strong></div>
 								</div>
 								<div class="row">
 									<div class="col-7 text-right text-muted">Livraison:</div>
@@ -84,10 +97,13 @@
 								<hr class="hr-sm">
 								<div class="row text-md">
 									<div class="col-7 text-right text-muted">Total:</div>
-									<div class="col-5"><strong>12.00€</strong></div>
+									<div class="col-5"><strong><?= $total['total']+4;?></strong></div>
+									<div><a href="?deletepanier=true">sup le panier</a><div>
+
 								</div>
 							</div>
 						</div>
+		
 					</div>
 					<div class="col-xl-8 pull-xl-4 col-lg-7 pull-lg-5">			
 						<div class="bg-white p-4 p-md-5 mb-4">
