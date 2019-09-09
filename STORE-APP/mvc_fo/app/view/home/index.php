@@ -27,8 +27,8 @@
 								<h1><?= $newPro["pro_title"]?></h1>
 								<h5 class="text-muted mb-5"><?= $newPro["pro_subtitle1"]?> | <?= $newPro["pro_subtitle3"]?></h5>
 								<div class="btn-group">
-									<a href="#productModal" data-toggle="modal" class="btn btn-outline-primary btn-lg"><span>Ajout au panier</span></a>
-									<span class="price price-lg">pour <?= $newPro["pro_price_euro"]?> €</span>
+								<a href="#productModal" data-product="<?= $newPro['pro_id']?>" data-price="<?= $newPro['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $newPro['pro_subtitle1']?>" data-name="<?= $newPro['pro_title']?>" data-descr="<?= $newPro['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg">Ajout au panier</a>
+									<span class="price price-lg"><?= $newPro["pro_price_euro"]?></span>
 								</div>
 							</div>							
 							<?php
@@ -157,7 +157,7 @@
 			}'>
 				<!-- Menu Sample -->
 				<?php
-					foreach($categories as $cat){
+					foreach($categ as $cat){
 				?>
 				<div class="menu-sample">
 					<a href="index.php?module=product&action=catalogue&id=<?=$cat['cat_main_id']?>">

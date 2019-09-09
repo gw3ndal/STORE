@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="<?= APP_LANG ?>">
 <head>
+<?php 
+include("../app/model/checkout/get_caddie.php");
+	$caddie=get_caddie();
+	$total=get_caddie_total();
+	include("../app/model/home/slider_categories.php");
+	$categ=display_cat();
+	include("../app/model/home/souscat.php");
+	
+	?>
 
 	<!-- Meta -->
 	<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
@@ -68,82 +77,24 @@
 							<li>
 								<a href="index.php">Accueil</a>
 							</li>
+							<?php $i=0; foreach ($categ as $newcateg ) {?>
 							<li class="has-dropdown">
-								<a href="#">Label</a>
+								<a href="#"><?= $categ[$i]['cat_main_descr']?></a>
 								<div class="dropdown-container">
 									<ul class="dropdown-mega">
-										<li><a href="products_by_cat.php">ARTISANAL</a></li>
-										<li><a href="">BEAN TO BAR</a></li>
-										<li><a href="">BIO</a></li>
-										<li><a href="">CRU / NON-CONCHÉ</a></li>
-										<li><a href="">ÉQUITABLE</a></li>
-										<li><a href="">EXCLUSIF</a></li>
-										<li><a href="">SANS SUCRE</a></li>
-										<li><a href="">VEGAN</a></li>
-									</ul><!-- 
+											<?php $souscateg=display_souscat($categ[$i]['cat_main_id']); foreach ($souscateg as $newsouscateg ) {?>
+										<li><a href="products_by_cat.php"><?= $newsouscateg['cat_descr']?></a></li>
+										<?php } ?><!-- 
+									</ul>
 									<div class="dropdown-image">
 										<img src="assets/img/photos/dropdown-about.jpg" alt="">
 									</div> -->
 								</div>
+
 							</li>
-							<li class="has-dropdown">
-								<a href="#">Production</a>
-								<div class="dropdown-container">
-									<ul class="dropdown-mega">
-										<li><a href="products_by_cat.php">ALLEMAGNE</a></li>
-										<li><a href="">BELGIQUE</a></li>
-										<li><a href="">CANADA</a></li>
-										<li><a href="">ESPAGNE</a></li>
-										<li><a href="">FINLANDE</a></li>
-										<li><a href="">FRANCE</a></li>
-										<li><a href="">ISLANDE</a></li>
-										<li><a href="">SUISSE</a></li>
-										<li><a href="">USA</a></li>
-									</ul><!-- 
-									<div class="dropdown-image">
-										<img src="assets/img/photos/dropdown-about.jpg" alt="">
-									</div> -->
-								</div>
-							</li>
-							<li class="has-dropdown">
-								<a href="#">Fèves</a>
-								<div class="dropdown-container">
-									<div class="row">
-										<div class="col-6">
-											<ul class="dropdown-mega">
-												<li><a href="products_by_cat.php">BELIZE</a></li>
-												<li><a href="">BRÉSIL</a></li>
-												<li><a href="">CAMEROUN</a></li>
-												<li><a href="">COLOMBIE</a></li>
-												<li><a href="">CONGO</a></li>
-												<li><a href="">COSTA RICA</a></li>
-												<li><a href="">CUBA</a></li>
-												<li><a href="">ÉQUATEUR</a></li>
-												<li><a href="">HONDURAS</a></li>
-												<li><a href="">INDE</a></li>
-											</ul>
-										</div>
-										<div class="col-6">
-											<ul class="dropdown-mega">
-												<li><a href="products_by_cat.php">JAMAÏQUE</a></li>
-												<li><a href="">MADAGASCAR</a></li>
-												<li><a href="">MEXIQUE</a></li>
-												<li><a href="">NICARAGUA</a></li>
-												<li><a href="">PAPOUASIE-NOUVELLE-GUINÉE</a></li>
-												<li><a href="">PÉROU</a></li>
-												<li><a href="">RÉPUBLIQUE DOMINICAINE</a></li>
-												<li><a href="">TANZANIE</a></li>
-												<li><a href="">VENEZUELA</a></li>
-												<li><a href="">VIETNAM</a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- 
-									<div class="dropdown-image">
-										<img src="assets/img/photos/dropdown-about.jpg" alt="">
-									</div> -->
-								</div>
-							</li>
+							
+							<?php $i++; } ?>
+							
 						<!-- 	<li class="has-dropdown">   
 								<a href="#">Variétés</a>
 								<div class="dropdown-container">
@@ -192,12 +143,13 @@
 						?>
 
 					</div>
+					<?php if($total['total']==null){ $total['total']="0.00"; $total['totalq']="0"; }?>
 					<a href="#" class="module module-cart right" data-toggle="panel-cart">
 						<span class="cart-icon">
 							<i class="ti ti-shopping-cart"></i>
-							<span class="notification">1</span>
+							<span class="notification"><?php echo $total['totalq'];?></span>
 						</span>
-						<span class="cart-value">8.00€</span>
+						<span class="cart-value"><?php echo $total['total'].'€';?> </span>
 					</a>
 				</div>
 			</div>
