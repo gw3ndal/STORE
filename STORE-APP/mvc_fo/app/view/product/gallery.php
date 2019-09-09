@@ -8,8 +8,8 @@
         
             <!-- Gallery Carousel -->
             <div class="gallery-carousel inner-controls">
-                <div class="slide"><div class="bg-image bg-parallax"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_A.jpg" alt="recto"></div></div>
-                <div class="slide"><div class="bg-image bg-parallax"><img src="https://www.chocolatsdumonde.ch/wp-content/uploads/Millesime_CamerounNoir_B.jpg" alt="verso"></div></div>
+                <div class="slide"><div id="recto" class="bg-image bg-parallax"><img src="<?= $pics["pro_img_url_recto"]?>" alt="recto"></div></div>
+                <div class="slide"><div id="verso" class="bg-image bg-parallax"><img src="<?= $pics["pro_img_url_verso"]?>" alt="verso"></div></div>
             </div>
 
             <!-- Gallery Carousel Nav -->
@@ -17,7 +17,7 @@
             </div>
 
             <div class="set-fullscreen">
-                <a href="#gallery"><i class="ti ti-fullscreen"></i></a>
+                <a href="index.php?module=product&action=tablette&id=<?=$pics['pro_id']?>"><i class="ti ti-layout-grid3-alt"></i></a>
             </div>
 
         </section>

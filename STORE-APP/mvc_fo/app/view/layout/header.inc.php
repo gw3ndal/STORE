@@ -99,7 +99,7 @@ include("../app/model/checkout/get_caddie.php");
 						</ul>
 					</nav>
 					<div class="nav nav-main mt-1 mb-1">
-						<a href="index.php?module=product&action=catalogue" class="btn btn-outline-secondary"><span>catalogue</span></a>
+						<a href="index.php?module=product&action=catalogue&id=4" class="btn btn-outline-secondary"><span>catalogue</span></a>
 					</div>
 				</div>
 				<div class="col-md-4">

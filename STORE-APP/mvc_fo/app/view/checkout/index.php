@@ -140,7 +140,7 @@
 							<div class="row text-lg">
 								<div class="col-md-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
-										<input type="radio" name="logistic_type" class="custom-control-input">
+										<input type="radio" name="logistic_type" class="custom-control-input" value="0" checked>
 										<span class="custom-control-indicator"></span>
 										<span class="custom-control-description">MuleXpress</span>
 										<span class="caption text-muted">&nbsp;(gratuit)</span>
@@ -149,7 +149,7 @@
 								</div>
 								<div class="col-md-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
-										<input type="radio" name="logistic_type" class="custom-control-input">
+										<input type="radio" name="logistic_type" class="custom-control-input" value="1">
 										<span class="custom-control-indicator"></span>
 										<span class="custom-control-description">Collisimo</span>
 										<span class="caption text-muted">&nbsp;(3.00€)</span>				
@@ -158,7 +158,7 @@
 								</div>
 								<div class="col-md-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
-										<input type="radio" name="logistic_type" class="custom-control-input">
+										<input type="radio" name="logistic_type" class="custom-control-input" value="2">
 										<span class="custom-control-indicator"></span>
 										<span class="custom-control-description">Chronopost</span>
 										<span class="caption text-muted">&nbsp;(5.00€)</span>
@@ -171,21 +171,21 @@
 							<div class="row text-lg">
 								<div class="col-md-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
-										<input type="radio" name="payment_type" class="custom-control-input">
+										<input type="radio" name="payment_type" class="custom-control-input" value="0">
 										<span class="custom-control-indicator"></span>
 										<span class="custom-control-description">PayPal</span>
 									</label>
 								</div>
 								<div class="col-md-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
-										<input type="radio" name="payment_type" class="custom-control-input">
+										<input type="radio" name="payment_type" class="custom-control-input" value="1" checked>
 										<span class="custom-control-indicator"></span>
 										<span class="custom-control-description">Carte bancaire</span>
 									</label>
 								</div>
 								<div class="col-md-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
-										<input type="radio" name="payment_type" class="custom-control-input">
+										<input type="radio" name="payment_type" class="custom-control-input" value="2">
 										<span class="custom-control-indicator"></span>
 										<span class="custom-control-description">Monero</span>
 									</label>
