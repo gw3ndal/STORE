@@ -1,28 +1,20 @@
 <?php
-function read_newPro(){
-	global $pdo;
-	// var_dump ($pdo);
+	function lire_new_produit(){
+        global $pdo;
 	try {
-		$query= "SELECT *
-					FROM st_products
-					ORDER BY pro_date DESC
-					LIMIT 3";
-		// die($query);
-
-		//ENVOI de la requête
-		$req = $pdo->prepare($query);
-		//INITIALISATION des paramètres
-		//EXÉCUTION de la requête
-		$req->execute();
-		//RÉCUPÉRATION de tous les résultats
+		$query= "SELECT pro_price_euro*cad_qt as price,pro_title,pro_id,cad_qt,pro_price_euro,pro_subtitle1,pro_descr
+		FROM st_caddies, st_products
+		WHERE st_products_pro_id = pro_id
+                    ORDER BY pro_date DESC
+                    LIMIT 3";
+		$req = $pdo->query($query);
 		$req->setFetchMode(PDO::FETCH_ASSOC);
-		$newProducts = $req->fetchAll();
-		// var_dump($data);exit;
+		$newproducts = $req->fetchAll();
+		//var_dump($data);
 		$req->closeCursor();
-		//RETOUR de tous les articles sélectionnés
-		return $newProducts;
+		return $newproducts;
 	 }catch (Exception $e) {
 		// die("Erreur MySQL :". utf8_encode($e->getMessage()));
 		return false;
 	}
-}
+	}

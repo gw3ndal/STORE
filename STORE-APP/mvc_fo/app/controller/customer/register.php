@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 
 }else{
 
-	var_dump($_POST);
+	// var_dump($_POST);
 	include("../app/model/customer/add_cust.php");
 	// var_dump($user);
 	if(add_cust($_POST)){

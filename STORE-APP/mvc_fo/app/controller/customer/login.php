@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 
 }else{
 
-	var_dump($_POST);
+	// var_dump($_POST);
 	include("../app/model/customer/check_login.php");
 	$user=check_login($_POST);
 	// var_dump($user);
