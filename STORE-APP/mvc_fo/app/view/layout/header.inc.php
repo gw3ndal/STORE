@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="<?= APP_LANG ?>">
 <head>
+<?php include ("../app/model/home/categorie.php");
+$newcat=lire_categorie(); 
+include("../app/model/checkout/get_caddie.php");
+	$caddie=get_caddie();
+	$total=get_caddie_total();?>
 
 	<!-- Meta -->
 	<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
@@ -56,7 +61,7 @@
 						</a>
 						</li>
 						<li class="toeshi left">
-							<span><?=SITE_NAME?></span>
+							<span>TŒSHĪ</span>
 						</li>
 					</ul>
 					</div>
@@ -68,82 +73,12 @@
 							<li>
 								<a href="index.php">Accueil</a>
 							</li>
-							<li class="has-dropdown">
-								<a href="#">Label</a>
-								<div class="dropdown-container">
-									<ul class="dropdown-mega">
-										<li><a href="products_by_cat.php">ARTISANAL</a></li>
-										<li><a href="">BEAN TO BAR</a></li>
-										<li><a href="">BIO</a></li>
-										<li><a href="">CRU / NON-CONCHÉ</a></li>
-										<li><a href="">ÉQUITABLE</a></li>
-										<li><a href="">EXCLUSIF</a></li>
-										<li><a href="">SANS SUCRE</a></li>
-										<li><a href="">VEGAN</a></li>
-									</ul><!-- 
-									<div class="dropdown-image">
-										<img src="assets/img/photos/dropdown-about.jpg" alt="">
-									</div> -->
-								</div>
+							<?php foreach ($newcat as $onecat) {?>
+							<li >
+								<a href="index.php?module=product&action=productsbycat&id=<?=$onecat['cat_main_id']?>"><?= $onecat["cat_main_descr"]?></a>
+								
 							</li>
-							<li class="has-dropdown">
-								<a href="#">Production</a>
-								<div class="dropdown-container">
-									<ul class="dropdown-mega">
-										<li><a href="products_by_cat.php">ALLEMAGNE</a></li>
-										<li><a href="">BELGIQUE</a></li>
-										<li><a href="">CANADA</a></li>
-										<li><a href="">ESPAGNE</a></li>
-										<li><a href="">FINLANDE</a></li>
-										<li><a href="">FRANCE</a></li>
-										<li><a href="">ISLANDE</a></li>
-										<li><a href="">SUISSE</a></li>
-										<li><a href="">USA</a></li>
-									</ul><!-- 
-									<div class="dropdown-image">
-										<img src="assets/img/photos/dropdown-about.jpg" alt="">
-									</div> -->
-								</div>
-							</li>
-							<li class="has-dropdown">
-								<a href="#">Fèves</a>
-								<div class="dropdown-container">
-									<div class="row">
-										<div class="col-6">
-											<ul class="dropdown-mega">
-												<li><a href="products_by_cat.php">BELIZE</a></li>
-												<li><a href="">BRÉSIL</a></li>
-												<li><a href="">CAMEROUN</a></li>
-												<li><a href="">COLOMBIE</a></li>
-												<li><a href="">CONGO</a></li>
-												<li><a href="">COSTA RICA</a></li>
-												<li><a href="">CUBA</a></li>
-												<li><a href="">ÉQUATEUR</a></li>
-												<li><a href="">HONDURAS</a></li>
-												<li><a href="">INDE</a></li>
-											</ul>
-										</div>
-										<div class="col-6">
-											<ul class="dropdown-mega">
-												<li><a href="products_by_cat.php">JAMAÏQUE</a></li>
-												<li><a href="">MADAGASCAR</a></li>
-												<li><a href="">MEXIQUE</a></li>
-												<li><a href="">NICARAGUA</a></li>
-												<li><a href="">PAPOUASIE-NOUVELLE-GUINÉE</a></li>
-												<li><a href="">PÉROU</a></li>
-												<li><a href="">RÉPUBLIQUE DOMINICAINE</a></li>
-												<li><a href="">TANZANIE</a></li>
-												<li><a href="">VENEZUELA</a></li>
-												<li><a href="">VIETNAM</a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- 
-									<div class="dropdown-image">
-										<img src="assets/img/photos/dropdown-about.jpg" alt="">
-									</div> -->
-								</div>
-							</li>
+							<?php } ?>
 						<!-- 	<li class="has-dropdown">   
 								<a href="#">Variétés</a>
 								<div class="dropdown-container">
@@ -185,19 +120,19 @@
 							if (isset($_SESSION["user"])) {
 								if ($_SESSION["user"]["cus_admin"]==1) { 
 						?>
-						<a href="../../mvc_bo/view/dashboard/dashboard.php"><i class="ti ti-settings ml-3 text-primary"></i></a>
+						<i class="ti ti-settings ml-3 text-primary"></i>
 						<?php
 							}
 						}
 						?>
-
 					</div>
+					<?php if($total['total']==null){ $total['total']="0.00"; $total['totalq']="0"; }?>
 					<a href="#" class="module module-cart right" data-toggle="panel-cart">
 						<span class="cart-icon">
 							<i class="ti ti-shopping-cart"></i>
-							<span class="notification">1</span>
+							<span class="notification"><?php echo $total['totalq'];?></span>
 						</span>
-						<span class="cart-value">8.00€</span>
+						<span class="cart-value"><?php echo $total['total'].'€';?> </span>
 					</a>
 				</div>
 			</div>
@@ -216,7 +151,7 @@
 			<a href="index.php">
 				<img src="assets/img/logo_0.png" alt="logo">
 			</a>
-			<span class="toeshi-black"><?=SITE_NAME?></span>
+			<span class="toeshi-black">TŒSHĪ</span>
 		</div>
 
 		<a href="#" class="module module-cart" data-toggle="panel-cart">

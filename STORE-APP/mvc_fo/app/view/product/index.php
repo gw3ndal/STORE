@@ -6,7 +6,9 @@
 		<!-- Page Title -->
 		<div class="page-title bg-dark dark">
 			<!-- CATALOGUE IMAGE -->
+
 			<div class="bg-image bg-parallax"><img src="<?= $catalogue["cat_main_img"]?>" alt="catalogue"></div>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 push-lg-4">
