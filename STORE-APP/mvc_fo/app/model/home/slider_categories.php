@@ -4,8 +4,7 @@ function display_cat(){
 	// var_dump ($pdo);
 	try {
 		$query= "SELECT *
-					FROM st_categories_main
-					";
+					FROM st_categories_main ";
 		// die($query);
 
 		//ENVOI de la requête

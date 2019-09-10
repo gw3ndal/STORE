@@ -16,11 +16,13 @@
 				</div>
 			</div>
 		</div>
-<?php
-var_dump($data_cat)
-?>
+
 		<!-- Page Content -->
 		<div class="page-content">
+<?php
+$i=0;
+foreach ($catal as $cat) {
+?>
 			<div class="container">
 				<div class="row no-gutters">
 					<div class="col-md-10 push-md-1" role="tablist">
@@ -28,12 +30,14 @@ var_dump($data_cat)
 						<div id="Burgers" class="menu-category">
 							<div class="menu-category-title collapse-toggle" role="tab" data-target="#menuBurgersContent" data-toggle="collapse" aria-expanded="true">
 								<div class="bg-image"><img src="http://www.fao.org/fileadmin/user_upload/AGRO_Noticias/img/p_about_1.jpg"></div>
-								<h2 class="title">titre</h2>
+								<h2 class="title"><?= $catal[$i]['cat_descr']?></h2>
 							</div>
 						
 							<div id="menuBurgersContent" class="menu-category-content padded collapse">			<div class="row gutters-sm">
 									<?php
+										$data_pro=display_produit( $catal[$i]['cat_id']);
 									foreach($data_pro as $data){
+										if(($data['pro_id'])!=null){
 									?>		
 									<div class="col-lg-4 col-6">
 										<!-- Menu Item -->
@@ -48,7 +52,7 @@ var_dump($data_cat)
 										</div>
 									</div>
 									<?php
-										}
+									}}
 									?>
 								</div>						
 								<div class="col-sm-12 text-sm-right mt-2 mt-sm-0">
@@ -59,6 +63,7 @@ var_dump($data_cat)
 					</div>
 				</div>
 			</div>
+			<?php $i++; } ?>
 		</div>
 <!-- FOOTER -->
 <?php include("../app/view/layout/footer.inc.php");?>

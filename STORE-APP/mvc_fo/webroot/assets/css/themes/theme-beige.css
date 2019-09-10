@@ -3201,6 +3201,7 @@ section.protrude, .section.protrude {
 
 .btn-outline-primary:before {
   background-color: #ddae71;
+  z-index: -1;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:focus:active {

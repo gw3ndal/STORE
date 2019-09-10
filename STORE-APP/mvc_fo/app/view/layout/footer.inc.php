@@ -75,22 +75,32 @@
 			</div>
 			<div class="panel-cart-content">
 				<table class="table-cart">
+				<?php
+								if (count($caddie)==0) {?>
+									
+									<tr><td>Votre panier est vide </td></tr>
+								
+							<?php
+        } else {
+	    	foreach ($caddie as $products) {
+	       ?>
 					<tr>
 						<td class="title">
-							<span class="name"><a href="#productModal" data-toggle="modal">CAMEROUN 2017</a></span>
+						<span class="name"><a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-descr="<?= $products['pro_descr']?>" data-toggle="modal"><?= $products['cad_qt']?> x <?= $products['pro_title']?></a></span>
 							<span class="caption text-muted">chocolat noir grand cru | Cameroun</span>
 						</td>
-						<td class="price">8.00€</td>
+						<td class="price"><?= $products['price']?>€</td>
 						<td class="actions">
-							<a href="product.php#qte" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-							<a href="#" class="action-icon"><i class="ti ti-close"></i></a>
+						<a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-descr="<?= $products['pro_descr']?>" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
+										<a href="index.php?module=checkout&action=index&fait=suppression&pro_id=<?= $products['pro_id']?>" class="action-icon"><i class="ti ti-close"></i></a>
 						</td>
 					</tr>
+					<?php  } } ?>
 				</table>
 				<div class="cart-summary">
 					<div class="row">
 						<div class="col-7 text-right text-muted">Prix:</div>
-						<div class="col-5"><strong>8.00€</strong></div>
+						<div class="col-5"><strong><?= $total['total'];?></strong></div>
 					</div>
 					<div class="row">
 						<div class="col-7 text-right text-muted">Livraison:</div>
@@ -99,7 +109,7 @@
 					<hr class="hr-sm">
 					<div class="row text-lg">
 						<div class="col-7 text-right text-muted">Total:</div>
-						<div class="col-5"><strong>8.00€</strong></div>
+						<div class="col-5"><strong><?= $total['total'];?></strong></div>
 					</div>
 				</div>
 			</div>
@@ -180,18 +190,21 @@
 <div class="modal fade" id="productModal" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
+		<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}else {
+						echo 'index.php?module=customer&action=login';}?>" method="post" name="addProduct" id="addProductForm">
 			<div class="modal-header modal-header-lg dark bg-dark">
 				<div class="bg-image"><img src="assets/img/photos/modal-add2.jpg" alt="bandeau"></div>
 				<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
 			</div>
 			<div class="modal-product-details">
+			<input type="hidden" id="productId" name="productId" />
 				<div class="row align-items-center">
 					<div class="col-9">
-						<h6 class="mb-0">CAMEROUN 2017</h6>
-						<span class="text-muted">chocolat noir grand cru | Cameroun</span>
+					<h6 class="mb-0" id="productName" name="productName"></h6>
+					<h6 id="productSub" name="productSub"></h6>
 					</div>
-					<div class="col-3 text-lg text-right">8.00€</div>
+					<div class="col-3 text-lg text-right" id="productPrice"></div>
 				</div>
 			</div>
 			<div class="modal-body panel-details-container">
@@ -202,11 +215,7 @@
 					</h5>
 					<div id="panelDetailsSize" class="collapse">
 						<div class="panel-details-content">
-							<p class="lead">
-								Fèves forastero du Haut-Penja<br>
-								Typiques des terroirs volcaniques, les notes fumées sont complétées par une légère impression de réglisse. La texture unique renforce ce sentiment de cacao volcanique. Un chocolat particulièrement fin et élégant.<br>
-								70g
-							</p>
+						<p id="productDescr" class="lead">
 						</div>
 					</div>
 				</div>
@@ -218,13 +227,14 @@
 					<div id="panelDetailsAdditions" class="collapse show">
 						<div class="panel-details-content">
 							<div class="form-group text-center">
-								<input type="number" class="form-control input-qty form-control-lg" value="1">
+							<input type="number" id="qte" name="qte" class="form-control input-qty form-control-lg" value="1">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<button type="button" class="modal-btn btn btn-secondary btn-block btn-lg" data-dismiss="modal"><span>Ajout au panier</span></button>
+			<button type="submit" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</button>
+					</form>
 		</div>
 	</div>
 </div>
@@ -344,6 +354,9 @@ if (isset($_SESSION["user"])){
 
 <!-- JS Core -->
 <script src="assets/js/core.js"></script>
+		<!-- JS Site -->
+		<script src="assets/js/site.js"></script>
+
 
 </body>
 
