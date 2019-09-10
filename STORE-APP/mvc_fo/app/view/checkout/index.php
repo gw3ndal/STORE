@@ -98,8 +98,8 @@
 									<div class="col-5"><strong><?= $total['total']+4;?></strong></div>
 								</div>
 							</div>
-							<div class="col-sm-6">
-								<button class="btn btn-outline-danger btn-lg btn-block"  data-target="#editModal" data-toggle="modal"><span>Supprimer le panier</span></button>
+							<div class="col-sm-12">
+								<a href="index.php?module=checkout&action=index&fait=deletepanier" class="btn btn-outline-danger btn-lg btn-block"><span>Supprimer le panier</span></a>
 							</div>
 
 						</div>
@@ -132,7 +132,7 @@
 									<div class="col-sm-6">
 									</div>
 									<div class="col-sm-6">
-										<button class="btn btn-outline-danger btn-lg btn-block"  data-target="#editModal" data-toggle="modal"><span>modifier l'adresse</span></button>
+										<button class="btn btn-outline-danger btn-lg btn-block"  data-target="#editModal" data-toggle="modal"><span>modifier l'adresse</span></a>
 									</div>
 							</div>
 							<h4 class="border-bottom pb-4"><i class="ti ti-package mr-3 text-primary"></i>Type de livraison</h4>

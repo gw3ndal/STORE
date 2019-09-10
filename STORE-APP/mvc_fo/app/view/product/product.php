@@ -14,12 +14,12 @@
 							</div> -->
 							<div class="product-content">
 								<div class="product-header text-center">
-									<h1 class="product-title"><?= $data["pro_title"]?></h1>
+									<h1 class="product-title" id="productName"><?= $data["pro_title"]?></h1>
 									<span class="product-caption text-muted"><?= $data["pro_subtitle1"]?></span>
 									<span class="product-caption text-muted"><?= $data["pro_subtitle2"]?></span>
 									<span class="product-caption text-muted text-lowercase"><strong>Catégories: </strong><?= $categories[0]["categories"]?></span>
 									</div>
-									<p class="lead">
+									<p id="productDescr"class="lead">
 										<?= $data["pro_descr"]?><br>
 										70g
 									</p>
@@ -44,19 +44,16 @@
 									</div>
 								</div>
 								<h5 id="qte" class="text-center text-muted">Envie d'y croquer!</h5>
-								<div class="product-price text-center"><?= $data["pro_price_euro"]?>€</div>
+								<div class="product-price text-center" id="productPrice"><?= $data["pro_price_euro"]?>€</div>
+
 								<div class="row">
-									<div class="col-sm-6">
-										 <div class="form-group text-center">
-											<input type="number" class="form-control input-qty form-control-lg" value="1">
-										</div>
+									<div class="col-sm-12">
+									<a href="#productModal" data-product="<?= $data['pro_id']?>" data-price="<?= $data['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $data['pro_subtitle1']?>" data-name="<?= $data['pro_title']?>" data-descr="<?= $data['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg btn-block">Ajout au panier</a>
 									</div>
-									<div class="col-sm-6">
-										<a href="" class="btn btn-outline-primary btn-lg btn-block"><span>Ajout au Panier</span></a>
-									</div>
+								
 								</div>
 								<div class="text-center mt-4">
-									<a href="menu-list-collapse.html" class="btn btn-link">Retour au menu</a>
+									<a href="index.php?module=product&action=catalogue&id=<?= $data["cat_id"]?>" class="btn btn-link">Retour au menu</a>
 								</div>
 							</div>
 							<h3 class="mt-5 mb-5 text-center">Avis gourmands</h3>

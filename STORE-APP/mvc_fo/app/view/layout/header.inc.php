@@ -2,7 +2,7 @@
 <html lang="<?= APP_LANG ?>">
 <head>
 <?php 
-include("../app/model/checkout/get_caddie.php");
+	include("../app/model/checkout/get_caddie.php");
 	$caddie=get_caddie();
 	$total=get_caddie_total();
 	include("../app/model/home/slider_categories.php");
@@ -83,7 +83,7 @@ include("../app/model/checkout/get_caddie.php");
 								<div class="dropdown-container">
 									<ul class="dropdown-mega">
 											<?php $souscateg=display_souscat($categ[$i]['cat_main_id']); foreach ($souscateg as $newsouscateg ) {?>
-										<li><a href="products_by_cat.php"><?= $newsouscateg['cat_descr']?></a></li>
+										<li><a href="index.php?module=product&action=productbycat&id=<?= $newsouscateg['cat_id']?>"><?= $newsouscateg['cat_descr']?></a></li>
 										<?php } ?><!-- 
 									</ul>
 									<div class="dropdown-image">

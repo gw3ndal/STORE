@@ -3217,6 +3217,7 @@ section.protrude, .section.protrude {
 
 .btn-outline-secondary:before {
   background-color: #25282a;
+  z-index:-1;
 }
 
 .btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active, .btn-outline-secondary:focus:active {
