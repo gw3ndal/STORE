@@ -29,7 +29,7 @@ foreach ($catal as $cat) {
 						<!-- Menu Category -->
 						<div id="Burgers" class="menu-category">
 							<div class="menu-category-title collapse-toggle" role="tab" data-target="#menuBurgersContent" data-toggle="collapse" aria-expanded="true">
-								<div class="bg-image"><img src="http://www.fao.org/fileadmin/user_upload/AGRO_Noticias/img/p_about_1.jpg"></div>
+								<div class="bg-image"><img src="<?= $catal[$i]['cat_img_url']?>"></div>
 								<h2 class="title"><?= $catal[$i]['cat_descr']?></h2>
 							</div>
 						
@@ -47,7 +47,7 @@ foreach ($catal as $cat) {
 											<span class="text-muted text-sm"><?= $data["pro_subtitle1"]?></span>
 											<div class="row align-items-center mt-4">
 												<div class="col-sm-6"><span class="text-md mr-4"><?= $data["pro_price_euro"]?> <span class="text-muted">EURO</span></span></div>
-												<div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>Ajout Panier</span></button></div>
+												<div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button data-target="#productModal" data-product="<?= $data['pro_id']?>" data-price="<?= $data['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $data['pro_subtitle1']?>" data-name="<?= $data['pro_title']?>" data-descr="<?= $data['pro_descr']?>" data-toggle="modal" class="btn btn-outline-secondary btn-sm">Ajout au panier</button></div>
 											</div>
 										</div>
 									</div>
