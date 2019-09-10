@@ -49,20 +49,34 @@
                         <nav aria-label="Page navigation" class="mt-5">
                             <ul class="pagination justify-content-center">
                                 <li class="page-item">
-                                	<a class="page-link" href="#" aria-label="Previous">
+                                	<a class="page-link" href="index.php?module=product&action=productbycat&id=<?= $_GET["id"] ?>&page=<?= $page_demandee - 1 ?>" aria-label="Previous">
                                     	<i class="ti-arrow-left"></i>
-                                    	<span class="sr-only">Previous</span>
+                                    	<span class="sr-only">Précédent</span>
                                   	</a>
-                                </li>
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+								</li>
+								<?php
+									for ($i=1; $i <=$pages ; $i++) {
+								?>
+								<?php
+									if($i != $page_demandee) {
+								?>
+								<li class="page-item"><a class="page-link" href="index.php?module=product&action=productbycat&id=<?= $_GET["id"] ?>&page=<?= $i ?>"><?= $i ?></a></li>
+								<?php
+									}else {
+								?>
+								<li class="page-item"><span class="page-link active"><?= $i ?></span></li>					   
+								<?php
+									} 
+								?>
+								<?php
+								} 
+								?>
+								<li class="page-item">
+                                    <a class="page-link" href="index.php?module=product&action=productbycat&id=<?= $_GET["id"] ?>&page=<?= $page_demandee + 1 ?>" aria-label="Next">
                                         <i class="ti-arrow-right"></i>
-                                        <span class="sr-only">Next</span>
+                                        <span class="sr-only">Suivant</span>
                                     </a>
-                                </li>
+                                </li>                                
                             </ul>
                         </nav>
 					</div>
