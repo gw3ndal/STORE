@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 02 sep. 2019 à 08:18
+-- Généré le :  lun. 09 sep. 2019 à 18:55
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -86,43 +86,43 @@ CREATE TABLE IF NOT EXISTS `st_categories` (
 --
 
 INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
-(1, 'ARTISANAL', ''),
-(2, 'BEAN TO BAR', ''),
-(3, 'BIO', ''),
-(4, 'CRU / NON-CONCHÉ', ''),
-(5, 'ÉQUITABLE', ''),
-(6, 'EXCLUSIF', ''),
-(7, 'SANS SUCRE', ''),
-(8, 'VEGAN', ''),
-(9, 'ALLEMAGNE', ''),
-(10, 'BELGIQUE', ''),
-(11, 'CANADA', ''),
-(12, 'ESPAGNE', ''),
-(13, 'FINLANDE', ''),
-(14, 'FRANCE', ''),
-(15, 'ISLANDE', ''),
-(16, 'SUISSE', ''),
-(17, 'USA', ''),
-(18, 'BELIZE', ''),
-(19, 'BRÉSIL', ''),
-(20, 'CAMEROUN', ''),
-(21, 'COLOMBIE', ''),
-(22, 'CONGO', ''),
-(23, 'COSTA RICA', ''),
-(24, 'CUBA', ''),
-(25, 'ÉQUATEUR', ''),
-(26, 'HONDURAS', ''),
-(27, 'INDE', ''),
-(28, 'JAMAÏQUE', ''),
-(29, 'MADAGASCAR', ''),
-(30, 'MEXIQUE', ''),
-(31, 'NICARAGUA', ''),
-(32, 'PAPOUASIE-NOUVELLE-GUINÉE', ''),
-(33, 'PÉROU', ''),
-(34, 'RÉPUBLIQUE DOMINICAINE', ''),
-(35, 'TANZANIE', ''),
+(1, 'ARTISANAL', 'http://scd.rfi.fr/sites/filesrfi/aefimagesnew/imagecache/rfi_16x9_1024_578/sites/images.rfi.fr/files/aefimagesnew/aef_image/gettyimages-1133178965_0.jpg'),
+(2, 'BEAN TO BAR', 'https://www.tokyoweekender.com/wp-content/uploads/2015/02/Cocoa-beans-and-chocolate-bar_3737870_L.png'),
+(3, 'BIO', 'https://planet-vie.ens.fr/sites/default/files/cabosse_ouverte_grand.jpg'),
+(4, 'CRU / NON-CONCHÉ', 'https://www.rrraw.fr/blog/wp-content/uploads/2017/10/cabosse-jaune-format-home-blog.jpg'),
+(5, 'ÉQUITABLE', 'https://cdn.radiofrance.fr/s3/cruiser-production/2017/05/fd4141ce-c0c0-4e4f-be08-126da2bb5c7d/838_cacaophoto.jpg'),
+(6, 'EXCLUSIF', 'https://cicoservices.com/wp-content/uploads/2019/01/cocoa-3005624_1280.jpg'),
+(7, 'SANS SUCRE', 'https://www.rd.com/wp-content/uploads/2019/07/cocoa-cacao-beans-chocolate-800x450.jpg'),
+(8, 'VEGAN', 'https://www.biocoopoullins.fr/public/img/big/fevecacaojpg_5bfc1688d38db.jpg'),
+(9, 'ALLEMAGNE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(10, 'BELGIQUE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(11, 'CANADA', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(12, 'ESPAGNE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(13, 'FINLANDE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(14, 'FRANCE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(15, 'ISLANDE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(16, 'SUISSE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(17, 'USA', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(18, 'BELIZE', 'https://www.tropicair.com/wp-content/uploads/2018/03/Cacao-02.jpg'),
+(19, 'BRÉSIL', 'https://ajshoppers.com/wp-content/uploads/2019/03/frutti_cacao.jpg'),
+(20, 'CAMEROUN', 'https://agencecamerounpresse.com/media/k2/items/cache/db70e9ac197b9c0806058b7ccee76048_XL.jpg'),
+(21, 'COLOMBIE', 'https://static.iris.net.co/dinero/upload/images/2017/10/25/251643_1.jpg'),
+(22, 'CONGO', 'https://img.aws.la-croix.com/2016/12/19/1300811516/extraction-cabosse-precieuses-feves-seront-mises-secher-Antoine-Kakule-Kihumuledi-planteur-cacao-Beni-Republique-democratique-Congo_1_730_486.jpg'),
+(23, 'COSTA RICA', 'https://ticotimes.net/wp-content/uploads/2014/01/140125cacaoCATIE07.jpg'),
+(24, 'CUBA', 'http://www.canalcaribe.icrt.cu/en/wp-content/uploads/2019/04/cuba-4.jpg'),
+(25, 'ÉQUATEUR', 'https://www.larepublica.ec/wp-content/uploads/2014/11/cacao.jpg'),
+(26, 'HONDURAS', 'http://proceso.hn/media/k2/items/cache/25ee20f2a821388b57550fb91d3306f4_XL.jpg'),
+(27, 'INDE', 'https://mirzam.com/wp-content/uploads/MirzamIndia2017_KathyJohnston6_preview-1200x683.jpeg'),
+(28, 'JAMAÏQUE', 'https://previews.123rf.com/images/aedka123/aedka1231710/aedka123171001118/88790104-f%C3%A8ves-de-cacao-et-fruits-de-cacao-gousse-de-cacao-frais-coup%C3%A9e-exposant-des-graines-de-cacao-avec-une-pl.jpg'),
+(29, 'MADAGASCAR', 'https://voyages.michelin.fr/sites/default/files/nx-441.jpeg'),
+(30, 'MEXIQUE', 'https://i0.wp.com/cdn.foodandwineespanol.com/2018/12/cacao_mex.jpg?ssl=1'),
+(31, 'NICARAGUA', 'https://www.sensecuador.com/blog/wp-content/uploads/2017/11/chocolate-from-ecuador-beansjpg.jpg'),
+(32, 'PAPOUASIE-NOUVELLE-GUINÉE', 'https://www.chocolat-castelain.fr/blog/images/portrait-famille-louisa-cabosse-chocolaterie-castelain.png'),
+(33, 'PÉROU', 'https://www.efetur.com/wp-content/blogs.dir/2/files_mf/cache/th_c34ce7d0a9924e1e70c4be0b1d166dc8_6301810.jpg'),
+(34, 'RÉPUBLIQUE DOMINICAINE', 'http://www.fao.org/fileadmin/user_upload/AGRO_Noticias/img/p_about_1.jpg'),
+(35, 'TANZANIE', 'https://koragnaagny.org/wp-content/uploads/2018/09/cacao-fin.png'),
 (36, 'VENEZUELA', ''),
-(37, 'VIETNAM', ''),
+(37, 'VIETNAM', 'http://proceso.hn/media/k2/items/cache/25ee20f2a821388b57550fb91d3306f4_XL.jpg'),
 (38, 'AU LAIT', 'https://cooking-chef.sa.metacdn.com/sites/default/files/styles/recipe_visuel_node/public/recettes/recette-temperage%20chocolat%20lait%20blanc.jpg?itok=ARQay10j'),
 (39, 'BLANC', 'https://saviezvous.fr/wp-content/uploads/2018/07/chocolat-blanc-730x480.jpg'),
 (40, 'BLOND', 'http://www.didierfourreau.com/wordpress/wp-content/uploads/2015/03/dulcey-2.jpg'),
@@ -130,19 +130,19 @@ INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
 (42, 'NOIR D’ORIGINE', 'http://jemedeveloppe.com/wp-content/uploads/2017/12/chocolat-noir.jpg'),
 (43, 'NOIR GRAND CRU ', 'https://www.misya.info/wp-content/uploads/2012/11/cioccolato-fondente.jpg'),
 (44, 'RUBIS', 'https://www.francetvinfo.fr/image/75ee68170-29af/1500/843/13352953.jpg'),
-(45, 'A. MORIN', ''),
-(46, 'ARETÉ', ''),
-(47, 'BELYZIUM', ''),
-(48, 'CACAO SAMPAKA', ''),
-(49, 'ERITHAJ', ''),
-(50, 'GARÇOA', ''),
-(51, 'GOODIO', ''),
-(52, 'IDILIO ORIGINS', ''),
-(53, 'LA FLOR', ''),
-(54, 'MILLÉSIME', ''),
-(55, 'OMNOM', ''),
-(56, 'ORFÈVE', ''),
-(57, 'QANTU', '');
+(45, 'A. MORIN', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(46, 'ARETÉ', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(47, 'BELYZIUM', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(48, 'CACAO SAMPAKA', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(49, 'ERITHAJ', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(50, 'GARÇOA', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(51, 'GOODIO', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(52, 'IDILIO ORIGINS', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(53, 'LA FLOR', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(54, 'MILLÉSIME', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(55, 'OMNOM', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(56, 'ORFÈVE', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(57, 'QANTU', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg');
 
 -- --------------------------------------------------------
 
@@ -163,11 +163,11 @@ CREATE TABLE IF NOT EXISTS `st_categories_main` (
 --
 
 INSERT INTO `st_categories_main` (`cat_main_id`, `cat_main_descr`, `cat_main_img`) VALUES
-(1, 'label', 'http://www.didierfourreau.com/wordpress/wp-content/uploads/2015/03/dulcey-2.jpg'),
-(2, 'production', 'https://saviezvous.fr/wp-content/uploads/2018/07/chocolat-blanc-730x480.jpg'),
-(3, 'fèves', 'https://cooking-chef.sa.metacdn.com/sites/default/files/styles/recipe_visuel_node/public/recettes/recette-temperage%20chocolat%20lait%20blanc.jpg?itok=ARQay10j'),
-(4, 'variétés', 'http://hand-crafted-chocolate.com/wp-content/uploads/2013/04/iStock_000000934640_Large.jpg'),
-(5, 'brand', 'https://www.francetvinfo.fr/image/75ee68170-29af/1500/843/13352953.jpg');
+(1, 'label', 'https://www.elheraldo.co/sites/default/files/articulo/2017/05/03/cacao4.jpg'),
+(2, 'production', 'https://cdn-media.rtl.fr/cache/llfbVOvG4K0HfRe9FnvZrg/880v587-0/online/image/2018/0119/7791910134_du-chocolat-illustration.jpg'),
+(3, 'fèves', 'http://tpe-chocolat-4.e-monsite.com/medias/images/feve-cacao.jpg'),
+(4, 'variétés', 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Various_Chocolates_2.jpg'),
+(5, 'brand', 'https://jaimedijon.com/wp-content/uploads/2016/10/JAN4200.jpg');
 
 -- --------------------------------------------------------
 
@@ -206,7 +206,6 @@ INSERT INTO `st_categories_main_has_st_categories` (`st_categories_main_cat_main
 (2, 15),
 (2, 16),
 (2, 17),
-(2, 45),
 (3, 18),
 (3, 19),
 (3, 20),
@@ -273,7 +272,7 @@ INSERT INTO `st_customers` (`cus_id`, `cus_civility`, `cus_lastname`, `cus_first
 (2, 1, 'MONDEGUER', 'Gwendal', 'loaye1978@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1),
 (3, 1, 'SALAH', 'Merwhan', 'merwhan.salah@outlook.fr', '8d5e957f297893487bd98fa830fa6413', 1),
 (4, 1, 'TAKHERBOUCHT', 'Abdenour', 'tab88@live.fr', '8d5e957f297893487bd98fa830fa6413', 1),
-(5, 1, 'GIRAUD', 'Philippe', 'phgiraud@cogitium.com)\r\n', '8d5e957f297893487bd98fa830fa6413', 1);
+(5, 1, 'GIRAUD', 'Philippe', 'phgiraud@cogitium.com\r\n', '8d5e957f297893487bd98fa830fa6413', 1);
 
 -- --------------------------------------------------------
 
