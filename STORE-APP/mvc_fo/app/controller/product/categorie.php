@@ -1,6 +1,6 @@
 <?php
 
-include ("../app/model/product/display_produit.php");
+include ("../app/model/product/display_probycat.php");
 // $procatal=display_produit($_GET["id"]);
 
 $nb_products = lire_nb("st_products");

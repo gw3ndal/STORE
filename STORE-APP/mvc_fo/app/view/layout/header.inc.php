@@ -83,7 +83,7 @@
 								<div class="dropdown-container">
 									<ul class="dropdown-mega">
 											<?php $souscateg=display_souscat($categ[$i]['cat_main_id']); foreach ($souscateg as $newsouscateg ) {?>
-										<li><a href="index.php?module=product&action=productbycat&id=<?= $newsouscateg['cat_id']?>"><?= $newsouscateg['cat_descr']?></a></li>
+										<li><a href="index.php?module=product&action=categorie&id=<?= $newsouscateg['cat_id']?>"><?= $newsouscateg['cat_descr']?></a></li>
 										<?php } ?><!-- 
 									</ul>
 									<div class="dropdown-image">
