@@ -6,7 +6,7 @@
 		<!-- Page Title -->
 		<div class="page-title bg-dark dark">
 			<!-- CATEGORIE IMAGE -->
-			<div class="bg-image bg-parallax"><img src="assets/img/photos/var_lait.jpg" alt="catalogue"></div>
+			<div class="bg-image bg-parallax"><img src="<?=$procatal[0]["cat_img_url"]?>" alt="catalogue"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 push-lg-4">
@@ -36,7 +36,7 @@
 											<h6 class="mb-0"><?= $pro['pro_title']?></h6>
 											<span class="text-muted text-sm"><?= $pro['pro_subtitle1']?></span>
 											<div class="row align-items-center mt-4">
-												<div class="col-sm-6"><span class="text-md mr-4"><?= $pro['pro_price_euro']?><span class="text-muted">EURO</span></span></div>
+												<div class="col-sm-6"><span class="text-md mr-4"><?= $pro['pro_price_euro']?><span class="text-muted"> EURO</span></span></div>
 												<div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button data-target="#productModal" data-product="<?= $pro['pro_id']?>" data-price="<?= $pro['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $pro['pro_subtitle1']?>" data-name="<?= $pro['pro_title']?>" data-descr="<?= $pro['pro_descr']?>" data-toggle="modal" class="btn btn-outline-secondary btn-sm">Ajout au panier</button></div>
 											</div>
 										</div>
@@ -49,20 +49,34 @@
                         <nav aria-label="Page navigation" class="mt-5">
                             <ul class="pagination justify-content-center">
                                 <li class="page-item">
-                                	<a class="page-link" href="#" aria-label="Previous">
+                                	<a class="page-link" href="index.php?module=product&action=productbycat&id=<?= $_GET["id"] ?>&page=<?= $page_demandee - 1 ?>" aria-label="Previous">
                                     	<i class="ti-arrow-left"></i>
-                                    	<span class="sr-only">Previous</span>
+                                    	<span class="sr-only">Précédent</span>
                                   	</a>
-                                </li>
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+								</li>
+								<?php
+									for ($i=1; $i <=$pages ; $i++) {
+								?>
+								<?php
+									if($i != $page_demandee) {
+								?>
+								<li class="page-item"><a class="page-link" href="index.php?module=product&action=productbycat&id=<?= $_GET["id"] ?>&page=<?= $i ?>"><?= $i ?></a></li>
+								<?php
+									}else {
+								?>
+								<li class="page-item"><span class="page-link active"><?= $i ?></span></li>					   
+								<?php
+									} 
+								?>
+								<?php
+								} 
+								?>
+								<li class="page-item">
+                                    <a class="page-link" href="index.php?module=product&action=productbycat&id=<?= $_GET["id"] ?>&page=<?= $page_demandee + 1 ?>" aria-label="Next">
                                         <i class="ti-arrow-right"></i>
-                                        <span class="sr-only">Next</span>
+                                        <span class="sr-only">Suivant</span>
                                     </a>
-                                </li>
+                                </li>                                
                             </ul>
                         </nav>
 					</div>

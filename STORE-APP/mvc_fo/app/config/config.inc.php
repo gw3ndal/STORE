@@ -13,3 +13,5 @@
    define("NB_PAR_PAGE", 12);
    define("DEFAULT_MODULE", "home");
    define("DEFAULT_ACTION", "index");
+   define("MAIL_EXPE", "webmaster@toeshi.com");
+   define("NOM_EXPE", "Webmaster.TŒSHĪ");
