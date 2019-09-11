@@ -1,5 +1,5 @@
 <?php
-function display_produit($id){
+function display_produit($id, $offset, $limite){
 	global $pdo;
 	// var_dump ($pdo);
 	try {
@@ -10,15 +10,17 @@ function display_produit($id){
 					WHERE pro_id=st_products_pro_id 
 					AND st_categories_cat_id=cat_id
 					AND cat_id =:souscat
-					LIMIT 6";
+					LIMIT :offset, :limite";
 		// die($query);
 		//ENVOI de la requête
 		$req = $pdo->prepare($query);
 		//INITIALISATION des paramètres
-        //EXÉCUTION de la requête
-      
-        
-		$req->execute([":souscat"=>$id]);
+		$req->bindParam(":souscat", $id, PDO::PARAM_INT);
+		$req->bindParam(":offset", $offset, PDO::PARAM_INT);
+		$req->bindParam(":limite", $limite, PDO::PARAM_INT);
+
+        //EXÉCUTION de la requête        
+		$req->execute();
 		//RÉCUPÉRATION de tous les résultats
 		$req->setFetchMode(PDO::FETCH_ASSOC);
 		$categories = $req->fetchAll();

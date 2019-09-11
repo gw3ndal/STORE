@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 11 sep. 2019 à 15:35
+-- Généré le :  mer. 11 sep. 2019 à 22:26
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -95,15 +95,15 @@ INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
 (6, 'EXCLUSIF', 'https://cicoservices.com/wp-content/uploads/2019/01/cocoa-3005624_1280.jpg'),
 (7, 'SANS SUCRE', 'https://www.rd.com/wp-content/uploads/2019/07/cocoa-cacao-beans-chocolate-800x450.jpg'),
 (8, 'VEGAN', 'https://www.biocoopoullins.fr/public/img/big/fevecacaojpg_5bfc1688d38db.jpg'),
-(9, 'ALLEMAGNE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(10, 'BELGIQUE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(11, 'CANADA', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(12, 'ESPAGNE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(13, 'FINLANDE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(14, 'FRANCE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(15, 'ISLANDE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(16, 'SUISSE', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
-(17, 'USA', 'https://cdn.pixabay.com/photo/2016/03/24/15/53/chocolate-1277002_960_720.jpg'),
+(9, 'ALLEMAGNE', 'https://flagpedia.net/data/flags/big/de.png'),
+(10, 'BELGIQUE', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1200px-Flag_of_Belgium.svg.png'),
+(11, 'CANADA', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/1280px-Flag_of_Canada.svg.png'),
+(12, 'ESPAGNE', 'http://www.drapeaux-du-monde.fr/drapeaux-du-monde/3000/drapeau-espagne.jpg'),
+(13, 'FINLANDE', 'https://www.drapeauxdespays.fr/data/flags/ultra/fi.png'),
+(14, 'FRANCE', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png'),
+(15, 'ISLANDE', 'https://www.drapeauxdespays.fr/data/flags/ultra/is.png'),
+(16, 'SUISSE', 'http://www.drapeaux-du-monde.fr/drapeaux-du-monde/3000/drapeau-suisse.jpg'),
+(17, 'USA', 'https://www.drapeauxdespays.fr/data/flags/ultra/us.png'),
 (18, 'BELIZE', 'https://www.tropicair.com/wp-content/uploads/2018/03/Cacao-02.jpg'),
 (19, 'BRÉSIL', 'https://ajshoppers.com/wp-content/uploads/2019/03/frutti_cacao.jpg'),
 (20, 'CAMEROUN', 'https://agencecamerounpresse.com/media/k2/items/cache/db70e9ac197b9c0806058b7ccee76048_XL.jpg'),
@@ -122,7 +122,7 @@ INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
 (33, 'PÉROU', 'https://www.efetur.com/wp-content/blogs.dir/2/files_mf/cache/th_c34ce7d0a9924e1e70c4be0b1d166dc8_6301810.jpg'),
 (34, 'RÉPUBLIQUE DOMINICAINE', 'http://www.fao.org/fileadmin/user_upload/AGRO_Noticias/img/p_about_1.jpg'),
 (35, 'TANZANIE', 'https://koragnaagny.org/wp-content/uploads/2018/09/cacao-fin.png'),
-(36, 'VENEZUELA', ''),
+(36, 'VENEZUELA', 'https://www.bohnkaf-kolonial.de/wp-content/uploads/cocoa_venzuela-1024x575.jpg'),
 (37, 'VIETNAM', 'http://proceso.hn/media/k2/items/cache/25ee20f2a821388b57550fb91d3306f4_XL.jpg'),
 (38, 'AU LAIT', 'https://cooking-chef.sa.metacdn.com/sites/default/files/styles/recipe_visuel_node/public/recettes/recette-temperage%20chocolat%20lait%20blanc.jpg?itok=ARQay10j'),
 (39, 'BLANC', 'https://saviezvous.fr/wp-content/uploads/2018/07/chocolat-blanc-730x480.jpg'),
@@ -131,19 +131,19 @@ INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
 (42, 'NOIR D’ORIGINE', 'http://jemedeveloppe.com/wp-content/uploads/2017/12/chocolat-noir.jpg'),
 (43, 'NOIR GRAND CRU ', 'https://www.misya.info/wp-content/uploads/2012/11/cioccolato-fondente.jpg'),
 (44, 'RUBIS', 'https://www.francetvinfo.fr/image/75ee68170-29af/1500/843/13352953.jpg'),
-(45, 'A. MORIN', 'https://doktor.frettabladid.is/wp-content/uploads/2010/03/Groovyfoody.jpg'),
-(46, 'ARETÉ', 'https://res.cloudinary.com/fiveten/image/upload/c_scale,q_auto:good,w_1000/kellermanni/y2pjzgy2pwa6ek6e3fgn.jpg'),
-(47, 'BELYZIUM', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(48, 'CACAO SAMPAKA', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(49, 'ERITHAJ', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(50, 'GARÇOA', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(51, 'GOODIO', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(52, 'IDILIO ORIGINS', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(53, 'LA FLOR', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(54, 'MILLÉSIME', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(55, 'OMNOM', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(56, 'ORFÈVE', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(57, 'QANTU', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg');
+(45, 'A. MORIN', 'https://chocolaterie-morin.com/wp-content/uploads/2016/07/couverture-noir.jpg'),
+(46, 'ARETÉ', 'https://i2.wp.com/timetoeatchocolate.com/wp-content/uploads/2018/06/IMG_20180609_165415.jpg?resize=629%2C343'),
+(47, 'BELYZIUM', 'https://belyzium.com/en/index_htm_files/34865.jpg'),
+(48, 'CACAO SAMPAKA', 'http://www.oasis-mag.com/wp-content/uploads/2015/01/cacao-sampaka-gin-tonic-3-1140x863.jpg'),
+(49, 'ERITHAJ', 'https://lechocolatdanstousnosetats.com/wp-content/uploads/2017/01/IMG_1730-1024x1024.jpg'),
+(50, 'GARÇOA', 'https://designswitzerland.ch/app/uploads/sites/24/2019/07/garcoa-940x390.png'),
+(51, 'GOODIO', 'https://finnflavours.de/WebRoot/vilkasen01/Shops/2017100601/MediaGallery/Producer_pages/producer_goodio.jpg'),
+(52, 'IDILIO ORIGINS', 'http://2.bp.blogspot.com/-LBz87PMf9hE/ViF_PVDTeLI/AAAAAAAAEmk/s0FppLbkEBo/s1600/DSC_1024.JPG'),
+(53, 'LA FLOR', 'https://www.alternativesante.fr/upload/cache/cacao.jpg/cacao_w837_h553_r4_q90.jpg'),
+(54, 'MILLÉSIME', 'https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2017/10/17/node_140975/404799/public/2017/10/17/B9713526551Z.1_20171017182635_000%2BGCSA050QV.1-0.jpg?itok=4j7kpVVS'),
+(55, 'OMNOM', 'https://icelandictimes.com/wp-content/uploads/2018/03/Test-Lab2-1024x683.jpg'),
+(56, 'ORFÈVE', 'http://righthype.20minutes-blogs.fr/files/Janv2019/orfeve-1-rightandhype.jpg'),
+(57, 'QANTU', 'https://cdn.shopify.com/s/files/1/2077/8853/files/Tablettes_2048x2048.jpg?v=1528428031');
 
 -- --------------------------------------------------------
 
@@ -225,6 +225,7 @@ INSERT INTO `st_categories_main_has_st_categories` (`st_categories_main_cat_main
 (3, 33),
 (3, 34),
 (3, 35),
+(3, 36),
 (3, 37),
 (4, 38),
 (4, 39),
@@ -264,7 +265,8 @@ CREATE TABLE IF NOT EXISTS `st_customers` (
   `cus_actif` tinyint(1) NOT NULL DEFAULT '0',
   `cus_token` varchar(32) NOT NULL,
   `cus_admin` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`cus_id`)
+  PRIMARY KEY (`cus_id`),
+  UNIQUE KEY `cus_mail` (`cus_mail`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
