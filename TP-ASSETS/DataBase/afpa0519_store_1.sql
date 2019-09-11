@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 09 sep. 2019 à 18:55
+-- Généré le :  mer. 11 sep. 2019 à 15:35
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `st_addresses` (
   `add_city` varchar(45) NOT NULL,
   PRIMARY KEY (`add_id`),
   KEY `fk_st_addresses_st_customers1_idx` (`st_customers_cus_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `st_addresses`
@@ -48,7 +48,8 @@ INSERT INTO `st_addresses` (`add_id`, `st_customers_cus_id`, `add_address1`, `ad
 (1, 1, 'Route de La Goulette', 'Site archéologique de Carthage', '2016', 'Carthage'),
 (2, 2, '6/8 rue Georges et Mai Politzer', NULL, '75012', 'Paris'),
 (3, 3, 'El Mouradia', NULL, '16000', 'Alger'),
-(4, 4, 'Taourirt Moussa', '', '15000', 'Tizy Ouzou');
+(4, 4, 'Taourirt Moussa', '', '15000', 'Tizy Ouzou'),
+(5, 6, '1a boulevard voltaire', '', '75011', 'paris');
 
 -- --------------------------------------------------------
 
@@ -130,8 +131,8 @@ INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
 (42, 'NOIR D’ORIGINE', 'http://jemedeveloppe.com/wp-content/uploads/2017/12/chocolat-noir.jpg'),
 (43, 'NOIR GRAND CRU ', 'https://www.misya.info/wp-content/uploads/2012/11/cioccolato-fondente.jpg'),
 (44, 'RUBIS', 'https://www.francetvinfo.fr/image/75ee68170-29af/1500/843/13352953.jpg'),
-(45, 'A. MORIN', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
-(46, 'ARETÉ', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
+(45, 'A. MORIN', 'https://doktor.frettabladid.is/wp-content/uploads/2010/03/Groovyfoody.jpg'),
+(46, 'ARETÉ', 'https://res.cloudinary.com/fiveten/image/upload/c_scale,q_auto:good,w_1000/kellermanni/y2pjzgy2pwa6ek6e3fgn.jpg'),
 (47, 'BELYZIUM', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
 (48, 'CACAO SAMPAKA', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
 (49, 'ERITHAJ', 'https://tissuslionel.com/wp-content/uploads/13-lycra-de%CC%81grade%CC%81-chair-et-noir.jpg'),
@@ -163,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `st_categories_main` (
 --
 
 INSERT INTO `st_categories_main` (`cat_main_id`, `cat_main_descr`, `cat_main_img`) VALUES
-(1, 'label', 'https://www.elheraldo.co/sites/default/files/articulo/2017/05/03/cacao4.jpg'),
+(1, 'label', 'https://www.chocolatsdumonde.ch/wp-content/uploads/image-test-chocolat.jpg'),
 (2, 'production', 'https://cdn-media.rtl.fr/cache/llfbVOvG4K0HfRe9FnvZrg/880v587-0/online/image/2018/0119/7791910134_du-chocolat-illustration.jpg'),
 (3, 'fèves', 'http://tpe-chocolat-4.e-monsite.com/medias/images/feve-cacao.jpg'),
 (4, 'variétés', 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Various_Chocolates_2.jpg'),
@@ -227,6 +228,7 @@ INSERT INTO `st_categories_main_has_st_categories` (`st_categories_main_cat_main
 (3, 37),
 (4, 38),
 (4, 39),
+(4, 40),
 (4, 41),
 (4, 42),
 (4, 43),
@@ -259,20 +261,23 @@ CREATE TABLE IF NOT EXISTS `st_customers` (
   `cus_firstname` varchar(45) NOT NULL,
   `cus_mail` varchar(80) NOT NULL,
   `cus_password` varchar(32) NOT NULL,
+  `cus_actif` tinyint(1) NOT NULL DEFAULT '0',
+  `cus_token` varchar(32) NOT NULL,
   `cus_admin` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`cus_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `st_customers`
 --
 
-INSERT INTO `st_customers` (`cus_id`, `cus_civility`, `cus_lastname`, `cus_firstname`, `cus_mail`, `cus_password`, `cus_admin`) VALUES
-(1, 1, 'BOUSSETTA', 'Farid', 'farid_2312@hotmail.fr', '8d5e957f297893487bd98fa830fa6413', 1),
-(2, 1, 'MONDEGUER', 'Gwendal', 'loaye1978@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1),
-(3, 1, 'SALAH', 'Merwhan', 'merwhan.salah@outlook.fr', '8d5e957f297893487bd98fa830fa6413', 1),
-(4, 1, 'TAKHERBOUCHT', 'Abdenour', 'tab88@live.fr', '8d5e957f297893487bd98fa830fa6413', 1),
-(5, 1, 'GIRAUD', 'Philippe', 'phgiraud@cogitium.com\r\n', '8d5e957f297893487bd98fa830fa6413', 1);
+INSERT INTO `st_customers` (`cus_id`, `cus_civility`, `cus_lastname`, `cus_firstname`, `cus_mail`, `cus_password`, `cus_actif`, `cus_token`, `cus_admin`) VALUES
+(1, 1, 'BOUSSETTA', 'Farid', 'farid_2312@hotmail.fr', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
+(2, 1, 'MONDEGUER', 'Gwendal', 'loaye1978@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
+(3, 1, 'SALAH', 'Merwhan', 'merwhan.salah@outlook.fr', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
+(4, 1, 'TAKHERBOUCHT', 'Abdenour', 'tab88@live.fr', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
+(5, 1, 'GIRAUD', 'Philippe', 'phgiraud@cogitium.com\r\n', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
+(6, 0, 'test', 'test', 'test@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1, '', 0);
 
 -- --------------------------------------------------------
 
@@ -407,7 +412,7 @@ INSERT INTO `st_products` (`pro_id`, `pro_title`, `pro_subtitle1`, `pro_subtitle
 (44, 'FINCA RODRIGO FARINA BONA', 'chocolat noir grand cru à la farine de maïs | Venezuela', 'La Flor | Suisse (Zurich)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/LaFlor_FincaRodrigoFarinaBona_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/LaFlor_FincaRodrigoFarinaBona_B.jpg', ' Fèves Canobao de la région du même nom au Venezuela.\r\n        Les notes puissantes du cacao se marient petit à petit à la farine de maïs grillé, qui donne une impression de pop-corn ! La farine de maïs grillée provient du Tessin et est fabriquée selon une recette artisanale. Le chocolat parfait pour un film au cinéma ! Aussi surprenant qu’agréable.\r\n        ', '4.60', '2019-08-30 20:43:07'),
 (45, 'LICORICE & SEA BUCKTHORN', 'chocolat noir à la réglisse et à l’argousier', 'Goodio | Finlande (Helsinki)', 'bean to bar, cru / non conché', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Goodio_LicoriceSeaBuckthorn_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Goodio_LicoriceSeaBuckthorn_B.jpg', ' Le chocolat révèle en premier les notes typiques de l’argousier. La sensation est accentuée par la texture non conchée, mais fondante. La réglisse ne se laisse que deviner petit à petit tant l’accord est fin. Une tablette aussi originale qu’unique!', '7.27', '2019-08-30 20:43:07'),
 (46, 'NIBS', 'chocolat noir grand cru avec éclats de fèves de cacao | Belize', 'Belyzium | Allemagne (Berlin)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Belyzium_Nibs_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Belyzium_Nibs_B.jpg', ' Fèves hybrides criollo et trinitario.\r\n        L’ajout d’éclats de fèves de cacao est bien plus qu’un autre variation du 83. Les notes de cacaotées des fèves ajoutent une première impression gourmande, tandis que le caractère acidulé renforce les sensations fruitées. Une réussite!\r\n        ', '8.56', '2019-08-30 20:43:07'),
-(47, 'MR. CARROTS – LAKKRIS', NULL, NULL, NULL, 'https://www.chocolatsdumonde.ch/wp-content/uploads/BunnyOmnom_unboxed.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/BunnyOmnom_bar.jpg', 'A la recherche d’un lapin de Pâques unique? Seuls 4 ont réussi à s’envoler d’Islande pour passer les fêtes en Suisse! Offrez-vous un design à couper le souffle et des sensations gustatives uniques grâce au chocolat blanc à la réglisse. De l’art éphémère.\r\n       300 g de bonheur! Mr Carrots vit dans une boîte de 31 x 25 x 16 cm. Être sensible et fragile, il ne peut être livré ou récupéré que dans le Canton de Genève.\r\n        Il attend avec impatience de pouvoir rejoindre une maison aimante qui saura l’apprécier à sa juste valeur. N.B. Il n’est pas nécessaire de parler islandais pour l’adopter. Sachez quand même que lapin se dit kanína.\r\n        ', '59.80', '2019-08-30 20:43:07'),
+(47, 'MR. CARROTS – LAKKRIS', 'chocolat blanc à la réglisse', 'Omnom | Islande (Reykjavik)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/BunnyOmnom_unboxed.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/BunnyOmnom_bar.jpg', 'A la recherche d’un lapin de Pâques unique? Seuls 4 ont réussi à s’envoler d’Islande pour passer les fêtes en Suisse! Offrez-vous un design à couper le souffle et des sensations gustatives uniques grâce au chocolat blanc à la réglisse. De l’art éphémère.\r\n       300 g de bonheur! Mr Carrots vit dans une boîte de 31 x 25 x 16 cm. Être sensible et fragile, il ne peut être livré ou récupéré que dans le Canton de Genève.\r\n        Il attend avec impatience de pouvoir rejoindre une maison aimante qui saura l’apprécier à sa juste valeur. N.B. Il n’est pas nécessaire de parler islandais pour l’adopter. Sachez quand même que lapin se dit kanína.\r\n        ', '59.80', '2019-08-30 20:43:07'),
 (48, 'HACIENDA LIMON', 'chocolat noir grand cru | Équateur', 'La Flor | Suisse (Zurich)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/DSC01844-e1530382556683.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/DSC01845-e1530382534306.jpg', ' Fèves nacional arriba de la Hacienda Limon en Equateur.\r\n        Aux notes épicées, s’ajoute une touche de fruits rouges, puis de noisette, sans que l’aspect poivré ne disparaisse vraiment. Un chocolat plutôt fort en goût, sans tomber dans l’excès.\r\n        ', '4.60', '2019-08-30 20:43:07'),
 (49, 'HACIENDA LIMON MILCH & NIBS', 'chocolat au lait | Equateur', 'La Flor | Suisse (Zurich)', NULL, 'https://www.chocolatsdumonde.ch/wp-content/uploads/LaFlor_HaciendaLimonMilchNibs_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/LaFlor_HaciendaLimonMilchNibs_B.jpg', ' Fèves nacional arriba de la Hacienda Limon en Équateur et nibs de Fazenda Vera Cruz au Brésil.\r\n        Un chocolat au lait suisse inclassable: fondant grâce au lait, croquant grâce aux nibs et intense comme un chocolat noir avec son haut pourcentage de cacao. Les éclats de cacao ne font pas qu’ajouter de la texture, leurs arômes de bananes se déploient en croquant dans les nibs et confèrent une longueur en bouche unique pour un chocolat au lait. A goûter absolument!\r\n        ', '4.60', '2019-08-30 20:43:07'),
 (50, '83', 'chocolat noir grand cru | Belize', 'Belyzium | Allemagne (Berlin)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Belyzium_83_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Belyzium_83_B.jpg', ' Fèves hybrides criollo et trinitario.\r\n        Puissant, la légère acidité de l’attaque est très vite renversée par le cacao amer et ample qui sature les papilles avec une texture pâteuse agréable. Une bonne initiation à un chocolat fort.\r\n        ', '8.19', '2019-08-30 20:43:07'),
