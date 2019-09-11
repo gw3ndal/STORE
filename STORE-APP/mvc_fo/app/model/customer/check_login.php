@@ -6,7 +6,8 @@ function check_login($form){
 		$query="SELECT *
 					FROM st_customers
 					WHERE cus_mail=:login
-						AND cus_password=:password";
+						AND cus_password=:password
+                  		AND cus_actif=1";
 		// die($query);
 
 		//ENVOI de la requête

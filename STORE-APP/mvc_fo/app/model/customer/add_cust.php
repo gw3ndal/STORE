@@ -1,12 +1,12 @@
 <?php
-function add_cust($form){
+function add_cust($form, $token){
 	global $pdo;
 	// var_dump ($pdo);
 	try {
 		$query="INSERT INTO st_customers
-		(cus_mail, cus_password, cus_civility, cus_lastname, cus_firstname)       
+		(cus_mail, cus_password, cus_civility, cus_lastname, cus_firstname, cus_token)       
 	  
-				VALUES (:mail, :password, :civility, :lastname, :firstname)";
+				VALUES (:mail, :password, :civility, :lastname, :firstname, :cus_token)";
 							
 		// die($query);
 
@@ -18,6 +18,7 @@ function add_cust($form){
 		$req->bindParam(":civility", $form["cus_civility"], PDO::PARAM_STR);
 		$req->bindParam(":lastname", $form["cus_lastname"], PDO::PARAM_STR);
 		$req->bindParam(":firstname", $form["cus_firstname"], PDO::PARAM_STR);
+		$req->bindParam(":cus_token", $token, PDO::PARAM_STR);
 		//EXÉCUTION de la requête
 		$req->execute();
 		//RÉCUPÉRATION de tous les résultats
