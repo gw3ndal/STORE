@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 		   echo $e->getMessage();
 		   echo $e->getCode();
 	   }   
-		header("Location:index.php?notif=registered");
+		header("Location:index.php?module=customer&action=validation");
 		}else{
 			header("Location:index.php?module=customer&action=register&notif=nok");
 		}
