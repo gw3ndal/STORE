@@ -10,7 +10,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 push-lg-4">
-						<h1 class="mb-0"><?php if(!empty($procatal)){echo $procatal[0]['cat_descr'];}else {
+						<h1 class="mb-0 font-weight-normal"><?php if(!empty($procatal)){echo $procatal[0]['cat_descr'];}else {
 							echo "Produit Divers";
 						} ?></h1>
 						<h4 class="text-muted mb-0"></h4>
