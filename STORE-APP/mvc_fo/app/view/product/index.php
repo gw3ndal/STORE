@@ -65,7 +65,7 @@ foreach ($catal as $cat) {
 									?>
 								</div>						
 								<div class="col-sm-12 text-sm-right mt-2 mt-sm-0">
-									<a href="index.php?module=product&action=categorie&id=<?= $catal[$i]['cat_id']?>"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>VOIR TOUT</span></button></a>
+									<a href="index.php?module=product&action=categorie&id=<?= $catal[$i]['cat_id']?>"><button class="btn btn-outline-secondary btn-sm"><span>VOIR TOUT</span></button></a>
 								</div>
 							</div>
 						</div>
