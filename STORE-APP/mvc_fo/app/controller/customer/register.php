@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 	$token = md5(uniqid(mt_rand()));
 	include("../app/model/customer/add_cust.php");
 	// var_dump($user);
-	if(add_cust($_POST $token)){
+	if(add_cust($_POST, $token)){
 		include_once("../lib/mail.class.php");
 		try{
 			$email= new phpMail(MAIL_EXPE, NOM_EXPE, MAIL_EXPE);

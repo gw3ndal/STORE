@@ -3,6 +3,14 @@ position: fixed !important;
 background: red;
 }*/
 /******LOGO*/
+
+/* MENU */
+@media screen and (max-width:1200px) {
+	.hide-this{
+		display:none;
+	}
+}
+
 .logo_0{
 	margin: 0px !important;
 	padding: 0px !important;
@@ -14,7 +22,7 @@ background: red;
 	margin: 0px !important;
 }
 .toeshi{
-	margin-top: 30px !important!;
+	margin-top: 30px !important;
 	color: white;
 	font-family:  'Red Hat Text', sans-serif;
 	font-size: 30px;
@@ -49,9 +57,7 @@ background: red;
 	padding-top: 45px;
 	padding-bottom: px;
 }
-.mobile-logo-toggle-toeshi{
-	/*padding-bottom: 45px;*/
-}
+
 .mobile-logo-toggle{
 	color: white;
 	font-family:  'Red Hat Text', sans-serif;

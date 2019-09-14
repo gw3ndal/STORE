@@ -43,7 +43,7 @@
 
 	<!-- CSS CREATED & LINKS ADDED -->
 	<link href="assets/css/mystyle.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,700&display=swap" rel="stylesheet">	
 </head>
 
 <body>
@@ -60,12 +60,12 @@
 					<!-- Logo -->
 					<div class="module module-navigation logo_0">
 						<ul class="nav nav-main mgTest">
-						<li><a href="https://youtu.be/_8VZ52fWYnQ?t=33" target="_blank">
+						<li><a href="index.php" target="_blank">
 							<img src="assets/img/logo_0.png" alt="logo" width="50" >
 						</a>
 						</li>
 						<li class="toeshi left">
-							<span><?=SITE_NAME?></span>
+							<a href="index.php"><span><?=SITE_NAME?></span></a>
 						</li>
 					</ul>
 					</div>
@@ -74,48 +74,36 @@
 					<!-- Navigation -->
 					<nav class="module module-navigation left mr-4">
 						<ul id="nav-main" class="nav nav-main">
-							<li>
+							<!-- <li>
 								<a href="index.php">Accueil</a>
-							</li>
+							</li> -->
 							<?php $i=0; foreach ($categ as $newcateg ) {?>
 							<li class="has-dropdown">
 								<a href="#"><?= $categ[$i]['cat_main_descr']?></a>
 								<div class="dropdown-container">
 									<ul class="dropdown-mega">
-											<?php $souscateg=display_souscat($categ[$i]['cat_main_id']); foreach ($souscateg as $newsouscateg ) {?>
-										<li><a href="index.php?module=product&action=categorie&id=<?= $newsouscateg['cat_id']?>"><?= $newsouscateg['cat_descr']?></a></li>
-										<?php } ?><!-- 
+										<?php
+											$souscateg=display_souscat($categ[$i]['cat_main_id']);
+											foreach ($souscateg as $newsouscateg )
+										{ ?>
+										<li>
+											<a href="index.php?module=product&action=categorie&id=<?= $newsouscateg['cat_id']?>">
+												<?= $newsouscateg['cat_descr']?>
+											</a>
+										</li>
+										<?php
+										} ?> 
 									</ul>
-									<div class="dropdown-image">
+									<!-- <div class="dropdown-image">
 										<img src="assets/img/photos/dropdown-about.jpg" alt="">
 									</div> -->
 								</div>
-
-							</li>
-							
-							<?php $i++; } ?>
-							
-						<!-- 	<li class="has-dropdown">   
-								<a href="#">Variétés</a>
-								<div class="dropdown-container">
-									<ul class="dropdown-mega">
-										<li><a href="product_index.php">au lait</a></li>
-										<li><a href="">blanc</a></li>
-										<li><a href="">blond</a></li>
-										<li><a href="">noir</a></li>
-										<li><a href="">noir d'origine</a></li>
-										<li><a href="">noir grand cru</a></li>
-										<li><a href="">rubis</a></li>
-									</ul>
-									<div class="dropdown-image">
-										<img src="assets/img/photos/dropdown-more.jpg" alt="">
-									</div>
-								</div>
-							</li> -->
+							</li>							
+							<?php $i++; } ?>						
 						</ul>
 					</nav>
-					<div class="nav nav-main mt-1 mb-1">
-						<a href="index.php?module=product&action=catalogue&id=4" class="btn btn-outline-secondary"><span>catalogue</span></a>
+					<div class="nav nav-main mt-1 mb-1 hide-this">
+						<a href="index.php?#retour" class="btn btn-outline-secondary"><span>catalogue</span></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -167,8 +155,8 @@
 		<div class="module module-logo logo-mobile">
 			<a href="index.php">
 				<img src="assets/img/logo_0.png" alt="logo">
+				<span class="toeshi-black"><?=SITE_NAME?></span>			
 			</a>
-			<span class="toeshi-black"><?=SITE_NAME?></span>
 		</div>
 
 		<a href="#" class="module module-cart" data-toggle="panel-cart">

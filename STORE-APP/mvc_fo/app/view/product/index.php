@@ -33,7 +33,8 @@ foreach ($catal as $cat) {
 								<h2 class="title"><?= $catal[$i]['cat_descr']?></h2>
 							</div>
 						
-							<div id="menuBurgersContent" class="menu-category-content padded collapse">			<div class="row gutters-sm">
+							<div id="menuBurgersContent" class="menu-category-content padded collapse">
+								<div class="row gutters-sm">
 									<?php
 										$data_pro=display_produit( $catal[$i]['cat_id']);
 									foreach($data_pro as $data){
@@ -42,12 +43,20 @@ foreach ($catal as $cat) {
 									<div class="col-lg-4 col-6">
 										<!-- Menu Item -->
 										<div class="menu-item menu-grid-item">
-											<a href="index.php?module=product&action=tablette&id=<?=$data['pro_id']?>"><img class="mb-4" src="<?= $data["pro_img_url_recto"]?>" alt="tablette"></a>
+											<a href="index.php?module=product&action=tablette&id=<?=$data['pro_id']?>">
+												<img class="mb-4" src="<?= $data["pro_img_url_recto"]?>" alt="tablette">
+											</a>
 											<h6 class="mb-0"><?= $data["pro_title"]?></h6>
 											<span class="text-muted text-sm"><?= $data["pro_subtitle1"]?></span>
 											<div class="row align-items-center mt-4">
-												<div class="col-sm-6"><span class="text-md mr-4"><?= $data["pro_price_euro"]?> <span class="text-muted">EURO</span></span></div>
-												<div class="col-sm-6 text-sm-right mt-2 mt-sm-0"><button data-target="#productModal" data-product="<?= $data['pro_id']?>" data-price="<?= $data['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $data['pro_subtitle1']?>" data-name="<?= $data['pro_title']?>" data-descr="<?= $data['pro_descr']?>" data-toggle="modal" class="btn btn-outline-secondary btn-sm">Ajout au panier</button></div>
+												<div class="col-sm-6">
+													<span class="text-md mr-4"><?= $data["pro_price_euro"]?> <span class="text-muted">EURO</span></span>
+												</div>
+												<div class="col-sm-6 text-sm-right mt-2 mt-sm-0">
+													<button data-target="#productModal" data-product="<?= $data['pro_id']?>" data-price="<?= $data['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $data['pro_subtitle1']?>" data-name="<?= $data['pro_title']?>" data-descr="<?= $data['pro_descr']?>" data-toggle="modal" class="btn btn-outline-secondary btn-sm">
+														Ajout au panier
+													</button>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -56,7 +65,7 @@ foreach ($catal as $cat) {
 									?>
 								</div>						
 								<div class="col-sm-12 text-sm-right mt-2 mt-sm-0">
-									<a href="products_by_categorie.php"><button class="btn btn-outline-secondary btn-sm" data-target="#productModal" data-toggle="modal"><span>VOIR TOUT</span></button></a>
+									<a href="index.php?module=product&action=categorie&id=<?= $catal[$i]['cat_id']?>"><button class="btn btn-outline-secondary btn-sm"><span>VOIR TOUT</span></button></a>
 								</div>
 							</div>
 						</div>

@@ -135,10 +135,12 @@
 				<img src="assets/img/logo_0.png" alt="logo" width="88">
 			</a>
 			<br>    
-			<div class="mobile-logo-toggle-toeshi"><?=SITE_NAME?></div>
+			<div class="mobile-logo-toggle-toeshi">
+				<a href="index.php"><?=SITE_NAME?></a>
+			</div>
 			<button class="close" data-toggle="panel-mobile"><i class="ti ti-close"></i></button>
 			<div class="pb-2">
-				<a href="product_index" class="btn btn-outline-primary"><span>catalogue</span></a>
+				<a href="index.php?#retour" class="btn btn-outline-primary"><span>catalogue</span></a>
 			</div>
 		</div>
 		<!-- <div class="module module-social mobile-social mt-2">
@@ -190,51 +192,51 @@
 <div class="modal fade" id="productModal" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-		<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}else {
-						echo 'index.php?module=customer&action=login';}?>" method="post" name="addProduct" id="addProductForm">
-			<div class="modal-header modal-header-lg dark bg-dark">
-				<div class="bg-image"><img src="assets/img/photos/modal-add2.jpg" alt="bandeau"></div>
-				<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
-			</div>
-			<div class="modal-product-details">
-			<input type="hidden" id="productId" name="productId" />
-				<div class="row align-items-center">
-					<div class="col-9">
-					<h6 class="mb-0" id="productName" name="productName"></h6>
-					<h6 id="productSub" name="productSub"></h6>
-					</div>
-					<div class="col-3 text-lg text-right" id="productPrice"></div>
+			<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}else {
+							echo 'index.php?module=customer&action=login';}?>" method="post" name="addProduct" id="addProductForm">
+				<div class="modal-header modal-header-lg dark bg-dark">
+					<div class="bg-image"><img src="assets/img/photos/modal-add2.jpg" alt="bandeau"></div>
+					<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
 				</div>
-			</div>
-			<div class="modal-body panel-details-container">
-				<!-- Panel Details / Size -->
-				<div class="panel-details">
-					<h5 class="panel-details-title">
-						<a href="#panelDetailsSize" data-toggle="collapse">Descriptif</a>
-					</h5>
-					<div id="panelDetailsSize" class="collapse">
-						<div class="panel-details-content">
-						<p id="productDescr" class="lead">
+				<div class="modal-product-details">
+				<input type="hidden" id="productId" name="productId" />
+					<div class="row align-items-center">
+						<div class="col-9">
+						<h6 class="mb-0" id="productName" name="productName"></h6>
+						<h6 id="productSub" name="productSub"></h6>
+						</div>
+						<div class="col-3 text-lg text-right" id="productPrice"></div>
+					</div>
+				</div>
+				<div class="modal-body panel-details-container">
+					<!-- Panel Details / Size -->
+					<div class="panel-details">
+						<h5 class="panel-details-title">
+							<a href="#panelDetailsSize" data-toggle="collapse">Descriptif</a>
+						</h5>
+						<div id="panelDetailsSize" class="collapse">
+							<div class="panel-details-content">
+							<p id="productDescr" class="lead">
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- Panel Details / Additions -->
-				<div class="panel-details">
-					<h5 class="panel-details-title">
-						<a href="#panelDetailsAdditions" data-toggle="collapse">Quantité</a>
-					</h5>
-					<div id="panelDetailsAdditions" class="collapse show">
-						<div class="panel-details-content">
-							<div class="form-group text-center">
-							<input type="number" id="qte" name="qte" class="form-control input-qty form-control-lg" value="1">
+					<!-- Panel Details / Additions -->
+					<div class="panel-details">
+						<h5 class="panel-details-title">
+							<a href="#panelDetailsAdditions" data-toggle="collapse">Quantité</a>
+						</h5>
+						<div id="panelDetailsAdditions" class="collapse show">
+							<div class="panel-details-content">
+								<div class="form-group text-center">
+								<input type="number" id="qte" name="qte" class="form-control input-qty form-control-lg" value="1">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<button type="submit" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</button>
-					</form>
+				<button type="submit" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</button>
+			</form>
 		</div>
 	</div>
 </div>
@@ -313,16 +315,7 @@ if (isset($_SESSION["user"])){
 				}
 				?>				
 				<h4 class="modal-title">Voulez-vous vous déconnecter <span class="text-capitalize font-weight-bold"><?= $_SESSION["user"]["cus_firstname"] ?></span>?</h4>
-			</div><!-- 
-			<div class="modal-product-details">
-				<div class="row align-items-center">
-					<div class="col-9">
-						<h6 class="mb-0">MONDEGUER</h6>
-						<span>Gwendal</span>
-					</div>
-					<div class="col-3 text-lg text-right"><span class="icon"><i class="ti ti-receipt mr-3 text-primary"></i></span></div>
-				</div>
-			</div> -->
+			</div>
 				<div class="row">
 					<div class="col-sm-6 p-0">
 						<button class="modal-btn btn btn-dark btn-block btn-lg" data-dismiss="modal"><span>annuler</span></button>
