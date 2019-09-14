@@ -9,16 +9,20 @@
 			<div class="container dark">
 				<div class="slide-container">
 					<div id="section-main-1-carousel-image" class="image inner-controls">			
-							<?php
-								foreach($newProducts as $newPro){
-							?>
-						<div class="slide"><div class="bg-image"><img src="<?= $newPro["pro_img_url_recto"]?>" alt="tablette"></div></div>				
-							<?php
-								}
-							?>
+						<?php
+							foreach($newProducts as $newPro){
+						?>
+						<div class="slide">
+							<div class="bg-image">
+								<img src="<?= $newPro["pro_img_url_recto"]?>" alt="tablette">
+							</div>
+						</div>				
+						<?php
+							}
+						?>
 					</div>
 					<div class="content dark">
-						<div id="section-main-1-carousel-content">
+						<div id="section-main-1-carousel-content" class=" hide-this-2">
 							<?php
 								foreach($newProducts as $newPro){
 							?>
@@ -37,10 +41,13 @@
 								}
 							?>
 						</div>
-						<nav class="content-nav">
+						<nav class="content-nav hide-this-2">
 							<a class="prev" href="#"><i class="ti-arrow-left"></i></a>
 							<a class="next" href="#"><i class="ti-arrow-right"></i></a>
 						</nav>
+					</div>
+					<div class="content dark display-this new-title">
+						<h4 class="mt-3 mb-3 text-center">NOUVEAUTÉS</h4>
 					</div>
 				</div>
 			</div>
