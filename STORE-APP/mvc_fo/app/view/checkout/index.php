@@ -98,7 +98,7 @@
 									<div class="col-5"><strong><?= $total['total']+4;?></strong></div>
 								</div>
 							</div>
-							<div class="col-sm-12">
+							<div class="col-sm-12 pb-1">
 								<a href="index.php?module=checkout&action=index&fait=deletepanier" class="btn btn-outline-danger btn-lg btn-block"><span>Supprimer le panier</span></a>
 							</div>
 

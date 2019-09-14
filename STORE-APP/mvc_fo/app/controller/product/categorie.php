@@ -1,18 +1,13 @@
 <?php
 
+include ("../app/model/product/read_nb_pro.php");
 include ("../app/model/product/display_probycat.php");
-// $procatal=display_produit($_GET["id"]);
 
-$nb_products = lire_nb("st_products");
+$nb_products = read_nb_pro($_GET["id"]);
 $pages = ceil($nb_products / NB_PAR_PAGE);
-if ($nb_products){
-    // var_dump($nb_products);
- } else{
-    die("ERREUR");
- }
 
  if(isset($_GET["page"])){
-    $page_demandee = ($_GET["page"]);
+    $page_demandee = $_GET["page"];
     if ($_GET["page"] > $pages){
        $page_demandee = $pages;
     }
@@ -25,11 +20,11 @@ if ($nb_products){
 
  $offset = ($page_demandee - 1) * NB_PAR_PAGE;
  $procatal = display_produit($_GET["id"],$offset,NB_PAR_PAGE);
- if ($procatal){
-    var_dump($procatal);
- } else{
-    die("ERREUR");
- }
+//  if ($procatal){
+//     var_dump($procatal);
+//  } else{
+//     die("ERREUR");
+//  }
 
 if(!empty($procatal)){
     define("PAGE_TITLE", "Catalogue de nos chocolats ".$procatal[0]['cat_descr']." | ".SITE_NAME);

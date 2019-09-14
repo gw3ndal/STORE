@@ -3,7 +3,6 @@ function display_produit($id, $offset, $limite){
 	global $pdo;
 	// var_dump ($pdo);
 	try {
-		
 
 		$query= "SELECT * 
 					FROM `st_products`,st_products_has_st_categories,st_categories 
@@ -24,9 +23,9 @@ function display_produit($id, $offset, $limite){
 		//RÉCUPÉRATION de tous les résultats
 		$req->setFetchMode(PDO::FETCH_ASSOC);
 		$categories = $req->fetchAll();
-		echo "<pre>";
-		print_r($categories);
-		echo "</pre>";
+		// echo "<pre>";
+		// print_r($categories);
+		// echo "</pre>";
 		// var_dump($categories);exit;
 		$req->closeCursor();
 		//RETOUR de tous les articles sélectionnés
