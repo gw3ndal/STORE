@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="<?= APP_LANG ?>">
 <head>
-<?php 
-	include("../app/model/checkout/get_caddie.php");
-	$caddie=get_caddie();
-	$total=get_caddie_total();
-	include("../app/model/home/slider_categories.php");
-	$categ=display_cat();
-	include("../app/model/home/souscat.php");
-	
+	<?php 
+		include("../app/model/checkout/get_caddie.php");
+		$caddie=get_caddie();
+		$total=get_caddie_total();
+		include("../app/model/home/slider_categories.php");
+		$categ=display_cat();
+		include("../app/model/home/souscat.php");		
 	?>
 
 	<!-- Meta -->
@@ -21,7 +20,7 @@
 	<meta name="description" content="<?= (defined('PAGE_DESCR'))?PAGE_DESCR : PAGE_DESCR_DEFAUT ?>">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo/favicon-96x96.png">
 	<link rel="manifest" href="assets/img/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -60,14 +59,17 @@
 					<!-- Logo -->
 					<div class="module module-navigation logo_0">
 						<ul class="nav nav-main mgTest">
-						<li><a href="index.php" target="_blank">
-							<img src="assets/img/logo_0.png" alt="logo" width="50" >
-						</a>
-						</li>
-						<li class="toeshi left">
-							<a href="index.php"><span><?=SITE_NAME?></span></a>
-						</li>
-					</ul>
+							<li>
+								<a href="index.php">
+									<img src="assets/img/logo/logo_0.png" alt="logo" width="50" >
+								</a>
+							</li>
+							<li class="toeshi left">
+								<a href="index.php">
+									<span><?=SITE_NAME?></span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -77,7 +79,9 @@
 							<!-- <li>
 								<a href="index.php">Accueil</a>
 							</li> -->
-							<?php $i=0; foreach ($categ as $newcateg ) {?>
+							<?php
+								$i=0; foreach ($categ as $newcateg ) {
+							?>
 							<li class="has-dropdown">
 								<a href="#"><?= $categ[$i]['cat_main_descr']?></a>
 								<div class="dropdown-container">
@@ -99,20 +103,28 @@
 									</div> -->
 								</div>
 							</li>							
-							<?php $i++; } ?>						
+							<?php
+								$i++;
+							}
+							?>						
 						</ul>
 					</nav>
 					<div class="nav nav-main mt-1 mb-1 hide-this">
-						<a href="index.php?#retour" class="btn btn-outline-secondary"><span>catalogue</span></a>
+						<a href="index.php?#retour" class="btn btn-outline-secondary">
+							<span>catalogue</span>
+						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
+					<!-- LOGIN -->
 					<div class="module left">
 						<i class="ti ti-user mr-3 text-primary"></i>
 						<?php
 							if (!isset($_SESSION["user"])){
 						?>
-						<a href="index.php?module=customer&action=login"  data-toggle="modal" data-target="#logoutModal">Mon compte</a>
+						<a href="index.php?module=customer&action=login"  data-toggle="modal" data-target="#logoutModal">
+							Mon compte
+						</a>
 						<?php
 							} else{
 						?>
@@ -129,8 +141,8 @@
 							}
 						}
 						?>
-
 					</div>
+					<!-- PANIER -->
 					<?php if($total['total']==null){ $total['total']="0.00"; $total['totalq']="0"; }?>
 					<a href="#" class="module module-cart right" data-toggle="panel-cart">
 						<span class="cart-icon">
@@ -154,7 +166,7 @@
 
 		<div class="module module-logo logo-mobile">
 			<a href="index.php">
-				<img src="assets/img/logo_0.png" alt="logo">
+				<img src="assets/img/logo/logo_0.png" alt="logo">
 				<span class="toeshi-black"><?=SITE_NAME?></span>			
 			</a>
 		</div>

@@ -6,7 +6,7 @@
 				<!-- Footer 1st Row -->
 				<div class="footer-first-row row">
 					<div class="col-lg-3 text-center mb-4">
-						<a href="index.html"><img src="assets/img/logo_0.png" alt="logo" width="88" class=""></a><br>
+						<a href="index.html"><img src="assets/img/logo/logo_0.png" alt="logo" width="88" class=""></a><br>
 						<span class="toeshi"><?=SITE_NAME?></span>
 					</div>
 					<div class="col-lg-4 col-md-6">
@@ -132,7 +132,7 @@
 	<nav id="panel-mobile">
 		<div class="module module-logo bg-dark dark mobile-logo-toggle p-0">
 			<a href="index.php">
-				<img src="assets/img/logo_0.png" alt="logo" width="88">
+				<img src="assets/img/logo/logo_0.png" alt="logo" width="88">
 			</a>
 			<br>    
 			<div class="mobile-logo-toggle-toeshi">

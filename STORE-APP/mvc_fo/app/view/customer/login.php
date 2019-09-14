@@ -12,7 +12,7 @@
 	<title><?=PAGE_TITLE?></title>
 	<meta name="description" content="<?= (defined('PAGE_DESCR'))?PAGE_DESCR : PAGE_DESCR_DEFAUT ?>">
 
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo/favicon-96x96.png">
 	<!-- Custom fonts for this template-->
 	<link rel="stylesheet" href="assets/css/themify-icons.css" />
 	<link href="assets/plugins/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
