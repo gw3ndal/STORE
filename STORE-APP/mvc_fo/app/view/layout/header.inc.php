@@ -173,7 +173,7 @@
 
 		<a href="#" class="module module-cart" data-toggle="panel-cart">
 			<i class="ti ti-shopping-cart"></i>
-			<span class="notification">2</span>
+			<span class="notification"><?php echo $total['totalq'];?></span>
 		</a>
 	</header>
 	<!-- Header / End -->
