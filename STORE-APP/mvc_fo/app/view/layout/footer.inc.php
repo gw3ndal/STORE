@@ -192,10 +192,9 @@
 <div class="modal fade" id="productModal" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}else {
-							echo 'index.php?module=customer&action=login';}?>" method="post" name="addProduct" id="addProductForm">
+			<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}?>" method="post" name="addProduct" id="addProductForm">
 				<div class="modal-header modal-header-lg dark bg-dark">
-					<div class="bg-image"><img src="assets/img/photos/modal-add2.jpg" alt="bandeau"></div>
+					<div class="bg-image"><img src="assets/img/photos/divers_8.jpg" alt="bandeau"></div>
 					<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
 				</div>
@@ -235,7 +234,17 @@
 						</div>
 					</div>
 				</div>
+				<?php
+					if (!isset($_SESSION["user"])){
+				?>
+				<a  href="index.php?module=customer&action=login&notif=notconnected" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</a>
+				<?php
+					} else{
+				?>
 				<button type="submit" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</button>
+				<?php
+					}
+				?>
 			</form>
 		</div>
 	</div>
