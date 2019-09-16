@@ -12,7 +12,7 @@
 	<title><?=PAGE_TITLE?></title>
 	<meta name="description" content="<?= (defined('PAGE_DESCR'))?PAGE_DESCR : PAGE_DESCR_DEFAUT ?>">
 
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo/favicon-96x96.png">
 	<!-- Custom fonts for this template-->
 	<link rel="stylesheet" href="assets/css/themify-icons.css" />
 	<link href="assets/plugins/font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,7 +44,22 @@
 			</div>
 		</div>
 		<?php
-				}  
+				}
+				if($_GET["notif"] =="notconnected"){
+		?>
+		<div class="row alert alert-success text-center" style="opacity:0.8;" role="alert">
+			<div class="col-1 p-0">
+				<i class="ti-light-bulb"></i>
+			</div>
+			<div class="col-9">
+			 <label>Veuillez-vous connecter afin de constituer votre panier.</label>
+			</div>
+			<div class="col-1 p-0">
+				<i class="ti-light-bulb"></i>
+			</div>
+		</div>
+		<?php			 
+				}
 			}
 		?>
 		<div class="card card-login mx-auto mt-5">
@@ -66,17 +81,16 @@
 					<div class="form-group">
 						<div class="checkbox">
 							<label>
-								<input type="checkbox" value="remember-me" name="remember">
-								Se souvenir de moi
+								<!-- <input type="checkbox" value="remember-me" name="remember"> -->
+								<a class="d-block small accueil" href="index.php">Revenir à la page d'accueil en tant que visiteur</a>
 							</label>
-						</div>
-					<a class="d-block small accueil" href="index.php">Revenir à la page d'accueil en tant que visiteur</a>
+						</div>					
 					</div>
 					<div class="text-center"><input type="submit" name="" class="btn btn-dark" value="SE CONNECTER"></div>
 					<!-- <a class="btn btn-primary btn-block" href="_index.php">Login</a> -->
 				</form>
 				<div class="text-center">
-					<a  class="btn border-dark btn-block mt-3 font-weight-bold" href="index.php?module=customer&action=register">Créer un compte</a>
+					<a  class="btn border-dark btn-block mt-3 text-info font-weight-bold" href="index.php?module=customer&action=register">Créer un compte</a>
 					<!-- <a class="d-block small" href="forgot-password.php">Mot de passe oublié?</a> -->
 				</div>
 			</div>

@@ -9,16 +9,20 @@
 			<div class="container dark">
 				<div class="slide-container">
 					<div id="section-main-1-carousel-image" class="image inner-controls">			
-							<?php
-								foreach($newProducts as $newPro){
-							?>
-						<div class="slide"><div class="bg-image"><img src="<?= $newPro["pro_img_url_recto"]?>" alt="tablette"></div></div>				
-							<?php
-								}
-							?>
+						<?php
+							foreach($newProducts as $newPro){
+						?>
+						<div class="slide">
+							<div class="bg-image">
+								<img src="<?= $newPro["pro_img_url_recto"]?>" alt="tablette">
+							</div>
+						</div>				
+						<?php
+							}
+						?>
 					</div>
 					<div class="content dark">
-						<div id="section-main-1-carousel-content">
+						<div id="section-main-1-carousel-content" class=" hide-this-2">
 							<?php
 								foreach($newProducts as $newPro){
 							?>
@@ -27,7 +31,9 @@
 								<h1><?= $newPro["pro_title"]?></h1>
 								<h5 class="text-muted mb-5"><?= $newPro["pro_subtitle1"]?> | <?= $newPro["pro_subtitle3"]?></h5>
 								<div class="btn-group">
-								<a href="#productModal" data-product="<?= $newPro['pro_id']?>" data-price="<?= $newPro['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $newPro['pro_subtitle1']?>" data-name="<?= $newPro['pro_title']?>" data-descr="<?= $newPro['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg">Ajout au panier</a>
+								<a href="#productModal" data-product="<?= $newPro['pro_id']?>" data-price="<?= $newPro['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $newPro['pro_subtitle1']?>" data-name="<?= $newPro['pro_title']?>" data-descr="<?= $newPro['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg">
+									Ajout au panier
+								</a>
 									<span class="price price-lg">pour <?= $newPro["pro_price_euro"]?> €</span>
 								</div>
 							</div>							
@@ -35,10 +41,13 @@
 								}
 							?>
 						</div>
-						<nav class="content-nav">
+						<nav class="content-nav hide-this-2">
 							<a class="prev" href="#"><i class="ti-arrow-left"></i></a>
 							<a class="next" href="#"><i class="ti-arrow-right"></i></a>
 						</nav>
+					</div>
+					<div class="content dark display-this new-title">
+						<h4 class="mt-3 mb-3 text-center">NOUVEAUTÉS</h4>
 					</div>
 				</div>
 			</div>

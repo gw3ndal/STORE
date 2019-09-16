@@ -6,7 +6,7 @@
 				<!-- Footer 1st Row -->
 				<div class="footer-first-row row">
 					<div class="col-lg-3 text-center mb-4">
-						<a href="index.html"><img src="assets/img/logo_0.png" alt="logo" width="88" class=""></a><br>
+						<a href="index.html"><img src="assets/img/logo/logo_0.png" alt="logo" width="88" class=""></a><br>
 						<span class="toeshi"><?=SITE_NAME?></span>
 					</div>
 					<div class="col-lg-4 col-md-6">
@@ -53,7 +53,7 @@
 				</div>
 				<!-- Footer 2nd Row -->
 				<div class="footer-second-row">
-					<span class="text-muted">Copyright Soup 2017©. Made with love by Suelo.</span>
+					<span class="text-muted">Copyright <?=SITE_NAME?> 2019©</span>
 				</div>
 			</div>
 
@@ -132,7 +132,7 @@
 	<nav id="panel-mobile">
 		<div class="module module-logo bg-dark dark mobile-logo-toggle p-0">
 			<a href="index.php">
-				<img src="assets/img/logo_0.png" alt="logo" width="88">
+				<img src="assets/img/logo/logo_0.png" alt="logo" width="88">
 			</a>
 			<br>    
 			<div class="mobile-logo-toggle-toeshi">
@@ -192,10 +192,9 @@
 <div class="modal fade" id="productModal" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}else {
-							echo 'index.php?module=customer&action=login';}?>" method="post" name="addProduct" id="addProductForm">
+			<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}?>" method="post" name="addProduct" id="addProductForm">
 				<div class="modal-header modal-header-lg dark bg-dark">
-					<div class="bg-image"><img src="assets/img/photos/modal-add2.jpg" alt="bandeau"></div>
+					<div class="bg-image"><img src="assets/img/photos/divers_8.jpg" alt="bandeau"></div>
 					<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
 				</div>
@@ -235,7 +234,17 @@
 						</div>
 					</div>
 				</div>
+				<?php
+					if (!isset($_SESSION["user"])){
+				?>
+				<a  href="index.php?module=customer&action=login&notif=notconnected" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</a>
+				<?php
+					} else{
+				?>
 				<button type="submit" class="modal-btn btn btn-secondary btn-block btn-lg">Ajout au panier</button>
+				<?php
+					}
+				?>
 			</form>
 		</div>
 	</div>

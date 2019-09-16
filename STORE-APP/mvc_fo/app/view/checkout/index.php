@@ -98,7 +98,7 @@
 									<div class="col-5"><strong><?= $total['total']+4;?></strong></div>
 								</div>
 							</div>
-							<div class="col-sm-12">
+							<div class="col-sm-12 pb-1">
 								<a href="index.php?module=checkout&action=index&fait=deletepanier" class="btn btn-outline-danger btn-lg btn-block"><span>Supprimer le panier</span></a>
 							</div>
 
@@ -137,7 +137,7 @@
 							</div>
 							<h4 class="border-bottom pb-4"><i class="ti ti-package mr-3 text-primary"></i>Type de livraison</h4>
 							<div class="row text-lg">
-								<div class="col-md-4 col-sm-6 form-group">
+								<div class="col-xl-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
 										<input type="radio" name="logistic_type" class="custom-control-input" value="0" checked>
 										<span class="custom-control-indicator"></span>
@@ -146,7 +146,7 @@
 									</label>
 									<p class="caption text-muted">livré sous 2 à 6 mois</p>
 								</div>
-								<div class="col-md-4 col-sm-6 form-group">
+								<div class="col-xl-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
 										<input type="radio" name="logistic_type" class="custom-control-input" value="1">
 										<span class="custom-control-indicator"></span>
@@ -155,7 +155,7 @@
 									</label>
 									<p class="caption text-muted">livré sous 10 jours</p>
 								</div>
-								<div class="col-md-4 col-sm-6 form-group">
+								<div class="col-xl-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">
 										<input type="radio" name="logistic_type" class="custom-control-input" value="2">
 										<span class="custom-control-indicator"></span>
