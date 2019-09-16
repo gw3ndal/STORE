@@ -19,24 +19,24 @@
 
 		<!-- Page Content -->
 		<div class="page-content">
-<?php
-$i=0;
-foreach ($catal as $cat) {
-?>
+			<?php
+			$i=0;
+			foreach ($catal as $cat) {
+			?>
 			<div class="container">
 				<div class="row no-gutters">
 					<div class="col-md-10 push-md-1" role="tablist">
 						<!-- Menu Category -->
 						<div id="Burgers" class="menu-category">
-							<div class="menu-category-title collapse-toggle" role="tab" data-target="#menuBurgersContent" data-toggle="collapse" aria-expanded="true">
+							<div class="menu-category-title collapse-toggle" role="tab" data-target="#menuBurgersContent<?=$i?>" data-toggle="collapse" aria-expanded="true">
 								<div class="bg-image"><img src="<?= $catal[$i]['cat_img_url']?>"></div>
 								<h2 class="title"><?= $catal[$i]['cat_descr']?></h2>
 							</div>
 						
-							<div id="menuBurgersContent" class="menu-category-content padded collapse">
+							<div id="menuBurgersContent<?=$i?>" class="menu-category-content padded collapse">
 								<div class="row gutters-sm">
 									<?php
-										$data_pro=display_produit( $catal[$i]['cat_id']);
+										$data_pro=display_produit($catal[$i]['cat_id']);
 									foreach($data_pro as $data){
 										if(($data['pro_id'])!=null){
 									?>		
@@ -63,10 +63,16 @@ foreach ($catal as $cat) {
 									<?php
 									}}
 									?>
-								</div>						
+								</div>
+								<?php
+									if(count($data_pro)>=6){
+								?>
 								<div class="col-sm-12 text-sm-right mt-2 mt-sm-0">
 									<a href="index.php?module=product&action=categorie&id=<?= $catal[$i]['cat_id']?>"><button class="btn btn-outline-secondary btn-sm"><span>VOIR TOUT</span></button></a>
 								</div>
+								<?php
+									}
+								?>	
 							</div>
 						</div>
 					</div>

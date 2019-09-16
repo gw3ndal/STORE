@@ -22,9 +22,9 @@ function display_produit($id){
 		//RÉCUPÉRATION de tous les résultats
 		$req->setFetchMode(PDO::FETCH_ASSOC);
 		$categories = $req->fetchAll();
-		echo "<pre>";
-		print_r($categories);
-		echo "</pre>";
+		// echo "<pre>";
+		// print_r($categories);
+		// echo "</pre>";
 		// var_dump($categories);exit;
 		$req->closeCursor();
 		//RETOUR de tous les articles sélectionnés
