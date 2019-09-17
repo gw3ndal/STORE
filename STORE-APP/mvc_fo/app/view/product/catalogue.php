@@ -37,6 +37,7 @@
 								<div class="row gutters-sm">
 									<?php
 										$data_pro=display_produit($catal[$i]['cat_id'],0,6);
+										$data_pro1=display_produit($catal[$i]['cat_id'],0,9);
 									foreach($data_pro as $data){
 										if(($data['pro_id'])!=null){
 									?>		
@@ -61,11 +62,12 @@
 										</div>
 									</div>
 									<?php
-									}}
+										}
+									}
 									?>
 								</div>
 								<?php
-									if(count($data_pro)>=6){
+									if(count($data_pro1)>6){
 								?>
 								<div class="col-sm-12 text-sm-right mt-2 mt-sm-0">
 									<a href="index.php?module=product&action=categorie&id=<?= $catal[$i]['cat_id']?>"><button class="btn btn-outline-secondary btn-sm"><span>VOIR TOUT</span></button></a>
