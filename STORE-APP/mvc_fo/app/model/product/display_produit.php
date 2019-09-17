@@ -4,7 +4,6 @@ function display_produit($id){
 	// var_dump ($pdo);
 	try {
 		
-
 		$query= "SELECT * 
 					FROM `st_products`,st_products_has_st_categories,st_categories 
 					WHERE pro_id=st_products_pro_id 
