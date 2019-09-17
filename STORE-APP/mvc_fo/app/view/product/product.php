@@ -21,7 +21,6 @@
 									</div>
 									<p id="productDescr"class="lead">
 										<?= $data["pro_descr"]?><br>
-										70g
 									</p>
 								<hr class="hr-primary">
 								<div class="row gutters-sm">
