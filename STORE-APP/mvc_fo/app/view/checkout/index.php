@@ -113,7 +113,6 @@
 						</div>
 					</div>
 					<div class="col-xl-8 pull-xl-4 col-lg-7 pull-lg-5">	
-					<form action="index.php?module=checkout&action=checkout" method="post">			
 						<div class="bg-white p-4 p-md-5 mb-4">
 							<h4 class="border-bottom pb-4"><i class="ti ti-user mr-3 text-primary"></i>Adresse de livraison</h4>
 							<div class="row mb-4">
@@ -128,11 +127,8 @@
 								<div class="form-group col-sm-12">
 									<h5 class="text-muted mb-2 text-capitalize">Adresse:</h5>
 									<h6 class="mb-2 text-capitalize"><?= $read_add["add_address1"] ?></h6>
-									<input type="hidden" name="add1" value="<?= $read_add["add_id"] ?>">
 									<p class="mb-2 text-capitalize"><?= $read_add["add_address2"] ?></p>
-									<input type="hidden" name="add2" value="<?= $read_add["add_id"] ?>">
-									<input type="hidden" name="total" value="<?= $total['total'];?>">
-									<input type="hidden" name="totalq" value="<?= $total['totalq'];?>">
+									
 								</div>
 								<div class="form-group col-sm-6">
 									<h5 class="text-muted mb-2">Ville:</h5>
@@ -142,13 +138,18 @@
 									<h5 class="text-muted mb-3">Code Postal:</h5>
 									<h6 class="mb-3"><?= $read_add["add_zipcode"] ?></h6>
 								</div>
-									<div class="col-sm-6">
+								<div class="col-sm-6">
 									</div>
 									<div class="col-sm-6">
 										<button class="btn btn-outline-danger btn-lg btn-block"  data-target="#editModal" data-toggle="modal"><span>modifier l'adresse</span></a>
 									</div>
-							</div>
-							<h4 class="border-bottom pb-4"><i class="ti ti-package mr-3 text-primary"></i>Type de livraison</h4>
+								</div>
+								<form action="index.php?module=checkout&action=checkout" method="post">	
+									<input type="hidden" name="add1" value="<?= $read_add["add_id"] ?>">
+									<input type="hidden" name="add2" value="<?= $read_add["add_id"] ?>">
+									<input type="hidden" name="total" value="<?= $total['total'];?>">
+									<input type="hidden" name="totalq" value="<?= $total['totalq'];?>">		
+								<h4 class="border-bottom pb-4"><i class="ti ti-package mr-3 text-primary"></i>Type de livraison</h4>
 							<div class="row text-lg">
 								<div class="col-xl-4 col-sm-6 form-group">
 									<label class="custom-control custom-radio">

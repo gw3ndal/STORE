@@ -72,6 +72,8 @@
 				$mod = explode('&',$ser)[0];
 				if(isset($_GET["action"])){					
 					$act = explode('&',$ser)[1];
+				}else{
+					$act = "action=index";
 				}
 			?>
 		</pre>
@@ -106,7 +108,7 @@
 							<a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-descr="<?= $products['pro_descr']?>" data-toggle="modal" class="action-icon">
 								<i class="ti ti-split-v"></i>
 							</a>
-							<a href=<?php if($_SERVER['QUERY_STRING']==''){echo "index.php?module=home&action=index&fait=suppression&pro_id=".$products['pro_id']."";}else{ echo "index.php?{$mod}&{$act}&fait=suppression&pro_id=".$products['pro_id']."";}?> class="action-icon">
+							<a href="index.php?module=checkout&action=index&fait=suppression&pro_id=<?= $products['pro_id']?>" class="action-icon">
 								<i class="ti ti-close"></i>
 							</a>
 						</td>
