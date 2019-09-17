@@ -65,7 +65,17 @@
 
 	</div>
 	<!-- Content / End -->
-
+	<div>
+		<pre>
+			<?php 
+				$ser = $_SERVER['QUERY_STRING'];
+				$mod = explode('&',$ser)[0];
+				if(isset($_GET["action"])){					
+					$act = explode('&',$ser)[1];
+				}
+			?>
+		</pre>
+	</div>
 	<!-- Panel Cart -->
 	<div id="panel-cart">
 		<div class="panel-cart-container">
@@ -87,12 +97,18 @@
 					<tr>
 						<td class="title">
 						<span class="name"><a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-descr="<?= $products['pro_descr']?>" data-toggle="modal"><?= $products['cad_qt']?> x <?= $products['pro_title']?></a></span>
-							<span class="caption text-muted">chocolat noir grand cru | Cameroun</span>
+						<span class="caption text-muted">
+							<?= $products['pro_subtitle1']?>
+						</span>
 						</td>
 						<td class="price"><?= $products['price']?>€</td>
 						<td class="actions">
-						<a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-descr="<?= $products['pro_descr']?>" data-toggle="modal" class="action-icon"><i class="ti ti-pencil"></i></a>
-										<a href="index.php?module=checkout&action=index&fait=suppression&pro_id=<?= $products['pro_id']?>" class="action-icon"><i class="ti ti-close"></i></a>
+							<a href="#productModal" data-product="<?= $products['pro_id']?>" data-price="<?= $products['pro_price_euro']?>" data-qte="<?= $products['cad_qt']?>" data-sub="<?= $products['pro_subtitle1']?>"data-name="<?= $products['pro_title']?>" data-descr="<?= $products['pro_descr']?>" data-toggle="modal" class="action-icon">
+								<i class="ti ti-split-v"></i>
+							</a>
+							<a href=<?php if($_SERVER['QUERY_STRING']==''){echo "index.php?module=home&action=index&fait=suppression&pro_id=".$products['pro_id']."";}else{ echo "index.php?{$mod}&{$act}&fait=suppression&pro_id=".$products['pro_id']."";}?> class="action-icon">
+								<i class="ti ti-close"></i>
+							</a>
 						</td>
 					</tr>
 					<?php  } } ?>
@@ -192,7 +208,8 @@
 <div class="modal fade" id="productModal" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<form action="<?php if(isset($_SESSION['user'])){ echo 'index.php?module=checkout&action=index';}?>" method="post" name="addProduct" id="addProductForm">
+		<form action="<?php if(isset($_SESSION['user'])){if($_SERVER['QUERY_STRING']==''){echo 'index.php?module=home&action=index';}else{ echo "index.php?{$mod}&{$act}";} }else {
+			echo 'index.php?module=customer&action=login';}?>" method="post" name="addProduct" id="addProductForm">
 				<div class="modal-header modal-header-lg dark bg-dark">
 					<div class="bg-image"><img src="assets/img/photos/divers_8.jpg" alt="bandeau"></div>
 					<h4 class="modal-title">Le chocolat est ruine, extase, amour,...</h4>
@@ -228,7 +245,7 @@
 						<div id="panelDetailsAdditions" class="collapse show">
 							<div class="panel-details-content">
 								<div class="form-group text-center">
-								<input type="number" id="qte" name="qte" class="form-control input-qty form-control-lg" value="1">
+								<input type="number" id="qte" name="qte" class="form-control input-qty form-control-lg" value="1" min="0">
 								</div>
 							</div>
 						</div>

@@ -76,9 +76,7 @@
 					<!-- Navigation -->
 					<nav class="module module-navigation left mr-4">
 						<ul id="nav-main" class="nav nav-main">
-							<!-- <li>
-								<a href="index.php">Accueil</a>
-							</li> -->
+
 							<?php
 								$i=0; foreach ($categ as $newcateg ) {
 							?>

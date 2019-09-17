@@ -1,0 +1,113 @@
+/*#header{
+position: fixed !important;
+background: red;
+}*/
+/******LOGO*/
+
+/* MENU */
+@media screen and (max-width:1200px) {
+	.hide-this{
+		display:none;
+	}
+}
+/* NOUVEAUTES */
+.new-title{
+	display: none;
+}
+@media screen and (max-width:580px) {
+	.hide-this-2{
+		display:none;
+	}
+	.display-this{
+		display: inline;
+	}
+}
+.logo_0{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.bgLogo{
+	background-color: black;
+}
+.mgTest li{
+	margin: 0px !important;
+}
+.toeshi{
+	margin-top: 30px !important;
+	color: white;
+	font-family:  'Red Hat Text', sans-serif;
+	font-size: 30px;
+}
+.toeshi-black{
+	font-family:  'Red Hat Text', sans-serif;
+	color:black;
+	font-size: 20px;
+	/*font-weight: bold;*/
+}
+.toeshi-black-2{
+	font-family:  'Red Hat Text', sans-serif;
+	color:black;
+	font-size: 47px;
+	/*font-weight: bold;*/
+}
+/*#header.menuFixed{	
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+}*/
+
+
+
+/******MOBILE MENU*/
+.logo-mobile img{
+		margin-bottom: 10px;
+}
+.mobile-logo-toggle img{
+	padding-top: 45px;
+	padding-bottom: px;
+}
+
+.mobile-logo-toggle{
+	color: white;
+	font-family:  'Red Hat Text', sans-serif;
+	font-size: 30px;
+}
+.mobile-social{
+	margin-top: 20px;
+}
+.mobile-user{
+	margin-top: 90px;
+}
+.module{
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+}
+.bouiz{
+	padding-top: 104px;
+}
+
+
+
+/******PAGE LOGIN*/
+.accueil{
+	color:brown;
+	font-weight: bold;
+}
+.accueil:hover{
+	color:chocolate;
+	text-decoration: none;
+}
+.register{
+  font-weight: bold;
+  color:peru;
+}
+.register:hover{
+  text-decoration: none;
+  color:maroon;
+}
+.mytheme{
+	color: white;
+	background-color: brown;
+}

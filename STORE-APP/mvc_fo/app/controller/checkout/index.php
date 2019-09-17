@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 			if (isset($_SESSION['user'])) {
 				include("../app/model/checkout/suparticle.php");
 				$sup=suparticle($pro_id);
+				header("Location:index.php?module=checkout&action=index");
 			}else {
 					header("Location:index.php?module=customer&action=login");
 				}
@@ -59,9 +60,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     include("../app/model/checkout/ajoutarticle.php");
     // var_dump($user);
     if (ajoutarticle($_POST)) {
-        header("Location:?modal=caddie");
+        header("Location:".$_SERVER['HTTP_REFERER']);
     } else {
-        header("Location:?error=notadd");
+        header("Location:?module=checkout&action=index&error=notadd");
     }
 }
 	
