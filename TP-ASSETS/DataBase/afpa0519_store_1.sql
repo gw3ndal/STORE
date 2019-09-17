@@ -1053,7 +1053,16 @@ CREATE TABLE IF NOT EXISTS `st_types_of_logistics` (
   `typ_log_descr` varchar(45) NOT NULL,
   `typ_log_price` decimal(10,2) NOT NULL,
   PRIMARY KEY (`typ_log_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `st_types_of_logistics`
+--
+
+INSERT INTO `st_types_of_logistics` (`typ_log_id`, `typ_log_descr`, `typ_log_price`) VALUES
+(1, 'muleXpress', '0.00'),
+(2, 'Colissimo', '3.00'),
+(3, 'Chronopost', '5.00');
 
 -- --------------------------------------------------------
 
