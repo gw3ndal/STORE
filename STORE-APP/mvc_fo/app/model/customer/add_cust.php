@@ -13,8 +13,9 @@ function add_cust($form, $token){
 		//ENVOI de la requête
 		$req = $pdo->prepare($query);
 		//INITIALISATION des paramètres
+		$pass=md5($form["cus_password"]);
 		$req->bindParam(":mail", $form["cus_mail"], PDO::PARAM_STR);
-		$req->bindParam(":password", md5($form["cus_password"]), PDO::PARAM_STR);
+		$req->bindParam(":password", $pass, PDO::PARAM_STR);
 		$req->bindParam(":civility", $form["cus_civility"], PDO::PARAM_STR);
 		$req->bindParam(":lastname", $form["cus_lastname"], PDO::PARAM_STR);
 		$req->bindParam(":firstname", $form["cus_firstname"], PDO::PARAM_STR);

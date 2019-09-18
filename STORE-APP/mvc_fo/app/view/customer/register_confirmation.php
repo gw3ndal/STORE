@@ -13,7 +13,7 @@
 						<span class="icon icon-xl icon-success"><i class="ti ti-check-box"></i></span>
 						<h1 class="mb-2">Un email vous a été envoyé!</h1>
 						<h4 class="text-muted mb-5">Rendez-vous dès à présent dans la boîte de réception de votre email pour finaliser votre inscription et laisser libre cours à votre péché mignon.</h4>
-						<a href="cust_login.php" class="btn btn-outline-secondary"><span>Me connecter</span></a>
+						<a href="index.php" class="btn btn-outline-secondary"><span>Retour Accueil</span></a>
 					</div>
 				</div>
 			</div>
