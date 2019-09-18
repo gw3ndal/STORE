@@ -11,29 +11,37 @@
 						<div class="product-single">
 							<!-- <div class="product-image">
 								<img src="assets/img/photos/product-single.jpg" alt="tablette">
-							</div> -->
+                            </div> -->
+                           
 							<div class="product-content">
 								<div class="product-header text-center">
-									<h1 class="product-title" id="productName"><?= $data["pro_title"]?></h1>
-									<span class="product-caption text-muted"><?= $data["pro_subtitle1"]?></span>
-									<span class="product-caption text-muted"><?= $data["pro_subtitle2"]?></span>
-									<span class="product-caption text-muted text-lowercase"><strong>Catégories: </strong><?= $categories[0]["categories"]?></span>
+									<h1 class="product-title" id="productName"><?= $data[0]["pro_title"]?></h1>
+									<span class="product-caption text-muted"><?= $data[0]["pro_subtitle1"]?></span>
+                                    <span class="product-caption text-muted"><?= $data[0]["pro_subtitle2"]?></span>
+                                    <span class="d-flex justify-content-around align-items-center border border-danger ">Catégories: 
+                                    <?php foreach($data[0]["categories"] as $key => $category):?>
+                                    <a href="index.php?module=product&action=categorie&id=<?= $key ?>" 
+                                    class=" product-caption text-muted text-lowercase">
+                                        <?= $category ?> 🍫
+                                    </a>
+<?php endforeach;?>
+</span>
 									</div>
 									<p id="productDescr"class="lead">
-										<?= $data["pro_descr"]?><br>
+										<?= $data[0]["pro_descr"]?><br>
 									</p>
 								<hr class="hr-primary">
 								<div class="row gutters-sm">
 									<div class="col-lg-6 col-12">
 										<!-- Menu Item -->
 										<div class="menu-item menu-grid-item">
-											<a href="index.php?module=product&action=photos&id=<?=$data['pro_id']?>"><img class="mb-4" src="<?= $data["pro_img_url_recto"]?>" alt="tablette"></a>
+											<a href="index.php?module=product&action=photos&id=<?=$data[0]['pro_id']?>"><img class="mb-4" src="<?= $data[0]["pro_img_url_recto"]?>" alt="tablette"></a>
 										</div>
 									</div>
 									<div class="col-lg-6 col-12">
 										<!-- Menu Item -->
 										<div class="menu-item menu-grid-item">
-											<a href="index.php?module=product&action=photos&id=<?=$data['pro_id']?>#verso"><img class="mb-4" src="<?= $data["pro_img_url_verso"]?>" alt="tablette"></a>
+											<a href="index.php?module=product&action=photos&id=<?=$data[0]['pro_id']?>#verso"><img class="mb-4" src="<?= $data[0]["pro_img_url_verso"]?>" alt="tablette"></a>
 										</div>
 									</div>
 								</div>
@@ -43,16 +51,16 @@
 									</div>
 								</div>
 								<h5 id="qte" class="text-center text-muted">Envie d'y croquer!</h5>
-								<div class="product-price text-center" id="productPrice"><?= $data["pro_price_euro"]?>€</div>
+								<div class="product-price text-center" id="productPrice"><?= $data[0]["pro_price_euro"]?>€</div>
 
 								<div class="row">
 									<div class="col-sm-12">
-									<a href="#productModal" data-product="<?= $data['pro_id']?>" data-price="<?= $data['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $data['pro_subtitle1']?>" data-name="<?= $data['pro_title']?>" data-descr="<?= $data['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg btn-block">Ajout au panier</a>
+									<a href="#productModal" data-product="<?= $data[0]['pro_id']?>" data-price="<?= $data[0]['pro_price_euro']?>"  data-qte="<?php if(!empty($caddie)){ echo $caddie[0]['cad_qt'];}?>" data-sub="<?= $data[0]['pro_subtitle1']?>" data-name="<?= $data[0]['pro_title']?>" data-descr="<?= $data[0]['pro_descr']?>" data-toggle="modal" class="btn btn-outline-primary btn-lg btn-block">Ajout au panier</a>
 									</div>
 								
 								</div>
 								<div class="text-center mt-4">
-									<a href="index.php?module=product&action=catalogue&id=<?= $data["cat_id"]?>" class="btn btn-link">Retour au menu</a>
+									<a href="index.php" class="btn btn-link">Retour au menu</a>
 								</div>
 							</div>
 							<h3 class="mt-5 mb-5 text-center">Avis gourmands</h3>
@@ -85,4 +93,3 @@
 		</section>
 <!-- FOOTER -->
 <?php include("../app/view/layout/footer.inc.php");?>
-

@@ -67,12 +67,18 @@
                         <!-- Pagination -->
                         <nav aria-label="Page navigation" class="mt-5">
                             <ul class="pagination justify-content-center">
-                                <li class="page-item">
-                                	<a class="page-link" href="index.php?module=product&action=categorie&id=<?= $_GET["id"] ?>&page=<?= $page_demandee - 1 ?>" aria-label="Previous">
-                                    	<i class="ti-arrow-left"></i>
-                                    	<span class="sr-only">Précédent</span>
-                                  	</a>
-								</li>
+								<?php
+									if($page_demandee>1) {
+								?>
+									<li class="page-item">
+										<a class="page-link" href="index.php?module=product&action=categorie&id=<?= $_GET["id"] ?>&page=<?= $page_demandee - 1 ?>" aria-label="Previous">
+											<i class="ti-arrow-left"></i>
+											<span class="sr-only">Précédent</span>
+										</a>
+									</li>
+								<?php
+									} 
+								?>
 								<?php
 									for ($i=1; $i <=$pages ; $i++) {
 								?>
@@ -90,12 +96,18 @@
 								<?php
 								} 
 								?>
-								<li class="page-item">
-                                    <a class="page-link" href="index.php?module=product&action=categorie&id=<?= $_GET["id"] ?>&page=<?= $page_demandee + 1 ?>" aria-label="Next">
-                                        <i class="ti-arrow-right"></i>
-                                        <span class="sr-only">Suivant</span>
-                                    </a>
-                                </li>                                
+								<?php
+									if($page_demandee<$pages) {
+								?>
+									<li class="page-item">
+										<a class="page-link" href="index.php?module=product&action=categorie&id=<?= $_GET["id"] ?>&page=<?= $page_demandee + 1 ?>" aria-label="Next">
+											<i class="ti-arrow-right"></i>
+											<span class="sr-only">Suivant</span>
+										</a>
+									</li>   
+								<?php
+									} 
+								?>                             
                             </ul>
                         </nav>
 					</div>
