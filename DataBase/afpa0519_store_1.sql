@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 11 sep. 2019 à 22:26
+-- Généré le :  mer. 18 sep. 2019 à 11:26
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -48,8 +48,7 @@ INSERT INTO `st_addresses` (`add_id`, `st_customers_cus_id`, `add_address1`, `ad
 (1, 1, 'Route de La Goulette', 'Site archéologique de Carthage', '2016', 'Carthage'),
 (2, 2, '6/8 rue Georges et Mai Politzer', NULL, '75012', 'Paris'),
 (3, 3, 'El Mouradia', NULL, '16000', 'Alger'),
-(4, 4, 'Taourirt Moussa', '', '15000', 'Tizy Ouzou'),
-(5, 6, '1a boulevard voltaire', '', '75011', 'paris');
+(4, 4, 'Taourirt Moussa', '', '15000', 'Tizy Ouzou');
 
 -- --------------------------------------------------------
 
@@ -67,6 +66,15 @@ CREATE TABLE IF NOT EXISTS `st_caddies` (
   KEY `fk_st_customers_has_st_products_st_products1_idx` (`st_products_pro_id`),
   KEY `fk_st_customers_has_st_products_st_customers_idx` (`st_customers_cus_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `st_caddies`
+--
+
+INSERT INTO `st_caddies` (`st_customers_cus_id`, `st_products_pro_id`, `cad_qt`, `cad_date`) VALUES
+(2, 25, 1, '2019-09-17 09:14:44'),
+(2, 37, 1, '2019-09-17 09:46:20'),
+(2, 50, 1, '2019-09-17 11:43:37');
 
 -- --------------------------------------------------------
 
@@ -142,8 +150,7 @@ INSERT INTO `st_categories` (`cat_id`, `cat_descr`, `cat_img_url`) VALUES
 (53, 'LA FLOR', 'https://www.alternativesante.fr/upload/cache/cacao.jpg/cacao_w837_h553_r4_q90.jpg'),
 (54, 'MILLÉSIME', 'https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2017/10/17/node_140975/404799/public/2017/10/17/B9713526551Z.1_20171017182635_000%2BGCSA050QV.1-0.jpg?itok=4j7kpVVS'),
 (55, 'OMNOM', 'https://icelandictimes.com/wp-content/uploads/2018/03/Test-Lab2-1024x683.jpg'),
-(56, 'ORFÈVE', 'http://righthype.20minutes-blogs.fr/files/Janv2019/orfeve-1-rightandhype.jpg'),
-(57, 'QANTU', 'https://cdn.shopify.com/s/files/1/2077/8853/files/Tablettes_2048x2048.jpg?v=1528428031');
+(56, 'ORFÈVE', 'http://righthype.20minutes-blogs.fr/files/Janv2019/orfeve-1-rightandhype.jpg');
 
 -- --------------------------------------------------------
 
@@ -245,8 +252,7 @@ INSERT INTO `st_categories_main_has_st_categories` (`st_categories_main_cat_main
 (5, 53),
 (5, 54),
 (5, 55),
-(5, 56),
-(5, 57);
+(5, 56);
 
 -- --------------------------------------------------------
 
@@ -278,8 +284,7 @@ INSERT INTO `st_customers` (`cus_id`, `cus_civility`, `cus_lastname`, `cus_first
 (2, 1, 'MONDEGUER', 'Gwendal', 'loaye1978@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
 (3, 1, 'SALAH', 'Merwhan', 'merwhan.salah@outlook.fr', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
 (4, 1, 'TAKHERBOUCHT', 'Abdenour', 'tab88@live.fr', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
-(5, 1, 'GIRAUD', 'Philippe', 'phgiraud@cogitium.com\r\n', '8d5e957f297893487bd98fa830fa6413', 1, '', 1),
-(6, 0, 'test', 'test', 'test@gmail.com', '8d5e957f297893487bd98fa830fa6413', 1, '', 0);
+(5, 1, 'GIRAUD', 'Philippe', 'phgiraud@cogitium.com\r\n', '8d5e957f297893487bd98fa830fa6413', 1, '', 1);
 
 -- --------------------------------------------------------
 
@@ -302,7 +307,15 @@ CREATE TABLE IF NOT EXISTS `st_orders` (
   KEY `fk_st_orders_st_types_of_logistics1_idx` (`st_types_of_logistics_typ_log_id`),
   KEY `fk_st_orders_st_addresses1_idx` (`st_address_billing`),
   KEY `fk_st_orders_st_addresses2_idx` (`st_address_delivery`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `st_orders`
+--
+
+INSERT INTO `st_orders` (`ord_id`, `st_customers_cus_id`, `st_types_of_logistics_typ_log_id`, `st_address_billing`, `st_address_delivery`, `ord_date`, `ord_total`, `ord_qt`) VALUES
+(3, 2, 1, 2, 2, '2019-09-17 08:29:00', '73.00', 9),
+(4, 2, 2, 2, 2, '2019-09-17 08:40:30', '25.00', 4);
 
 -- --------------------------------------------------------
 
@@ -320,6 +333,14 @@ CREATE TABLE IF NOT EXISTS `st_orders_lines` (
   KEY `fk_st_orders_has_st_products_st_products1_idx` (`st_products_pro_id`),
   KEY `fk_st_orders_has_st_products_st_orders1_idx` (`st_orders_ord_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `st_orders_lines`
+--
+
+INSERT INTO `st_orders_lines` (`st_orders_ord_id`, `st_products_pro_id`, `ord_lines_qt`, `ord_lines_price`) VALUES
+(3, 3, 4, '27.00'),
+(4, 1, 4, '25.00');
 
 -- --------------------------------------------------------
 
@@ -409,7 +430,7 @@ INSERT INTO `st_products` (`pro_id`, `pro_title`, `pro_subtitle1`, `pro_subtitle
 (39, 'MILK OF MADAGASCAR', 'chocolat au lait | Madagascar', 'Omnom | Islande (Reykjavik)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Omnom_MilkMadagascar_A-e1527100742873.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Omnom_MilkMadagascar_B-e1527100721328.jpg', ' Un chocolat au lait classique : doux, sucré et fondant. Léger, il se distingue par d’agréables notes caramélisées.', '10.03', '2019-08-30 20:43:07'),
 (40, 'VIETNAM BEN TRE', 'chocolat noir grand cru | Vietnam', 'Areté | USA (Spencer TN)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Arete_Vietnam_BenTre_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Arete_Vietnam_BenTre_B.jpg', ' Un florilège de saveurs boisées, florales, épicées remue les papilles. Suit une impression fugitive de tabac qui laisse ensuite place à une sensation de fraîcheur acidulée. Une palette de notes aussi impressionnantes que cristallines! Une des plus belles interprétations du terroir vietnamien.', '14.44', '2019-08-30 20:43:07'),
 (41, 'MARVIA (LAIT)', 'chocolat au lait | Jamaïque', 'A. Morin | France (Donzère)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/AMorin_Marvia_A-e1527798770337.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/AMorin_Marvia_B-e1527798795945.jpg', ' Fèves généralement trinitario en Jamaïque, importées via un organisme officiel ayant le monopole.\r\n        Un chocolat au lait surprenant dont la douceur et le fondant se marient avec des notes végétales qui lui confère un goût particulièrement peu sucré. A goûter si vous voulez sentir des sentiers battus.\r\n        ', '7.82', '2019-08-30 20:43:07'),
-(42, 'IDUKKI NIBS', 'Chocolat noir grand cru | Inde\r\n   Garçoa | Suisse (Zurich)', 'bean to bar', NULL, 'https://www.chocolatsdumonde.ch/wp-content/uploads/Garcoa_IdukkiNibs_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Garcoa_IdukkiNibs_B.jpg', 'Mélange de fèves criollo et forastero, fermentées 3-4 jours et séchées au soleil.\r\n\r\nL’acidité des éclats de cacao se marie à merveille à la douceur et au notes sucrées de fruits du chocolat. Un chocolat noir facile aux saveurs qui explosent et à la structure agréable.', '10.58', '2019-08-30 20:43:07'),
+(42, 'IDUKKI NIBS', 'Chocolat noir grand cru | Inde\r\n   Garçoa | Suisse (Zurich)', 'bean to bar', NULL, 'https://www.chocolatsdumonde.ch/wp-content/uploads/Garcoa_IdukkiNibs_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Garcoa_IdukkiNibs_B.jpg', ' undefined', '10.58', '2019-08-30 20:43:07'),
 (43, 'GINGER & LEMONGRASS', 'chocolat noir au gingembre et à la citronnelle', 'Goodio | Finlande (Helsinki)', 'bean to bar, cru / non conché', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Goodio_GingerLemongrass_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Goodio_GingerLemongrass_B.jpg', ' Le parfum de la citronnelle donne le ton avant même de goûter. Le gingembre attaque les papilles au premier contact. Un chocolat fortement épicé – comme ceux au piment – mais à la façon asiatique. Puissance parfaitement maîtrisée.', '7.27', '2019-08-30 20:43:07'),
 (44, 'FINCA RODRIGO FARINA BONA', 'chocolat noir grand cru à la farine de maïs | Venezuela', 'La Flor | Suisse (Zurich)', 'bean to bar', 'https://www.chocolatsdumonde.ch/wp-content/uploads/LaFlor_FincaRodrigoFarinaBona_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/LaFlor_FincaRodrigoFarinaBona_B.jpg', ' Fèves Canobao de la région du même nom au Venezuela.\r\n        Les notes puissantes du cacao se marient petit à petit à la farine de maïs grillé, qui donne une impression de pop-corn ! La farine de maïs grillée provient du Tessin et est fabriquée selon une recette artisanale. Le chocolat parfait pour un film au cinéma ! Aussi surprenant qu’agréable.\r\n        ', '4.60', '2019-08-30 20:43:07'),
 (45, 'LICORICE & SEA BUCKTHORN', 'chocolat noir à la réglisse et à l’argousier', 'Goodio | Finlande (Helsinki)', 'bean to bar, cru / non conché', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Goodio_LicoriceSeaBuckthorn_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Goodio_LicoriceSeaBuckthorn_B.jpg', ' Le chocolat révèle en premier les notes typiques de l’argousier. La sensation est accentuée par la texture non conchée, mais fondante. La réglisse ne se laisse que deviner petit à petit tant l’accord est fin. Une tablette aussi originale qu’unique!', '7.27', '2019-08-30 20:43:07'),
@@ -462,8 +483,7 @@ INSERT INTO `st_products` (`pro_id`, `pro_title`, `pro_subtitle1`, `pro_subtitle
 (91, 'ROSAS Y FRESAS', 'chocolat blanc à la rose et aux fraises', 'Cacao Sampaka | Espagne (Barcelone)', 'artisanal', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_RoseFraise_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_RoseFraise_B.jpg', ' Un chocolat blanc et rose qui envahit le nez et le palais avec sa délicate saveur à l’eau de rose, qui est ensuite relevée par une touche de fraise.', '6.35', '2019-08-30 20:43:07'),
 (92, 'VERANO 2017 (MOJITO)', 'chocolat blanc à la menthe et au citron vert', 'Cacao Sampaka | Espagne (Barcelone)', 'artisanal', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_Mojito_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_Mojito_B.jpg', ' Un chocolat blanc estival qui surprend par son accord original et donne envie d’y goûter à nouveau. A consommer sans modération.', '6.35', '2019-08-30 20:43:07'),
 (93, 'TÉ VERDE MATCHA', 'Chocolat blanc au matcha de thé vert', 'Cacao Sampaka | Espagne (Barcelone)', 'artisanal', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_Matcha_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_Matcha_B.jpg', ' Ce chocolat blanc est en réalité… vert ! Un ovni dont la base au thé vert est rehaussée par des pointes de citron. Un délice de fraicheur et d’originalité.', '6.35', '2019-08-30 20:43:07'),
-(94, 'GIN & TONIC', 'chocolat au lait avec citron et genévrier', 'Cacao Sampaka | Espagne (Barcelone)', 'artisanal', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_GinTonic_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_GinTonic_B.jpg', ' Alliance de la douceur du chocolat au lait avec le pétillant du cocktail, le mélange est réussi ! Un plaisir léger et sucré pour les papilles.', '6.35', '2019-08-30 20:43:07'),
-(95, 'CANELA CEYLAN', 'chocolat blanc à la cannelle de Ceylan', 'Cacao Sampaka | Espagne (Barcelone)', 'artisanal', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Sampaka_Canela_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/Sampaka_Canela_B.jpg', ' Réservé aux amateurs de cannelle et de sensations de marché de Noël. Un moment de douceur à savourer en fin de repas ou avec des biscuits de Noël. Aussi fondant qu’addictif…', '6.35', '2019-08-30 20:43:07');
+(94, 'GIN & TONIC', 'chocolat au lait avec citron et genévrier', 'Cacao Sampaka | Espagne (Barcelone)', 'artisanal', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_GinTonic_A.jpg', 'https://www.chocolatsdumonde.ch/wp-content/uploads/CacaoSampaka_GinTonic_B.jpg', ' Alliance de la douceur du chocolat au lait avec le pétillant du cocktail, le mélange est réussi ! Un plaisir léger et sucré pour les papilles.', '6.35', '2019-08-30 20:43:07');
 
 -- --------------------------------------------------------
 
@@ -730,7 +750,6 @@ INSERT INTO `st_products_has_st_categories` (`st_products_pro_id`, `st_categorie
 (92, 12),
 (93, 12),
 (94, 12),
-(95, 12),
 (24, 13),
 (25, 13),
 (38, 13),
@@ -884,7 +903,6 @@ INSERT INTO `st_products_has_st_categories` (`st_products_pro_id`, `st_categorie
 (91, 39),
 (92, 39),
 (93, 39),
-(95, 39),
 (10, 40),
 (7, 41),
 (24, 41),
@@ -993,7 +1011,6 @@ INSERT INTO `st_products_has_st_categories` (`st_products_pro_id`, `st_categorie
 (92, 48),
 (93, 48),
 (94, 48),
-(95, 48),
 (77, 49),
 (78, 49),
 (79, 49),
@@ -1035,11 +1052,7 @@ INSERT INTO `st_products_has_st_categories` (`st_products_pro_id`, `st_categorie
 (33, 56),
 (34, 56),
 (51, 56),
-(52, 56),
-(14, 57),
-(17, 57),
-(70, 57),
-(72, 57);
+(52, 56);
 
 -- --------------------------------------------------------
 
@@ -1085,7 +1098,7 @@ CREATE TABLE IF NOT EXISTS `st_types_of_payments` (
 -- Contraintes pour la table `st_addresses`
 --
 ALTER TABLE `st_addresses`
-  ADD CONSTRAINT `fk_st_addresses_st_customers1` FOREIGN KEY (`st_customers_cus_id`) REFERENCES `st_customers` (`cus_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_st_addresses_st_customers1` FOREIGN KEY (`st_customers_cus_id`) REFERENCES `st_customers` (`cus_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `st_caddies`
@@ -1098,8 +1111,8 @@ ALTER TABLE `st_caddies`
 -- Contraintes pour la table `st_categories_main_has_st_categories`
 --
 ALTER TABLE `st_categories_main_has_st_categories`
-  ADD CONSTRAINT `fk_st_categories_main_has_st_categories1` FOREIGN KEY (`st_categories_cat_id`) REFERENCES `st_categories` (`cat_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_st_categories_main_has_st_categories_main1` FOREIGN KEY (`st_categories_main_cat_main_id`) REFERENCES `st_categories_main` (`cat_main_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_st_categories_main_has_st_categories1` FOREIGN KEY (`st_categories_cat_id`) REFERENCES `st_categories` (`cat_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_st_categories_main_has_st_categories_main1` FOREIGN KEY (`st_categories_main_cat_main_id`) REFERENCES `st_categories_main` (`cat_main_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `st_orders`
@@ -1114,8 +1127,8 @@ ALTER TABLE `st_orders`
 -- Contraintes pour la table `st_orders_lines`
 --
 ALTER TABLE `st_orders_lines`
-  ADD CONSTRAINT `fk_st_orders_has_st_products_st_orders1` FOREIGN KEY (`st_orders_ord_id`) REFERENCES `st_orders` (`ord_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_st_orders_has_st_products_st_products1` FOREIGN KEY (`st_products_pro_id`) REFERENCES `st_products` (`pro_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_st_orders_has_st_products_st_orders1` FOREIGN KEY (`st_orders_ord_id`) REFERENCES `st_orders` (`ord_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_st_orders_has_st_products_st_products1` FOREIGN KEY (`st_products_pro_id`) REFERENCES `st_products` (`pro_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `st_payments`
@@ -1129,8 +1142,8 @@ ALTER TABLE `st_payments`
 -- Contraintes pour la table `st_products_has_st_categories`
 --
 ALTER TABLE `st_products_has_st_categories`
-  ADD CONSTRAINT `fk_st_products_has_st_categories_st_categories1` FOREIGN KEY (`st_categories_cat_id`) REFERENCES `st_categories` (`cat_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_st_products_has_st_categories_st_products1` FOREIGN KEY (`st_products_pro_id`) REFERENCES `st_products` (`pro_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_st_products_has_st_categories_st_categories1` FOREIGN KEY (`st_categories_cat_id`) REFERENCES `st_categories` (`cat_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_st_products_has_st_categories_st_products1` FOREIGN KEY (`st_products_pro_id`) REFERENCES `st_products` (`pro_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
