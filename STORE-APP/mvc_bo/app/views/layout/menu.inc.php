@@ -48,23 +48,24 @@
         <!-- nabar right -->
         <ul class="nav navbar-nav flex-row align-items-center ml-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link text-ellipsis" href="" data-toggle="dropdown">
+                <a class="nav-link text-ellipsis" href="/STORE/STORE-APP/mvc_fo/webroot">
                     <span class="avatar w-32">
                         <img src="<?=to_src('assets/images/a3.jpg')?>" alt="...">
                         <i class="on b-white bottom"></i>
                     </span>
+
                     <span class="hidden-md-down nav-text m-l-sm text-left">
-                        <span class="_500">Rose Lynda</span>
-                        <small class="text-muted">Administrateur</small>
+                        <span class="_500">Redirection</span>
+                        <small class="text-muted">Front-Office</small>
                     </span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-scale pull-right">
+                <!-- <div class="dropdown-menu dropdown-menu-scale pull-right">
                     <a class="dropdown-item" ui-sref="app.page.profile">
                         <span>Profile</span>
                     </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" ui-sref="access.signin">Déconnexion</a>
-                </div>
+                </div> -->
             </li>
         </ul>
         <!-- / navbar right -->
